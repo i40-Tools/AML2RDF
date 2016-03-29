@@ -4,8 +4,9 @@
 
 # Goals:
 # Create a project in java that converts AML to RDF - done
-# Use SPARQL queries  - done
-# Give a nice GUI - not done
+# Use SPARQL queries  - partially done
+# Use dependancy injection and remove jar files- not done
+Give a nice GUI - not done
 # Cleaner code - not done
 # Validate RDF - not done
 # Convert the project into Mavaen / Gradle or Spring - not done
