@@ -2,8 +2,8 @@
 # The aim of this project is to convert AML to RDF
 # Solve the integration issues.
 
- Goals:
- Create a project in java that converts AML to RDF - done
+# Goals:
+# Create a project in java that converts AML to RDF - done
  Use SPARQL queries  - done
  Give a nice GUI - not done
  Cleaner code - not done
