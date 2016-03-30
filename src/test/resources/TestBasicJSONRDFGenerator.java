@@ -1,11 +1,13 @@
 package test.resources;
 
+//package test.resources;
+
 import java.io.File;
 import java.io.PrintWriter;
 import java.io.StringWriter;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+//import org.slf4j.Logger;
+//import org.slf4j.LoggerFactory;
 
 import edu.isi.karma.kr2rml.mapping.R2RMLMappingIdentifier;
 import edu.isi.karma.kr2rml.planning.UserSpecifiedRootStrategy;
@@ -15,7 +17,7 @@ import edu.isi.karma.rdf.RDFGeneratorRequest;
 import edu.isi.karma.webserver.ContextParametersRegistry;
 
 public class TestBasicJSONRDFGenerator extends TestJSONRDFGenerator {
-	private static Logger logger = LoggerFactory.getLogger(TestBasicJSONRDFGenerator.class);
+	//private static Logger logger = LoggerFactory.getLogger(TestBasicJSONRDFGenerator.class);
 	/**
 	 * @throws java.lang.Exception
 	 */
@@ -57,24 +59,24 @@ public class TestBasicJSONRDFGenerator extends TestJSONRDFGenerator {
 		try {
 			executeBasicJSONTest("people.json", "people-model", true, 102);
 		} catch (Exception e) {
-			logger.error("testGenerateRDF1 failed:", e);
+		//	logger.error("testGenerateRDF1 failed:", e);
 		//	fail("Execption: " + e.getMessage());
 		}
 	}
-
+/*
 //	@Test
 	public void testGenerateJSON1() {
 		try {
 			String filename = "people.json";
-			logger.info("Loading json file: " + filename);
-			StringWriter sw = new StringWriter();
-			PrintWriter pw = new PrintWriter(sw);
-			JSONKR2RMLRDFWriter writer = new JSONKR2RMLRDFWriter(pw);
+	//		logger.info("Loading json file: " + filename);
+	//		StringWriter sw = new StringWriter();
+	//		PrintWriter pw = new PrintWriter(sw);
+//			JSONKR2RMLRDFWriter writer = new JSONKR2RMLRDFWriter(pw);
 			RDFGeneratorRequest request = new RDFGeneratorRequest("people-model", filename);
 			request.setInputFile(new File(getTestResource(filename).toURI()));
 			request.setAddProvenance(false);
 			request.setDataType(InputType.JSON);
-			request.addWriter(writer);
+	//		request.addWriter(writer);
 			request.setContextParameters(ContextParametersRegistry.getInstance().getDefault());
 			rdfGen.generateRDF(request);
 			
@@ -120,5 +122,5 @@ public class TestBasicJSONRDFGenerator extends TestJSONRDFGenerator {
 			logger.error("testGenerateRDF1 failed:", e);
 			//fail("Execption: " + e.getMessage());
 		}
-	}
+	}*/
 }

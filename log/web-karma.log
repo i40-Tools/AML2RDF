@@ -1991,3 +1991,1182 @@ ERROR [2016-03-29 06:37:20,039] (KR2RMLMappingColumnNameHNodeTranslator->transla
 ERROR [2016-03-29 06:37:20,043] (KR2RMLMappingColumnNameHNodeTranslator->translateColumnNameToHNodeId->146): Error retrieving column: euri
 ERROR [2016-03-29 06:38:05,188] (KR2RMLMappingColumnNameHNodeTranslator->translateColumnNameToHNodeId->146): Error retrieving column: euri
 ERROR [2016-03-29 06:38:19,444] (KR2RMLMappingColumnNameHNodeTranslator->translateColumnNameToHNodeId->146): Error retrieving column: euri
+INFO [2016-03-30 05:25:15,091] (ServletContextParameterMap->setup->89): KARMA_USER_HOME not set.  Defaulting to C:\Users\omar\karma
+INFO [2016-03-30 05:25:15,095] (ServletContextParameterMap->setup->99): Karma home: C:\Users\omar\karma\
+INFO [2016-03-30 05:43:02,965] (ServletContextParameterMap->setup->89): KARMA_USER_HOME not set.  Defaulting to C:\Users\omar\karma
+INFO [2016-03-30 05:43:02,970] (ServletContextParameterMap->setup->99): Karma home: C:\Users\omar\karma\
+INFO [2016-03-30 05:43:03,285] (Reflections->scan->229): Reflections took 224 ms to scan 9 urls, producing 111 keys and 375 values 
+INFO [2016-03-30 05:43:03,313] (ModelingConfiguration->loadParams->300): Load modeling.properties: C:\modeling.properties:true
+INFO [2016-03-30 05:43:03,568] (Reflections->scan->229): Reflections took 107 ms to scan 9 urls, producing 111 keys and 375 values 
+INFO [2016-03-30 05:43:03,571] (ExecutionController->dynamicallyBuildCommandFactoryMap->93): Loaded 0 possible commands
+ERROR [2016-03-30 05:43:04,120] (GenericRDFGenerator->generateRDF->197): Error occurred while generating RDF
+com.hp.hpl.jena.n3.turtle.TurtleParseException: actualValueType
+	at com.hp.hpl.jena.n3.turtle.ParserTurtle.parse(ParserTurtle.java:51)
+	at com.hp.hpl.jena.n3.turtle.TurtleReader.readWorker(TurtleReader.java:21)
+	at com.hp.hpl.jena.n3.JenaReaderBase.readImpl(JenaReaderBase.java:101)
+	at com.hp.hpl.jena.n3.JenaReaderBase.read(JenaReaderBase.java:68)
+	at com.hp.hpl.jena.rdf.model.impl.ModelCom.read(ModelCom.java:226)
+	at edu.isi.karma.kr2rml.mapping.WorksheetR2RMLJenaModelParser.loadSourceModelIntoJenaModel(WorksheetR2RMLJenaModelParser.java:213)
+	at edu.isi.karma.kr2rml.mapping.WorksheetR2RMLJenaModelParser.loadModel(WorksheetR2RMLJenaModelParser.java:107)
+	at edu.isi.karma.kr2rml.mapping.WorksheetR2RMLJenaModelParser.parse(WorksheetR2RMLJenaModelParser.java:114)
+	at edu.isi.karma.rdf.GenericRDFGenerator.generateRDF(GenericRDFGenerator.java:173)
+	at edu.isi.karma.rdf.GenericRDFGenerator.generateRDF(GenericRDFGenerator.java:148)
+	at edu.isi.karma.rdf.GenericRDFGenerator.generateRDF(GenericRDFGenerator.java:225)
+	at test.resources.Modeler.convertor(Modeler.java:53)
+	at test.resources.Start$4.actionPerformed(Start.java:131)
+	at javax.swing.AbstractButton.fireActionPerformed(Unknown Source)
+	at javax.swing.AbstractButton$Handler.actionPerformed(Unknown Source)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(Unknown Source)
+	at javax.swing.DefaultButtonModel.setPressed(Unknown Source)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(Unknown Source)
+	at java.awt.Component.processMouseEvent(Unknown Source)
+	at javax.swing.JComponent.processMouseEvent(Unknown Source)
+	at java.awt.Component.processEvent(Unknown Source)
+	at java.awt.Container.processEvent(Unknown Source)
+	at java.awt.Component.dispatchEventImpl(Unknown Source)
+	at java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.awt.Component.dispatchEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.processMouseEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.dispatchEvent(Unknown Source)
+	at java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.awt.Window.dispatchEventImpl(Unknown Source)
+	at java.awt.Component.dispatchEvent(Unknown Source)
+	at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.awt.EventQueue.access$500(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue$4.run(Unknown Source)
+	at java.awt.EventQueue$4.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.run(Unknown Source)
+Caused by: java.lang.NoSuchFieldError: actualValueType
+	at com.hp.hpl.jena.datatypes.xsd.XSDDatatype.convertValidatedDataValue(XSDDatatype.java:376)
+	at com.hp.hpl.jena.datatypes.xsd.XSDDatatype.parse(XSDDatatype.java:250)
+	at com.hp.hpl.jena.graph.impl.LiteralLabelImpl.setValue(LiteralLabelImpl.java:201)
+	at com.hp.hpl.jena.graph.impl.LiteralLabelImpl.setLiteralLabel_1(LiteralLabelImpl.java:95)
+	at com.hp.hpl.jena.graph.impl.LiteralLabelImpl.<init>(LiteralLabelImpl.java:84)
+	at com.hp.hpl.jena.graph.impl.LiteralLabelFactory.createLiteralLabel(LiteralLabelFactory.java:16)
+	at com.hp.hpl.jena.graph.Node.createLiteral(Node.java:91)
+	at com.hp.hpl.jena.n3.turtle.ParserBase.<init>(ParserBase.java:25)
+	at com.hp.hpl.jena.n3.turtle.parser.TurtleParser.<init>(TurtleParser.java:777)
+	at com.hp.hpl.jena.n3.turtle.ParserTurtle.parse(ParserTurtle.java:34)
+	... 48 more
+INFO [2016-03-30 05:48:44,992] (ServletContextParameterMap->setup->89): KARMA_USER_HOME not set.  Defaulting to C:\Users\omar\karma
+INFO [2016-03-30 05:48:44,998] (ServletContextParameterMap->setup->99): Karma home: C:\Users\omar\karma\
+INFO [2016-03-30 05:48:45,299] (Reflections->scan->229): Reflections took 212 ms to scan 9 urls, producing 111 keys and 375 values 
+INFO [2016-03-30 05:48:45,320] (ModelingConfiguration->loadParams->300): Load modeling.properties: C:\modeling.properties:true
+INFO [2016-03-30 05:48:45,515] (Reflections->scan->229): Reflections took 88 ms to scan 9 urls, producing 111 keys and 375 values 
+INFO [2016-03-30 05:48:45,519] (ExecutionController->dynamicallyBuildCommandFactoryMap->93): Loaded 0 possible commands
+ERROR [2016-03-30 05:48:46,042] (GenericRDFGenerator->generateRDF->197): Error occurred while generating RDF
+com.hp.hpl.jena.n3.turtle.TurtleParseException: actualValueType
+	at com.hp.hpl.jena.n3.turtle.ParserTurtle.parse(ParserTurtle.java:51)
+	at com.hp.hpl.jena.n3.turtle.TurtleReader.readWorker(TurtleReader.java:21)
+	at com.hp.hpl.jena.n3.JenaReaderBase.readImpl(JenaReaderBase.java:101)
+	at com.hp.hpl.jena.n3.JenaReaderBase.read(JenaReaderBase.java:68)
+	at com.hp.hpl.jena.rdf.model.impl.ModelCom.read(ModelCom.java:226)
+	at edu.isi.karma.kr2rml.mapping.WorksheetR2RMLJenaModelParser.loadSourceModelIntoJenaModel(WorksheetR2RMLJenaModelParser.java:213)
+	at edu.isi.karma.kr2rml.mapping.WorksheetR2RMLJenaModelParser.loadModel(WorksheetR2RMLJenaModelParser.java:107)
+	at edu.isi.karma.kr2rml.mapping.WorksheetR2RMLJenaModelParser.parse(WorksheetR2RMLJenaModelParser.java:114)
+	at edu.isi.karma.rdf.GenericRDFGenerator.generateRDF(GenericRDFGenerator.java:173)
+	at edu.isi.karma.rdf.GenericRDFGenerator.generateRDF(GenericRDFGenerator.java:148)
+	at edu.isi.karma.rdf.GenericRDFGenerator.generateRDF(GenericRDFGenerator.java:225)
+	at test.resources.Modeler.convertor(Modeler.java:53)
+	at test.resources.Start$4.actionPerformed(Start.java:131)
+	at javax.swing.AbstractButton.fireActionPerformed(Unknown Source)
+	at javax.swing.AbstractButton$Handler.actionPerformed(Unknown Source)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(Unknown Source)
+	at javax.swing.DefaultButtonModel.setPressed(Unknown Source)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(Unknown Source)
+	at java.awt.Component.processMouseEvent(Unknown Source)
+	at javax.swing.JComponent.processMouseEvent(Unknown Source)
+	at java.awt.Component.processEvent(Unknown Source)
+	at java.awt.Container.processEvent(Unknown Source)
+	at java.awt.Component.dispatchEventImpl(Unknown Source)
+	at java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.awt.Component.dispatchEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.processMouseEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.dispatchEvent(Unknown Source)
+	at java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.awt.Window.dispatchEventImpl(Unknown Source)
+	at java.awt.Component.dispatchEvent(Unknown Source)
+	at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.awt.EventQueue.access$500(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue$4.run(Unknown Source)
+	at java.awt.EventQueue$4.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.run(Unknown Source)
+Caused by: java.lang.NoSuchFieldError: actualValueType
+	at com.hp.hpl.jena.datatypes.xsd.XSDDatatype.convertValidatedDataValue(XSDDatatype.java:376)
+	at com.hp.hpl.jena.datatypes.xsd.XSDDatatype.parse(XSDDatatype.java:250)
+	at com.hp.hpl.jena.graph.impl.LiteralLabelImpl.setValue(LiteralLabelImpl.java:201)
+	at com.hp.hpl.jena.graph.impl.LiteralLabelImpl.setLiteralLabel_1(LiteralLabelImpl.java:95)
+	at com.hp.hpl.jena.graph.impl.LiteralLabelImpl.<init>(LiteralLabelImpl.java:84)
+	at com.hp.hpl.jena.graph.impl.LiteralLabelFactory.createLiteralLabel(LiteralLabelFactory.java:16)
+	at com.hp.hpl.jena.graph.Node.createLiteral(Node.java:91)
+	at com.hp.hpl.jena.n3.turtle.ParserBase.<init>(ParserBase.java:25)
+	at com.hp.hpl.jena.n3.turtle.parser.TurtleParser.<init>(TurtleParser.java:777)
+	at com.hp.hpl.jena.n3.turtle.ParserTurtle.parse(ParserTurtle.java:34)
+	... 48 more
+INFO [2016-03-30 05:52:11,606] (ServletContextParameterMap->setup->89): KARMA_USER_HOME not set.  Defaulting to C:\Users\omar\karma
+INFO [2016-03-30 05:52:11,611] (ServletContextParameterMap->setup->99): Karma home: C:\Users\omar\karma\
+INFO [2016-03-30 05:52:11,906] (Reflections->scan->229): Reflections took 207 ms to scan 9 urls, producing 111 keys and 375 values 
+INFO [2016-03-30 05:52:11,940] (ModelingConfiguration->loadParams->300): Load modeling.properties: C:\modeling.properties:true
+INFO [2016-03-30 05:52:12,142] (Reflections->scan->229): Reflections took 88 ms to scan 9 urls, producing 111 keys and 375 values 
+INFO [2016-03-30 05:52:12,147] (ExecutionController->dynamicallyBuildCommandFactoryMap->93): Loaded 0 possible commands
+ERROR [2016-03-30 05:52:12,695] (GenericRDFGenerator->generateRDF->197): Error occurred while generating RDF
+com.hp.hpl.jena.n3.turtle.TurtleParseException: actualValueType
+	at com.hp.hpl.jena.n3.turtle.ParserTurtle.parse(ParserTurtle.java:51)
+	at com.hp.hpl.jena.n3.turtle.TurtleReader.readWorker(TurtleReader.java:21)
+	at com.hp.hpl.jena.n3.JenaReaderBase.readImpl(JenaReaderBase.java:101)
+	at com.hp.hpl.jena.n3.JenaReaderBase.read(JenaReaderBase.java:68)
+	at com.hp.hpl.jena.rdf.model.impl.ModelCom.read(ModelCom.java:226)
+	at edu.isi.karma.kr2rml.mapping.WorksheetR2RMLJenaModelParser.loadSourceModelIntoJenaModel(WorksheetR2RMLJenaModelParser.java:213)
+	at edu.isi.karma.kr2rml.mapping.WorksheetR2RMLJenaModelParser.loadModel(WorksheetR2RMLJenaModelParser.java:107)
+	at edu.isi.karma.kr2rml.mapping.WorksheetR2RMLJenaModelParser.parse(WorksheetR2RMLJenaModelParser.java:114)
+	at edu.isi.karma.rdf.GenericRDFGenerator.generateRDF(GenericRDFGenerator.java:173)
+	at edu.isi.karma.rdf.GenericRDFGenerator.generateRDF(GenericRDFGenerator.java:148)
+	at edu.isi.karma.rdf.GenericRDFGenerator.generateRDF(GenericRDFGenerator.java:225)
+	at test.resources.Modeler.convertor(Modeler.java:53)
+	at test.resources.Start$4.actionPerformed(Start.java:131)
+	at javax.swing.AbstractButton.fireActionPerformed(Unknown Source)
+	at javax.swing.AbstractButton$Handler.actionPerformed(Unknown Source)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(Unknown Source)
+	at javax.swing.DefaultButtonModel.setPressed(Unknown Source)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(Unknown Source)
+	at java.awt.Component.processMouseEvent(Unknown Source)
+	at javax.swing.JComponent.processMouseEvent(Unknown Source)
+	at java.awt.Component.processEvent(Unknown Source)
+	at java.awt.Container.processEvent(Unknown Source)
+	at java.awt.Component.dispatchEventImpl(Unknown Source)
+	at java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.awt.Component.dispatchEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.processMouseEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.dispatchEvent(Unknown Source)
+	at java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.awt.Window.dispatchEventImpl(Unknown Source)
+	at java.awt.Component.dispatchEvent(Unknown Source)
+	at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.awt.EventQueue.access$500(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue$4.run(Unknown Source)
+	at java.awt.EventQueue$4.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.run(Unknown Source)
+Caused by: java.lang.NoSuchFieldError: actualValueType
+	at com.hp.hpl.jena.datatypes.xsd.XSDDatatype.convertValidatedDataValue(XSDDatatype.java:376)
+	at com.hp.hpl.jena.datatypes.xsd.XSDDatatype.parse(XSDDatatype.java:250)
+	at com.hp.hpl.jena.graph.impl.LiteralLabelImpl.setValue(LiteralLabelImpl.java:201)
+	at com.hp.hpl.jena.graph.impl.LiteralLabelImpl.setLiteralLabel_1(LiteralLabelImpl.java:95)
+	at com.hp.hpl.jena.graph.impl.LiteralLabelImpl.<init>(LiteralLabelImpl.java:84)
+	at com.hp.hpl.jena.graph.impl.LiteralLabelFactory.createLiteralLabel(LiteralLabelFactory.java:16)
+	at com.hp.hpl.jena.graph.Node.createLiteral(Node.java:91)
+	at com.hp.hpl.jena.n3.turtle.ParserBase.<init>(ParserBase.java:25)
+	at com.hp.hpl.jena.n3.turtle.parser.TurtleParser.<init>(TurtleParser.java:777)
+	at com.hp.hpl.jena.n3.turtle.ParserTurtle.parse(ParserTurtle.java:34)
+	... 48 more
+INFO [2016-03-30 05:56:34,938] (ServletContextParameterMap->setup->89): KARMA_USER_HOME not set.  Defaulting to C:\Users\omar\karma
+INFO [2016-03-30 05:56:34,943] (ServletContextParameterMap->setup->99): Karma home: C:\Users\omar\karma\
+INFO [2016-03-30 05:56:35,371] (Reflections->scan->205): Reflections took 349 ms to scan 9 urls, producing 111 keys and 375 values 
+INFO [2016-03-30 05:56:35,378] (ModelingConfiguration->loadParams->300): Load modeling.properties: C:\modeling.properties:true
+INFO [2016-03-30 05:56:35,561] (Reflections->scan->205): Reflections took 96 ms to scan 9 urls, producing 111 keys and 375 values 
+INFO [2016-03-30 05:56:35,564] (ExecutionController->dynamicallyBuildCommandFactoryMap->93): Loaded 0 possible commands
+ERROR [2016-03-30 05:56:36,621] (KR2RMLMappingColumnNameHNodeTranslator->translateColumnNameToHNodeId->146): Error retrieving column: euri
+INFO [2016-03-30 05:58:58,061] (ServletContextParameterMap->setup->89): KARMA_USER_HOME not set.  Defaulting to C:\Users\omar\karma
+INFO [2016-03-30 05:58:58,066] (ServletContextParameterMap->setup->99): Karma home: C:\Users\omar\karma\
+INFO [2016-03-30 05:58:58,462] (Reflections->scan->205): Reflections took 322 ms to scan 9 urls, producing 111 keys and 375 values 
+INFO [2016-03-30 05:58:58,472] (ModelingConfiguration->loadParams->300): Load modeling.properties: C:\modeling.properties:true
+INFO [2016-03-30 05:58:58,702] (Reflections->scan->205): Reflections took 135 ms to scan 9 urls, producing 111 keys and 375 values 
+INFO [2016-03-30 05:58:58,704] (ExecutionController->dynamicallyBuildCommandFactoryMap->93): Loaded 0 possible commands
+ERROR [2016-03-30 05:58:59,721] (KR2RMLMappingColumnNameHNodeTranslator->translateColumnNameToHNodeId->146): Error retrieving column: euri
+INFO [2016-03-30 06:00:24,187] (ServletContextParameterMap->setup->89): KARMA_USER_HOME not set.  Defaulting to C:\Users\omar\karma
+INFO [2016-03-30 06:00:24,192] (ServletContextParameterMap->setup->99): Karma home: C:\Users\omar\karma\
+INFO [2016-03-30 06:00:24,483] (Reflections->scan->229): Reflections took 205 ms to scan 9 urls, producing 111 keys and 375 values 
+INFO [2016-03-30 06:00:24,515] (ModelingConfiguration->loadParams->300): Load modeling.properties: C:\modeling.properties:true
+INFO [2016-03-30 06:00:24,705] (Reflections->scan->229): Reflections took 82 ms to scan 9 urls, producing 111 keys and 375 values 
+INFO [2016-03-30 06:00:24,710] (ExecutionController->dynamicallyBuildCommandFactoryMap->93): Loaded 0 possible commands
+ERROR [2016-03-30 06:00:25,190] (GenericRDFGenerator->generateRDF->197): Error occurred while generating RDF
+com.hp.hpl.jena.n3.turtle.TurtleParseException: actualValueType
+	at com.hp.hpl.jena.n3.turtle.ParserTurtle.parse(ParserTurtle.java:51)
+	at com.hp.hpl.jena.n3.turtle.TurtleReader.readWorker(TurtleReader.java:21)
+	at com.hp.hpl.jena.n3.JenaReaderBase.readImpl(JenaReaderBase.java:101)
+	at com.hp.hpl.jena.n3.JenaReaderBase.read(JenaReaderBase.java:68)
+	at com.hp.hpl.jena.rdf.model.impl.ModelCom.read(ModelCom.java:226)
+	at edu.isi.karma.kr2rml.mapping.WorksheetR2RMLJenaModelParser.loadSourceModelIntoJenaModel(WorksheetR2RMLJenaModelParser.java:213)
+	at edu.isi.karma.kr2rml.mapping.WorksheetR2RMLJenaModelParser.loadModel(WorksheetR2RMLJenaModelParser.java:107)
+	at edu.isi.karma.kr2rml.mapping.WorksheetR2RMLJenaModelParser.parse(WorksheetR2RMLJenaModelParser.java:114)
+	at edu.isi.karma.rdf.GenericRDFGenerator.generateRDF(GenericRDFGenerator.java:173)
+	at edu.isi.karma.rdf.GenericRDFGenerator.generateRDF(GenericRDFGenerator.java:148)
+	at edu.isi.karma.rdf.GenericRDFGenerator.generateRDF(GenericRDFGenerator.java:225)
+	at test.resources.Modeler.convertor(Modeler.java:53)
+	at test.resources.Start$4.actionPerformed(Start.java:131)
+	at javax.swing.AbstractButton.fireActionPerformed(Unknown Source)
+	at javax.swing.AbstractButton$Handler.actionPerformed(Unknown Source)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(Unknown Source)
+	at javax.swing.DefaultButtonModel.setPressed(Unknown Source)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(Unknown Source)
+	at java.awt.Component.processMouseEvent(Unknown Source)
+	at javax.swing.JComponent.processMouseEvent(Unknown Source)
+	at java.awt.Component.processEvent(Unknown Source)
+	at java.awt.Container.processEvent(Unknown Source)
+	at java.awt.Component.dispatchEventImpl(Unknown Source)
+	at java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.awt.Component.dispatchEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.processMouseEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.dispatchEvent(Unknown Source)
+	at java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.awt.Window.dispatchEventImpl(Unknown Source)
+	at java.awt.Component.dispatchEvent(Unknown Source)
+	at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.awt.EventQueue.access$500(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue$4.run(Unknown Source)
+	at java.awt.EventQueue$4.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.run(Unknown Source)
+Caused by: java.lang.NoSuchFieldError: actualValueType
+	at com.hp.hpl.jena.datatypes.xsd.XSDDatatype.convertValidatedDataValue(XSDDatatype.java:376)
+	at com.hp.hpl.jena.datatypes.xsd.XSDDatatype.parse(XSDDatatype.java:250)
+	at com.hp.hpl.jena.graph.impl.LiteralLabelImpl.setValue(LiteralLabelImpl.java:201)
+	at com.hp.hpl.jena.graph.impl.LiteralLabelImpl.setLiteralLabel_1(LiteralLabelImpl.java:95)
+	at com.hp.hpl.jena.graph.impl.LiteralLabelImpl.<init>(LiteralLabelImpl.java:84)
+	at com.hp.hpl.jena.graph.impl.LiteralLabelFactory.createLiteralLabel(LiteralLabelFactory.java:16)
+	at com.hp.hpl.jena.graph.Node.createLiteral(Node.java:91)
+	at com.hp.hpl.jena.n3.turtle.ParserBase.<init>(ParserBase.java:25)
+	at com.hp.hpl.jena.n3.turtle.parser.TurtleParser.<init>(TurtleParser.java:777)
+	at com.hp.hpl.jena.n3.turtle.ParserTurtle.parse(ParserTurtle.java:34)
+	... 48 more
+INFO [2016-03-30 06:02:24,438] (ServletContextParameterMap->setup->89): KARMA_USER_HOME not set.  Defaulting to C:\Users\omar\karma
+INFO [2016-03-30 06:02:24,443] (ServletContextParameterMap->setup->99): Karma home: C:\Users\omar\karma\
+INFO [2016-03-30 06:02:24,881] (Reflections->scan->205): Reflections took 357 ms to scan 9 urls, producing 111 keys and 375 values 
+INFO [2016-03-30 06:02:24,889] (ModelingConfiguration->loadParams->300): Load modeling.properties: C:\modeling.properties:true
+INFO [2016-03-30 06:02:25,119] (Reflections->scan->205): Reflections took 130 ms to scan 9 urls, producing 111 keys and 375 values 
+INFO [2016-03-30 06:02:25,124] (ExecutionController->dynamicallyBuildCommandFactoryMap->93): Loaded 0 possible commands
+ERROR [2016-03-30 06:02:25,606] (GenericRDFGenerator->generateRDF->197): Error occurred while generating RDF
+com.hp.hpl.jena.n3.turtle.TurtleParseException: actualValueType
+	at com.hp.hpl.jena.n3.turtle.ParserTurtle.parse(ParserTurtle.java:51)
+	at com.hp.hpl.jena.n3.turtle.TurtleReader.readWorker(TurtleReader.java:21)
+	at com.hp.hpl.jena.n3.JenaReaderBase.readImpl(JenaReaderBase.java:101)
+	at com.hp.hpl.jena.n3.JenaReaderBase.read(JenaReaderBase.java:68)
+	at com.hp.hpl.jena.rdf.model.impl.ModelCom.read(ModelCom.java:226)
+	at edu.isi.karma.kr2rml.mapping.WorksheetR2RMLJenaModelParser.loadSourceModelIntoJenaModel(WorksheetR2RMLJenaModelParser.java:213)
+	at edu.isi.karma.kr2rml.mapping.WorksheetR2RMLJenaModelParser.loadModel(WorksheetR2RMLJenaModelParser.java:107)
+	at edu.isi.karma.kr2rml.mapping.WorksheetR2RMLJenaModelParser.parse(WorksheetR2RMLJenaModelParser.java:114)
+	at edu.isi.karma.rdf.GenericRDFGenerator.generateRDF(GenericRDFGenerator.java:173)
+	at edu.isi.karma.rdf.GenericRDFGenerator.generateRDF(GenericRDFGenerator.java:148)
+	at edu.isi.karma.rdf.GenericRDFGenerator.generateRDF(GenericRDFGenerator.java:225)
+	at test.resources.Modeler.convertor(Modeler.java:53)
+	at test.resources.Start$4.actionPerformed(Start.java:131)
+	at javax.swing.AbstractButton.fireActionPerformed(Unknown Source)
+	at javax.swing.AbstractButton$Handler.actionPerformed(Unknown Source)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(Unknown Source)
+	at javax.swing.DefaultButtonModel.setPressed(Unknown Source)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(Unknown Source)
+	at java.awt.Component.processMouseEvent(Unknown Source)
+	at javax.swing.JComponent.processMouseEvent(Unknown Source)
+	at java.awt.Component.processEvent(Unknown Source)
+	at java.awt.Container.processEvent(Unknown Source)
+	at java.awt.Component.dispatchEventImpl(Unknown Source)
+	at java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.awt.Component.dispatchEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.processMouseEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.dispatchEvent(Unknown Source)
+	at java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.awt.Window.dispatchEventImpl(Unknown Source)
+	at java.awt.Component.dispatchEvent(Unknown Source)
+	at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.awt.EventQueue.access$500(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue$4.run(Unknown Source)
+	at java.awt.EventQueue$4.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.run(Unknown Source)
+Caused by: java.lang.NoSuchFieldError: actualValueType
+	at com.hp.hpl.jena.datatypes.xsd.XSDDatatype.convertValidatedDataValue(XSDDatatype.java:376)
+	at com.hp.hpl.jena.datatypes.xsd.XSDDatatype.parse(XSDDatatype.java:250)
+	at com.hp.hpl.jena.graph.impl.LiteralLabelImpl.setValue(LiteralLabelImpl.java:201)
+	at com.hp.hpl.jena.graph.impl.LiteralLabelImpl.setLiteralLabel_1(LiteralLabelImpl.java:95)
+	at com.hp.hpl.jena.graph.impl.LiteralLabelImpl.<init>(LiteralLabelImpl.java:84)
+	at com.hp.hpl.jena.graph.impl.LiteralLabelFactory.createLiteralLabel(LiteralLabelFactory.java:16)
+	at com.hp.hpl.jena.graph.Node.createLiteral(Node.java:91)
+	at com.hp.hpl.jena.n3.turtle.ParserBase.<init>(ParserBase.java:25)
+	at com.hp.hpl.jena.n3.turtle.parser.TurtleParser.<init>(TurtleParser.java:777)
+	at com.hp.hpl.jena.n3.turtle.ParserTurtle.parse(ParserTurtle.java:34)
+	... 48 more
+INFO [2016-03-30 06:03:38,405] (ServletContextParameterMap->setup->89): KARMA_USER_HOME not set.  Defaulting to C:\Users\omar\karma
+INFO [2016-03-30 06:03:38,410] (ServletContextParameterMap->setup->99): Karma home: C:\Users\omar\karma\
+INFO [2016-03-30 06:03:38,721] (Reflections->scan->229): Reflections took 252 ms to scan 9 urls, producing 111 keys and 375 values 
+INFO [2016-03-30 06:03:38,738] (ModelingConfiguration->loadParams->300): Load modeling.properties: C:\modeling.properties:true
+INFO [2016-03-30 06:03:38,928] (Reflections->scan->229): Reflections took 110 ms to scan 9 urls, producing 111 keys and 375 values 
+INFO [2016-03-30 06:03:38,931] (ExecutionController->dynamicallyBuildCommandFactoryMap->93): Loaded 0 possible commands
+ERROR [2016-03-30 06:03:40,056] (KR2RMLMappingColumnNameHNodeTranslator->translateColumnNameToHNodeId->146): Error retrieving column: euri
+INFO [2016-03-30 06:05:00,501] (ServletContextParameterMap->setup->89): KARMA_USER_HOME not set.  Defaulting to C:\Users\omar\karma
+INFO [2016-03-30 06:05:00,506] (ServletContextParameterMap->setup->99): Karma home: C:\Users\omar\karma\
+INFO [2016-03-30 06:05:00,775] (Reflections->scan->229): Reflections took 207 ms to scan 9 urls, producing 111 keys and 375 values 
+INFO [2016-03-30 06:05:00,792] (ModelingConfiguration->loadParams->300): Load modeling.properties: C:\modeling.properties:true
+INFO [2016-03-30 06:05:01,007] (Reflections->scan->229): Reflections took 120 ms to scan 9 urls, producing 111 keys and 375 values 
+INFO [2016-03-30 06:05:01,014] (ExecutionController->dynamicallyBuildCommandFactoryMap->93): Loaded 0 possible commands
+ERROR [2016-03-30 06:05:01,479] (GenericRDFGenerator->generateRDF->197): Error occurred while generating RDF
+com.hp.hpl.jena.n3.turtle.TurtleParseException: actualValueType
+	at com.hp.hpl.jena.n3.turtle.ParserTurtle.parse(ParserTurtle.java:51)
+	at com.hp.hpl.jena.n3.turtle.TurtleReader.readWorker(TurtleReader.java:21)
+	at com.hp.hpl.jena.n3.JenaReaderBase.readImpl(JenaReaderBase.java:101)
+	at com.hp.hpl.jena.n3.JenaReaderBase.read(JenaReaderBase.java:68)
+	at com.hp.hpl.jena.rdf.model.impl.ModelCom.read(ModelCom.java:226)
+	at edu.isi.karma.kr2rml.mapping.WorksheetR2RMLJenaModelParser.loadSourceModelIntoJenaModel(WorksheetR2RMLJenaModelParser.java:213)
+	at edu.isi.karma.kr2rml.mapping.WorksheetR2RMLJenaModelParser.loadModel(WorksheetR2RMLJenaModelParser.java:107)
+	at edu.isi.karma.kr2rml.mapping.WorksheetR2RMLJenaModelParser.parse(WorksheetR2RMLJenaModelParser.java:114)
+	at edu.isi.karma.rdf.GenericRDFGenerator.generateRDF(GenericRDFGenerator.java:173)
+	at edu.isi.karma.rdf.GenericRDFGenerator.generateRDF(GenericRDFGenerator.java:148)
+	at edu.isi.karma.rdf.GenericRDFGenerator.generateRDF(GenericRDFGenerator.java:225)
+	at test.resources.Modeler.convertor(Modeler.java:53)
+	at test.resources.Start$4.actionPerformed(Start.java:131)
+	at javax.swing.AbstractButton.fireActionPerformed(Unknown Source)
+	at javax.swing.AbstractButton$Handler.actionPerformed(Unknown Source)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(Unknown Source)
+	at javax.swing.DefaultButtonModel.setPressed(Unknown Source)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(Unknown Source)
+	at java.awt.Component.processMouseEvent(Unknown Source)
+	at javax.swing.JComponent.processMouseEvent(Unknown Source)
+	at java.awt.Component.processEvent(Unknown Source)
+	at java.awt.Container.processEvent(Unknown Source)
+	at java.awt.Component.dispatchEventImpl(Unknown Source)
+	at java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.awt.Component.dispatchEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.processMouseEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.dispatchEvent(Unknown Source)
+	at java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.awt.Window.dispatchEventImpl(Unknown Source)
+	at java.awt.Component.dispatchEvent(Unknown Source)
+	at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.awt.EventQueue.access$500(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue$4.run(Unknown Source)
+	at java.awt.EventQueue$4.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.run(Unknown Source)
+Caused by: java.lang.NoSuchFieldError: actualValueType
+	at com.hp.hpl.jena.datatypes.xsd.XSDDatatype.convertValidatedDataValue(XSDDatatype.java:376)
+	at com.hp.hpl.jena.datatypes.xsd.XSDDatatype.parse(XSDDatatype.java:250)
+	at com.hp.hpl.jena.graph.impl.LiteralLabelImpl.setValue(LiteralLabelImpl.java:201)
+	at com.hp.hpl.jena.graph.impl.LiteralLabelImpl.setLiteralLabel_1(LiteralLabelImpl.java:95)
+	at com.hp.hpl.jena.graph.impl.LiteralLabelImpl.<init>(LiteralLabelImpl.java:84)
+	at com.hp.hpl.jena.graph.impl.LiteralLabelFactory.createLiteralLabel(LiteralLabelFactory.java:16)
+	at com.hp.hpl.jena.graph.Node.createLiteral(Node.java:91)
+	at com.hp.hpl.jena.n3.turtle.ParserBase.<init>(ParserBase.java:25)
+	at com.hp.hpl.jena.n3.turtle.parser.TurtleParser.<init>(TurtleParser.java:777)
+	at com.hp.hpl.jena.n3.turtle.ParserTurtle.parse(ParserTurtle.java:34)
+	... 48 more
+INFO [2016-03-30 06:06:22,098] (ServletContextParameterMap->setup->89): KARMA_USER_HOME not set.  Defaulting to C:\Users\omar\karma
+INFO [2016-03-30 06:06:22,104] (ServletContextParameterMap->setup->99): Karma home: C:\Users\omar\karma\
+INFO [2016-03-30 06:06:22,414] (Reflections->scan->229): Reflections took 230 ms to scan 9 urls, producing 111 keys and 375 values 
+INFO [2016-03-30 06:06:22,431] (ModelingConfiguration->loadParams->300): Load modeling.properties: C:\modeling.properties:true
+INFO [2016-03-30 06:06:22,609] (Reflections->scan->229): Reflections took 100 ms to scan 9 urls, producing 111 keys and 375 values 
+INFO [2016-03-30 06:06:22,611] (ExecutionController->dynamicallyBuildCommandFactoryMap->93): Loaded 0 possible commands
+ERROR [2016-03-30 06:06:23,091] (GenericRDFGenerator->generateRDF->197): Error occurred while generating RDF
+com.hp.hpl.jena.n3.turtle.TurtleParseException: actualValueType
+	at com.hp.hpl.jena.n3.turtle.ParserTurtle.parse(ParserTurtle.java:51)
+	at com.hp.hpl.jena.n3.turtle.TurtleReader.readWorker(TurtleReader.java:21)
+	at com.hp.hpl.jena.n3.JenaReaderBase.readImpl(JenaReaderBase.java:101)
+	at com.hp.hpl.jena.n3.JenaReaderBase.read(JenaReaderBase.java:68)
+	at com.hp.hpl.jena.rdf.model.impl.ModelCom.read(ModelCom.java:226)
+	at edu.isi.karma.kr2rml.mapping.WorksheetR2RMLJenaModelParser.loadSourceModelIntoJenaModel(WorksheetR2RMLJenaModelParser.java:213)
+	at edu.isi.karma.kr2rml.mapping.WorksheetR2RMLJenaModelParser.loadModel(WorksheetR2RMLJenaModelParser.java:107)
+	at edu.isi.karma.kr2rml.mapping.WorksheetR2RMLJenaModelParser.parse(WorksheetR2RMLJenaModelParser.java:114)
+	at edu.isi.karma.rdf.GenericRDFGenerator.generateRDF(GenericRDFGenerator.java:173)
+	at edu.isi.karma.rdf.GenericRDFGenerator.generateRDF(GenericRDFGenerator.java:148)
+	at edu.isi.karma.rdf.GenericRDFGenerator.generateRDF(GenericRDFGenerator.java:225)
+	at test.resources.Modeler.convertor(Modeler.java:53)
+	at test.resources.Start$4.actionPerformed(Start.java:131)
+	at javax.swing.AbstractButton.fireActionPerformed(Unknown Source)
+	at javax.swing.AbstractButton$Handler.actionPerformed(Unknown Source)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(Unknown Source)
+	at javax.swing.DefaultButtonModel.setPressed(Unknown Source)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(Unknown Source)
+	at java.awt.Component.processMouseEvent(Unknown Source)
+	at javax.swing.JComponent.processMouseEvent(Unknown Source)
+	at java.awt.Component.processEvent(Unknown Source)
+	at java.awt.Container.processEvent(Unknown Source)
+	at java.awt.Component.dispatchEventImpl(Unknown Source)
+	at java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.awt.Component.dispatchEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.processMouseEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.dispatchEvent(Unknown Source)
+	at java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.awt.Window.dispatchEventImpl(Unknown Source)
+	at java.awt.Component.dispatchEvent(Unknown Source)
+	at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.awt.EventQueue.access$500(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue$4.run(Unknown Source)
+	at java.awt.EventQueue$4.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.run(Unknown Source)
+Caused by: java.lang.NoSuchFieldError: actualValueType
+	at com.hp.hpl.jena.datatypes.xsd.XSDDatatype.convertValidatedDataValue(XSDDatatype.java:376)
+	at com.hp.hpl.jena.datatypes.xsd.XSDDatatype.parse(XSDDatatype.java:250)
+	at com.hp.hpl.jena.graph.impl.LiteralLabelImpl.setValue(LiteralLabelImpl.java:201)
+	at com.hp.hpl.jena.graph.impl.LiteralLabelImpl.setLiteralLabel_1(LiteralLabelImpl.java:95)
+	at com.hp.hpl.jena.graph.impl.LiteralLabelImpl.<init>(LiteralLabelImpl.java:84)
+	at com.hp.hpl.jena.graph.impl.LiteralLabelFactory.createLiteralLabel(LiteralLabelFactory.java:16)
+	at com.hp.hpl.jena.graph.Node.createLiteral(Node.java:91)
+	at com.hp.hpl.jena.n3.turtle.ParserBase.<init>(ParserBase.java:25)
+	at com.hp.hpl.jena.n3.turtle.parser.TurtleParser.<init>(TurtleParser.java:777)
+	at com.hp.hpl.jena.n3.turtle.ParserTurtle.parse(ParserTurtle.java:34)
+	... 48 more
+INFO [2016-03-30 06:07:32,773] (ServletContextParameterMap->setup->89): KARMA_USER_HOME not set.  Defaulting to C:\Users\omar\karma
+INFO [2016-03-30 06:07:32,778] (ServletContextParameterMap->setup->99): Karma home: C:\Users\omar\karma\
+INFO [2016-03-30 06:07:33,062] (Reflections->scan->229): Reflections took 202 ms to scan 9 urls, producing 111 keys and 375 values 
+INFO [2016-03-30 06:07:33,095] (ModelingConfiguration->loadParams->300): Load modeling.properties: C:\modeling.properties:true
+INFO [2016-03-30 06:07:33,275] (Reflections->scan->229): Reflections took 103 ms to scan 9 urls, producing 111 keys and 375 values 
+INFO [2016-03-30 06:07:33,279] (ExecutionController->dynamicallyBuildCommandFactoryMap->93): Loaded 0 possible commands
+INFO [2016-03-30 06:11:45,354] (ServletContextParameterMap->setup->89): KARMA_USER_HOME not set.  Defaulting to C:\Users\omar\karma
+INFO [2016-03-30 06:11:45,359] (ServletContextParameterMap->setup->99): Karma home: C:\Users\omar\karma\
+INFO [2016-03-30 06:11:45,851] (Reflections->scan->229): Reflections took 382 ms to scan 9 urls, producing 111 keys and 375 values 
+INFO [2016-03-30 06:11:45,884] (ModelingConfiguration->loadParams->300): Load modeling.properties: C:\modeling.properties:true
+INFO [2016-03-30 06:11:46,175] (Reflections->scan->229): Reflections took 158 ms to scan 9 urls, producing 111 keys and 375 values 
+INFO [2016-03-30 06:11:46,184] (ExecutionController->dynamicallyBuildCommandFactoryMap->93): Loaded 0 possible commands
+ERROR [2016-03-30 06:11:47,902] (KR2RMLMappingColumnNameHNodeTranslator->translateColumnNameToHNodeId->146): Error retrieving column: euri
+INFO [2016-03-30 06:14:46,437] (ServletContextParameterMap->setup->89): KARMA_USER_HOME not set.  Defaulting to C:\Users\omar\karma
+INFO [2016-03-30 06:14:46,442] (ServletContextParameterMap->setup->99): Karma home: C:\Users\omar\karma\
+INFO [2016-03-30 06:14:46,713] (Reflections->scan->229): Reflections took 187 ms to scan 9 urls, producing 111 keys and 375 values 
+INFO [2016-03-30 06:14:46,743] (ModelingConfiguration->loadParams->300): Load modeling.properties: C:\modeling.properties:true
+INFO [2016-03-30 06:14:46,961] (Reflections->scan->229): Reflections took 93 ms to scan 9 urls, producing 111 keys and 375 values 
+INFO [2016-03-30 06:14:46,966] (ExecutionController->dynamicallyBuildCommandFactoryMap->93): Loaded 0 possible commands
+ERROR [2016-03-30 06:14:47,526] (GenericRDFGenerator->generateRDF->197): Error occurred while generating RDF
+com.hp.hpl.jena.n3.turtle.TurtleParseException: actualValueType
+	at com.hp.hpl.jena.n3.turtle.ParserTurtle.parse(ParserTurtle.java:51)
+	at com.hp.hpl.jena.n3.turtle.TurtleReader.readWorker(TurtleReader.java:21)
+	at com.hp.hpl.jena.n3.JenaReaderBase.readImpl(JenaReaderBase.java:101)
+	at com.hp.hpl.jena.n3.JenaReaderBase.read(JenaReaderBase.java:68)
+	at com.hp.hpl.jena.rdf.model.impl.ModelCom.read(ModelCom.java:226)
+	at edu.isi.karma.kr2rml.mapping.WorksheetR2RMLJenaModelParser.loadSourceModelIntoJenaModel(WorksheetR2RMLJenaModelParser.java:213)
+	at edu.isi.karma.kr2rml.mapping.WorksheetR2RMLJenaModelParser.loadModel(WorksheetR2RMLJenaModelParser.java:107)
+	at edu.isi.karma.kr2rml.mapping.WorksheetR2RMLJenaModelParser.parse(WorksheetR2RMLJenaModelParser.java:114)
+	at edu.isi.karma.rdf.GenericRDFGenerator.generateRDF(GenericRDFGenerator.java:173)
+	at edu.isi.karma.rdf.GenericRDFGenerator.generateRDF(GenericRDFGenerator.java:148)
+	at edu.isi.karma.rdf.GenericRDFGenerator.generateRDF(GenericRDFGenerator.java:225)
+	at test.resources.Modeler.convertor(Modeler.java:53)
+	at test.resources.Start$4.actionPerformed(Start.java:131)
+	at javax.swing.AbstractButton.fireActionPerformed(Unknown Source)
+	at javax.swing.AbstractButton$Handler.actionPerformed(Unknown Source)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(Unknown Source)
+	at javax.swing.DefaultButtonModel.setPressed(Unknown Source)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(Unknown Source)
+	at java.awt.Component.processMouseEvent(Unknown Source)
+	at javax.swing.JComponent.processMouseEvent(Unknown Source)
+	at java.awt.Component.processEvent(Unknown Source)
+	at java.awt.Container.processEvent(Unknown Source)
+	at java.awt.Component.dispatchEventImpl(Unknown Source)
+	at java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.awt.Component.dispatchEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.processMouseEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.dispatchEvent(Unknown Source)
+	at java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.awt.Window.dispatchEventImpl(Unknown Source)
+	at java.awt.Component.dispatchEvent(Unknown Source)
+	at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.awt.EventQueue.access$500(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue$4.run(Unknown Source)
+	at java.awt.EventQueue$4.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.run(Unknown Source)
+Caused by: java.lang.NoSuchFieldError: actualValueType
+	at com.hp.hpl.jena.datatypes.xsd.XSDDatatype.convertValidatedDataValue(XSDDatatype.java:376)
+	at com.hp.hpl.jena.datatypes.xsd.XSDDatatype.parse(XSDDatatype.java:250)
+	at com.hp.hpl.jena.graph.impl.LiteralLabelImpl.setValue(LiteralLabelImpl.java:201)
+	at com.hp.hpl.jena.graph.impl.LiteralLabelImpl.setLiteralLabel_1(LiteralLabelImpl.java:95)
+	at com.hp.hpl.jena.graph.impl.LiteralLabelImpl.<init>(LiteralLabelImpl.java:84)
+	at com.hp.hpl.jena.graph.impl.LiteralLabelFactory.createLiteralLabel(LiteralLabelFactory.java:16)
+	at com.hp.hpl.jena.graph.Node.createLiteral(Node.java:91)
+	at com.hp.hpl.jena.n3.turtle.ParserBase.<init>(ParserBase.java:25)
+	at com.hp.hpl.jena.n3.turtle.parser.TurtleParser.<init>(TurtleParser.java:777)
+	at com.hp.hpl.jena.n3.turtle.ParserTurtle.parse(ParserTurtle.java:34)
+	... 48 more
+INFO [2016-03-30 06:16:23,877] (ServletContextParameterMap->setup->89): KARMA_USER_HOME not set.  Defaulting to C:\Users\omar\karma
+INFO [2016-03-30 06:16:23,884] (ServletContextParameterMap->setup->99): Karma home: C:\Users\omar\karma\
+INFO [2016-03-30 06:16:24,198] (Reflections->scan->229): Reflections took 220 ms to scan 9 urls, producing 111 keys and 375 values 
+INFO [2016-03-30 06:16:24,228] (ModelingConfiguration->loadParams->300): Load modeling.properties: C:\modeling.properties:true
+INFO [2016-03-30 06:16:24,405] (Reflections->scan->229): Reflections took 72 ms to scan 9 urls, producing 111 keys and 375 values 
+INFO [2016-03-30 06:16:24,408] (ExecutionController->dynamicallyBuildCommandFactoryMap->93): Loaded 0 possible commands
+ERROR [2016-03-30 06:16:24,906] (GenericRDFGenerator->generateRDF->197): Error occurred while generating RDF
+com.hp.hpl.jena.n3.turtle.TurtleParseException: actualValueType
+	at com.hp.hpl.jena.n3.turtle.ParserTurtle.parse(ParserTurtle.java:51)
+	at com.hp.hpl.jena.n3.turtle.TurtleReader.readWorker(TurtleReader.java:21)
+	at com.hp.hpl.jena.n3.JenaReaderBase.readImpl(JenaReaderBase.java:101)
+	at com.hp.hpl.jena.n3.JenaReaderBase.read(JenaReaderBase.java:68)
+	at com.hp.hpl.jena.rdf.model.impl.ModelCom.read(ModelCom.java:226)
+	at edu.isi.karma.kr2rml.mapping.WorksheetR2RMLJenaModelParser.loadSourceModelIntoJenaModel(WorksheetR2RMLJenaModelParser.java:213)
+	at edu.isi.karma.kr2rml.mapping.WorksheetR2RMLJenaModelParser.loadModel(WorksheetR2RMLJenaModelParser.java:107)
+	at edu.isi.karma.kr2rml.mapping.WorksheetR2RMLJenaModelParser.parse(WorksheetR2RMLJenaModelParser.java:114)
+	at edu.isi.karma.rdf.GenericRDFGenerator.generateRDF(GenericRDFGenerator.java:173)
+	at edu.isi.karma.rdf.GenericRDFGenerator.generateRDF(GenericRDFGenerator.java:148)
+	at edu.isi.karma.rdf.GenericRDFGenerator.generateRDF(GenericRDFGenerator.java:225)
+	at test.resources.Modeler.convertor(Modeler.java:53)
+	at test.resources.Start$4.actionPerformed(Start.java:131)
+	at javax.swing.AbstractButton.fireActionPerformed(Unknown Source)
+	at javax.swing.AbstractButton$Handler.actionPerformed(Unknown Source)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(Unknown Source)
+	at javax.swing.DefaultButtonModel.setPressed(Unknown Source)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(Unknown Source)
+	at java.awt.Component.processMouseEvent(Unknown Source)
+	at javax.swing.JComponent.processMouseEvent(Unknown Source)
+	at java.awt.Component.processEvent(Unknown Source)
+	at java.awt.Container.processEvent(Unknown Source)
+	at java.awt.Component.dispatchEventImpl(Unknown Source)
+	at java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.awt.Component.dispatchEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.processMouseEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.dispatchEvent(Unknown Source)
+	at java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.awt.Window.dispatchEventImpl(Unknown Source)
+	at java.awt.Component.dispatchEvent(Unknown Source)
+	at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.awt.EventQueue.access$500(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue$4.run(Unknown Source)
+	at java.awt.EventQueue$4.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.run(Unknown Source)
+Caused by: java.lang.NoSuchFieldError: actualValueType
+	at com.hp.hpl.jena.datatypes.xsd.XSDDatatype.convertValidatedDataValue(XSDDatatype.java:376)
+	at com.hp.hpl.jena.datatypes.xsd.XSDDatatype.parse(XSDDatatype.java:250)
+	at com.hp.hpl.jena.graph.impl.LiteralLabelImpl.setValue(LiteralLabelImpl.java:201)
+	at com.hp.hpl.jena.graph.impl.LiteralLabelImpl.setLiteralLabel_1(LiteralLabelImpl.java:95)
+	at com.hp.hpl.jena.graph.impl.LiteralLabelImpl.<init>(LiteralLabelImpl.java:84)
+	at com.hp.hpl.jena.graph.impl.LiteralLabelFactory.createLiteralLabel(LiteralLabelFactory.java:16)
+	at com.hp.hpl.jena.graph.Node.createLiteral(Node.java:91)
+	at com.hp.hpl.jena.n3.turtle.ParserBase.<init>(ParserBase.java:25)
+	at com.hp.hpl.jena.n3.turtle.parser.TurtleParser.<init>(TurtleParser.java:777)
+	at com.hp.hpl.jena.n3.turtle.ParserTurtle.parse(ParserTurtle.java:34)
+	... 48 more
+INFO [2016-03-30 06:17:39,765] (ServletContextParameterMap->setup->89): KARMA_USER_HOME not set.  Defaulting to C:\Users\omar\karma
+INFO [2016-03-30 06:17:39,770] (ServletContextParameterMap->setup->99): Karma home: C:\Users\omar\karma\
+INFO [2016-03-30 06:17:40,073] (Reflections->scan->229): Reflections took 212 ms to scan 9 urls, producing 111 keys and 375 values 
+INFO [2016-03-30 06:17:40,106] (ModelingConfiguration->loadParams->300): Load modeling.properties: C:\modeling.properties:true
+INFO [2016-03-30 06:17:40,281] (Reflections->scan->229): Reflections took 70 ms to scan 9 urls, producing 111 keys and 375 values 
+INFO [2016-03-30 06:17:40,286] (ExecutionController->dynamicallyBuildCommandFactoryMap->93): Loaded 0 possible commands
+ERROR [2016-03-30 06:17:40,801] (GenericRDFGenerator->generateRDF->197): Error occurred while generating RDF
+com.hp.hpl.jena.n3.turtle.TurtleParseException: actualValueType
+	at com.hp.hpl.jena.n3.turtle.ParserTurtle.parse(ParserTurtle.java:51)
+	at com.hp.hpl.jena.n3.turtle.TurtleReader.readWorker(TurtleReader.java:21)
+	at com.hp.hpl.jena.n3.JenaReaderBase.readImpl(JenaReaderBase.java:101)
+	at com.hp.hpl.jena.n3.JenaReaderBase.read(JenaReaderBase.java:68)
+	at com.hp.hpl.jena.rdf.model.impl.ModelCom.read(ModelCom.java:226)
+	at edu.isi.karma.kr2rml.mapping.WorksheetR2RMLJenaModelParser.loadSourceModelIntoJenaModel(WorksheetR2RMLJenaModelParser.java:213)
+	at edu.isi.karma.kr2rml.mapping.WorksheetR2RMLJenaModelParser.loadModel(WorksheetR2RMLJenaModelParser.java:107)
+	at edu.isi.karma.kr2rml.mapping.WorksheetR2RMLJenaModelParser.parse(WorksheetR2RMLJenaModelParser.java:114)
+	at edu.isi.karma.rdf.GenericRDFGenerator.generateRDF(GenericRDFGenerator.java:173)
+	at edu.isi.karma.rdf.GenericRDFGenerator.generateRDF(GenericRDFGenerator.java:148)
+	at edu.isi.karma.rdf.GenericRDFGenerator.generateRDF(GenericRDFGenerator.java:225)
+	at test.resources.Modeler.convertor(Modeler.java:53)
+	at test.resources.Start$4.actionPerformed(Start.java:131)
+	at javax.swing.AbstractButton.fireActionPerformed(Unknown Source)
+	at javax.swing.AbstractButton$Handler.actionPerformed(Unknown Source)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(Unknown Source)
+	at javax.swing.DefaultButtonModel.setPressed(Unknown Source)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(Unknown Source)
+	at java.awt.Component.processMouseEvent(Unknown Source)
+	at javax.swing.JComponent.processMouseEvent(Unknown Source)
+	at java.awt.Component.processEvent(Unknown Source)
+	at java.awt.Container.processEvent(Unknown Source)
+	at java.awt.Component.dispatchEventImpl(Unknown Source)
+	at java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.awt.Component.dispatchEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.processMouseEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.dispatchEvent(Unknown Source)
+	at java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.awt.Window.dispatchEventImpl(Unknown Source)
+	at java.awt.Component.dispatchEvent(Unknown Source)
+	at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.awt.EventQueue.access$500(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue$4.run(Unknown Source)
+	at java.awt.EventQueue$4.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.run(Unknown Source)
+Caused by: java.lang.NoSuchFieldError: actualValueType
+	at com.hp.hpl.jena.datatypes.xsd.XSDDatatype.convertValidatedDataValue(XSDDatatype.java:376)
+	at com.hp.hpl.jena.datatypes.xsd.XSDDatatype.parse(XSDDatatype.java:250)
+	at com.hp.hpl.jena.graph.impl.LiteralLabelImpl.setValue(LiteralLabelImpl.java:201)
+	at com.hp.hpl.jena.graph.impl.LiteralLabelImpl.setLiteralLabel_1(LiteralLabelImpl.java:95)
+	at com.hp.hpl.jena.graph.impl.LiteralLabelImpl.<init>(LiteralLabelImpl.java:84)
+	at com.hp.hpl.jena.graph.impl.LiteralLabelFactory.createLiteralLabel(LiteralLabelFactory.java:16)
+	at com.hp.hpl.jena.graph.Node.createLiteral(Node.java:91)
+	at com.hp.hpl.jena.n3.turtle.ParserBase.<init>(ParserBase.java:25)
+	at com.hp.hpl.jena.n3.turtle.parser.TurtleParser.<init>(TurtleParser.java:777)
+	at com.hp.hpl.jena.n3.turtle.ParserTurtle.parse(ParserTurtle.java:34)
+	... 48 more
+INFO [2016-03-30 06:18:53,888] (ServletContextParameterMap->setup->89): KARMA_USER_HOME not set.  Defaulting to C:\Users\omar\karma
+INFO [2016-03-30 06:18:53,893] (ServletContextParameterMap->setup->99): Karma home: C:\Users\omar\karma\
+INFO [2016-03-30 06:18:54,212] (Reflections->scan->229): Reflections took 225 ms to scan 9 urls, producing 111 keys and 375 values 
+INFO [2016-03-30 06:18:54,249] (ModelingConfiguration->loadParams->300): Load modeling.properties: C:\modeling.properties:true
+INFO [2016-03-30 06:18:54,449] (Reflections->scan->229): Reflections took 105 ms to scan 9 urls, producing 111 keys and 375 values 
+INFO [2016-03-30 06:18:54,452] (ExecutionController->dynamicallyBuildCommandFactoryMap->93): Loaded 0 possible commands
+ERROR [2016-03-30 06:18:54,969] (GenericRDFGenerator->generateRDF->197): Error occurred while generating RDF
+com.hp.hpl.jena.n3.turtle.TurtleParseException: actualValueType
+	at com.hp.hpl.jena.n3.turtle.ParserTurtle.parse(ParserTurtle.java:51)
+	at com.hp.hpl.jena.n3.turtle.TurtleReader.readWorker(TurtleReader.java:21)
+	at com.hp.hpl.jena.n3.JenaReaderBase.readImpl(JenaReaderBase.java:101)
+	at com.hp.hpl.jena.n3.JenaReaderBase.read(JenaReaderBase.java:68)
+	at com.hp.hpl.jena.rdf.model.impl.ModelCom.read(ModelCom.java:226)
+	at edu.isi.karma.kr2rml.mapping.WorksheetR2RMLJenaModelParser.loadSourceModelIntoJenaModel(WorksheetR2RMLJenaModelParser.java:213)
+	at edu.isi.karma.kr2rml.mapping.WorksheetR2RMLJenaModelParser.loadModel(WorksheetR2RMLJenaModelParser.java:107)
+	at edu.isi.karma.kr2rml.mapping.WorksheetR2RMLJenaModelParser.parse(WorksheetR2RMLJenaModelParser.java:114)
+	at edu.isi.karma.rdf.GenericRDFGenerator.generateRDF(GenericRDFGenerator.java:173)
+	at edu.isi.karma.rdf.GenericRDFGenerator.generateRDF(GenericRDFGenerator.java:148)
+	at edu.isi.karma.rdf.GenericRDFGenerator.generateRDF(GenericRDFGenerator.java:225)
+	at test.resources.Modeler.convertor(Modeler.java:53)
+	at test.resources.Start$4.actionPerformed(Start.java:131)
+	at javax.swing.AbstractButton.fireActionPerformed(Unknown Source)
+	at javax.swing.AbstractButton$Handler.actionPerformed(Unknown Source)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(Unknown Source)
+	at javax.swing.DefaultButtonModel.setPressed(Unknown Source)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(Unknown Source)
+	at java.awt.Component.processMouseEvent(Unknown Source)
+	at javax.swing.JComponent.processMouseEvent(Unknown Source)
+	at java.awt.Component.processEvent(Unknown Source)
+	at java.awt.Container.processEvent(Unknown Source)
+	at java.awt.Component.dispatchEventImpl(Unknown Source)
+	at java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.awt.Component.dispatchEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.processMouseEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.dispatchEvent(Unknown Source)
+	at java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.awt.Window.dispatchEventImpl(Unknown Source)
+	at java.awt.Component.dispatchEvent(Unknown Source)
+	at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.awt.EventQueue.access$500(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue$4.run(Unknown Source)
+	at java.awt.EventQueue$4.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.run(Unknown Source)
+Caused by: java.lang.NoSuchFieldError: actualValueType
+	at com.hp.hpl.jena.datatypes.xsd.XSDDatatype.convertValidatedDataValue(XSDDatatype.java:376)
+	at com.hp.hpl.jena.datatypes.xsd.XSDDatatype.parse(XSDDatatype.java:250)
+	at com.hp.hpl.jena.graph.impl.LiteralLabelImpl.setValue(LiteralLabelImpl.java:201)
+	at com.hp.hpl.jena.graph.impl.LiteralLabelImpl.setLiteralLabel_1(LiteralLabelImpl.java:95)
+	at com.hp.hpl.jena.graph.impl.LiteralLabelImpl.<init>(LiteralLabelImpl.java:84)
+	at com.hp.hpl.jena.graph.impl.LiteralLabelFactory.createLiteralLabel(LiteralLabelFactory.java:16)
+	at com.hp.hpl.jena.graph.Node.createLiteral(Node.java:91)
+	at com.hp.hpl.jena.n3.turtle.ParserBase.<init>(ParserBase.java:25)
+	at com.hp.hpl.jena.n3.turtle.parser.TurtleParser.<init>(TurtleParser.java:777)
+	at com.hp.hpl.jena.n3.turtle.ParserTurtle.parse(ParserTurtle.java:34)
+	... 48 more
+INFO [2016-03-30 06:20:10,565] (ServletContextParameterMap->setup->89): KARMA_USER_HOME not set.  Defaulting to C:\Users\omar\karma
+INFO [2016-03-30 06:20:10,570] (ServletContextParameterMap->setup->99): Karma home: C:\Users\omar\karma\
+INFO [2016-03-30 06:20:10,851] (Reflections->scan->229): Reflections took 212 ms to scan 9 urls, producing 111 keys and 375 values 
+INFO [2016-03-30 06:20:10,871] (ModelingConfiguration->loadParams->300): Load modeling.properties: C:\modeling.properties:true
+INFO [2016-03-30 06:20:11,069] (Reflections->scan->229): Reflections took 100 ms to scan 9 urls, producing 111 keys and 375 values 
+INFO [2016-03-30 06:20:11,071] (ExecutionController->dynamicallyBuildCommandFactoryMap->93): Loaded 0 possible commands
+ERROR [2016-03-30 06:20:11,564] (GenericRDFGenerator->generateRDF->197): Error occurred while generating RDF
+com.hp.hpl.jena.n3.turtle.TurtleParseException: actualValueType
+	at com.hp.hpl.jena.n3.turtle.ParserTurtle.parse(ParserTurtle.java:51)
+	at com.hp.hpl.jena.n3.turtle.TurtleReader.readWorker(TurtleReader.java:21)
+	at com.hp.hpl.jena.n3.JenaReaderBase.readImpl(JenaReaderBase.java:101)
+	at com.hp.hpl.jena.n3.JenaReaderBase.read(JenaReaderBase.java:68)
+	at com.hp.hpl.jena.rdf.model.impl.ModelCom.read(ModelCom.java:226)
+	at edu.isi.karma.kr2rml.mapping.WorksheetR2RMLJenaModelParser.loadSourceModelIntoJenaModel(WorksheetR2RMLJenaModelParser.java:213)
+	at edu.isi.karma.kr2rml.mapping.WorksheetR2RMLJenaModelParser.loadModel(WorksheetR2RMLJenaModelParser.java:107)
+	at edu.isi.karma.kr2rml.mapping.WorksheetR2RMLJenaModelParser.parse(WorksheetR2RMLJenaModelParser.java:114)
+	at edu.isi.karma.rdf.GenericRDFGenerator.generateRDF(GenericRDFGenerator.java:173)
+	at edu.isi.karma.rdf.GenericRDFGenerator.generateRDF(GenericRDFGenerator.java:148)
+	at edu.isi.karma.rdf.GenericRDFGenerator.generateRDF(GenericRDFGenerator.java:225)
+	at test.resources.Modeler.convertor(Modeler.java:53)
+	at test.resources.Start$4.actionPerformed(Start.java:131)
+	at javax.swing.AbstractButton.fireActionPerformed(Unknown Source)
+	at javax.swing.AbstractButton$Handler.actionPerformed(Unknown Source)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(Unknown Source)
+	at javax.swing.DefaultButtonModel.setPressed(Unknown Source)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(Unknown Source)
+	at java.awt.Component.processMouseEvent(Unknown Source)
+	at javax.swing.JComponent.processMouseEvent(Unknown Source)
+	at java.awt.Component.processEvent(Unknown Source)
+	at java.awt.Container.processEvent(Unknown Source)
+	at java.awt.Component.dispatchEventImpl(Unknown Source)
+	at java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.awt.Component.dispatchEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.processMouseEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.dispatchEvent(Unknown Source)
+	at java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.awt.Window.dispatchEventImpl(Unknown Source)
+	at java.awt.Component.dispatchEvent(Unknown Source)
+	at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.awt.EventQueue.access$500(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue$4.run(Unknown Source)
+	at java.awt.EventQueue$4.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.run(Unknown Source)
+Caused by: java.lang.NoSuchFieldError: actualValueType
+	at com.hp.hpl.jena.datatypes.xsd.XSDDatatype.convertValidatedDataValue(XSDDatatype.java:376)
+	at com.hp.hpl.jena.datatypes.xsd.XSDDatatype.parse(XSDDatatype.java:250)
+	at com.hp.hpl.jena.graph.impl.LiteralLabelImpl.setValue(LiteralLabelImpl.java:201)
+	at com.hp.hpl.jena.graph.impl.LiteralLabelImpl.setLiteralLabel_1(LiteralLabelImpl.java:95)
+	at com.hp.hpl.jena.graph.impl.LiteralLabelImpl.<init>(LiteralLabelImpl.java:84)
+	at com.hp.hpl.jena.graph.impl.LiteralLabelFactory.createLiteralLabel(LiteralLabelFactory.java:16)
+	at com.hp.hpl.jena.graph.Node.createLiteral(Node.java:91)
+	at com.hp.hpl.jena.n3.turtle.ParserBase.<init>(ParserBase.java:25)
+	at com.hp.hpl.jena.n3.turtle.parser.TurtleParser.<init>(TurtleParser.java:777)
+	at com.hp.hpl.jena.n3.turtle.ParserTurtle.parse(ParserTurtle.java:34)
+	... 48 more
+ERROR [2016-03-30 06:20:34,980] (GenericRDFGenerator->generateRDF->197): Error occurred while generating RDF
+com.hp.hpl.jena.n3.turtle.TurtleParseException: actualValueType
+	at com.hp.hpl.jena.n3.turtle.ParserTurtle.parse(ParserTurtle.java:51)
+	at com.hp.hpl.jena.n3.turtle.TurtleReader.readWorker(TurtleReader.java:21)
+	at com.hp.hpl.jena.n3.JenaReaderBase.readImpl(JenaReaderBase.java:101)
+	at com.hp.hpl.jena.n3.JenaReaderBase.read(JenaReaderBase.java:68)
+	at com.hp.hpl.jena.rdf.model.impl.ModelCom.read(ModelCom.java:226)
+	at edu.isi.karma.kr2rml.mapping.WorksheetR2RMLJenaModelParser.loadSourceModelIntoJenaModel(WorksheetR2RMLJenaModelParser.java:213)
+	at edu.isi.karma.kr2rml.mapping.WorksheetR2RMLJenaModelParser.loadModel(WorksheetR2RMLJenaModelParser.java:107)
+	at edu.isi.karma.kr2rml.mapping.WorksheetR2RMLJenaModelParser.parse(WorksheetR2RMLJenaModelParser.java:114)
+	at edu.isi.karma.rdf.GenericRDFGenerator.generateRDF(GenericRDFGenerator.java:173)
+	at edu.isi.karma.rdf.GenericRDFGenerator.generateRDF(GenericRDFGenerator.java:148)
+	at edu.isi.karma.rdf.GenericRDFGenerator.generateRDF(GenericRDFGenerator.java:225)
+	at test.resources.Modeler.convertor(Modeler.java:53)
+	at test.resources.Start$4.actionPerformed(Start.java:131)
+	at javax.swing.AbstractButton.fireActionPerformed(Unknown Source)
+	at javax.swing.AbstractButton$Handler.actionPerformed(Unknown Source)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(Unknown Source)
+	at javax.swing.DefaultButtonModel.setPressed(Unknown Source)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(Unknown Source)
+	at java.awt.Component.processMouseEvent(Unknown Source)
+	at javax.swing.JComponent.processMouseEvent(Unknown Source)
+	at java.awt.Component.processEvent(Unknown Source)
+	at java.awt.Container.processEvent(Unknown Source)
+	at java.awt.Component.dispatchEventImpl(Unknown Source)
+	at java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.awt.Component.dispatchEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.processMouseEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.dispatchEvent(Unknown Source)
+	at java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.awt.Window.dispatchEventImpl(Unknown Source)
+	at java.awt.Component.dispatchEvent(Unknown Source)
+	at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.awt.EventQueue.access$500(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue$4.run(Unknown Source)
+	at java.awt.EventQueue$4.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.run(Unknown Source)
+Caused by: java.lang.NoSuchFieldError: actualValueType
+	at com.hp.hpl.jena.datatypes.xsd.XSDDatatype.convertValidatedDataValue(XSDDatatype.java:376)
+	at com.hp.hpl.jena.datatypes.xsd.XSDDatatype.parse(XSDDatatype.java:250)
+	at com.hp.hpl.jena.graph.impl.LiteralLabelImpl.setValue(LiteralLabelImpl.java:201)
+	at com.hp.hpl.jena.graph.impl.LiteralLabelImpl.setLiteralLabel_1(LiteralLabelImpl.java:95)
+	at com.hp.hpl.jena.graph.impl.LiteralLabelImpl.<init>(LiteralLabelImpl.java:84)
+	at com.hp.hpl.jena.graph.impl.LiteralLabelFactory.createLiteralLabel(LiteralLabelFactory.java:16)
+	at com.hp.hpl.jena.graph.Node.createLiteral(Node.java:91)
+	at com.hp.hpl.jena.n3.turtle.ParserBase.<init>(ParserBase.java:25)
+	at com.hp.hpl.jena.n3.turtle.parser.TurtleParser.<init>(TurtleParser.java:777)
+	at com.hp.hpl.jena.n3.turtle.ParserTurtle.parse(ParserTurtle.java:34)
+	... 48 more
+INFO [2016-03-30 06:21:50,450] (ServletContextParameterMap->setup->89): KARMA_USER_HOME not set.  Defaulting to C:\Users\omar\karma
+INFO [2016-03-30 06:21:50,456] (ServletContextParameterMap->setup->99): Karma home: C:\Users\omar\karma\
+INFO [2016-03-30 06:21:50,828] (Reflections->scan->229): Reflections took 264 ms to scan 9 urls, producing 111 keys and 375 values 
+INFO [2016-03-30 06:21:50,848] (ModelingConfiguration->loadParams->300): Load modeling.properties: C:\modeling.properties:true
+INFO [2016-03-30 06:21:51,070] (Reflections->scan->229): Reflections took 115 ms to scan 9 urls, producing 111 keys and 375 values 
+INFO [2016-03-30 06:21:51,075] (ExecutionController->dynamicallyBuildCommandFactoryMap->93): Loaded 0 possible commands
+ERROR [2016-03-30 06:21:51,747] (GenericRDFGenerator->generateRDF->197): Error occurred while generating RDF
+com.hp.hpl.jena.n3.turtle.TurtleParseException: actualValueType
+	at com.hp.hpl.jena.n3.turtle.ParserTurtle.parse(ParserTurtle.java:51)
+	at com.hp.hpl.jena.n3.turtle.TurtleReader.readWorker(TurtleReader.java:21)
+	at com.hp.hpl.jena.n3.JenaReaderBase.readImpl(JenaReaderBase.java:101)
+	at com.hp.hpl.jena.n3.JenaReaderBase.read(JenaReaderBase.java:68)
+	at com.hp.hpl.jena.rdf.model.impl.ModelCom.read(ModelCom.java:226)
+	at edu.isi.karma.kr2rml.mapping.WorksheetR2RMLJenaModelParser.loadSourceModelIntoJenaModel(WorksheetR2RMLJenaModelParser.java:213)
+	at edu.isi.karma.kr2rml.mapping.WorksheetR2RMLJenaModelParser.loadModel(WorksheetR2RMLJenaModelParser.java:107)
+	at edu.isi.karma.kr2rml.mapping.WorksheetR2RMLJenaModelParser.parse(WorksheetR2RMLJenaModelParser.java:114)
+	at edu.isi.karma.rdf.GenericRDFGenerator.generateRDF(GenericRDFGenerator.java:173)
+	at edu.isi.karma.rdf.GenericRDFGenerator.generateRDF(GenericRDFGenerator.java:148)
+	at edu.isi.karma.rdf.GenericRDFGenerator.generateRDF(GenericRDFGenerator.java:225)
+	at test.resources.Modeler.convertor(Modeler.java:53)
+	at test.resources.Start$4.actionPerformed(Start.java:131)
+	at javax.swing.AbstractButton.fireActionPerformed(Unknown Source)
+	at javax.swing.AbstractButton$Handler.actionPerformed(Unknown Source)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(Unknown Source)
+	at javax.swing.DefaultButtonModel.setPressed(Unknown Source)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(Unknown Source)
+	at java.awt.Component.processMouseEvent(Unknown Source)
+	at javax.swing.JComponent.processMouseEvent(Unknown Source)
+	at java.awt.Component.processEvent(Unknown Source)
+	at java.awt.Container.processEvent(Unknown Source)
+	at java.awt.Component.dispatchEventImpl(Unknown Source)
+	at java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.awt.Component.dispatchEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.processMouseEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.dispatchEvent(Unknown Source)
+	at java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.awt.Window.dispatchEventImpl(Unknown Source)
+	at java.awt.Component.dispatchEvent(Unknown Source)
+	at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.awt.EventQueue.access$500(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue$4.run(Unknown Source)
+	at java.awt.EventQueue$4.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.run(Unknown Source)
+Caused by: java.lang.NoSuchFieldError: actualValueType
+	at com.hp.hpl.jena.datatypes.xsd.XSDDatatype.convertValidatedDataValue(XSDDatatype.java:376)
+	at com.hp.hpl.jena.datatypes.xsd.XSDDatatype.parse(XSDDatatype.java:250)
+	at com.hp.hpl.jena.graph.impl.LiteralLabelImpl.setValue(LiteralLabelImpl.java:201)
+	at com.hp.hpl.jena.graph.impl.LiteralLabelImpl.setLiteralLabel_1(LiteralLabelImpl.java:95)
+	at com.hp.hpl.jena.graph.impl.LiteralLabelImpl.<init>(LiteralLabelImpl.java:84)
+	at com.hp.hpl.jena.graph.impl.LiteralLabelFactory.createLiteralLabel(LiteralLabelFactory.java:16)
+	at com.hp.hpl.jena.graph.Node.createLiteral(Node.java:91)
+	at com.hp.hpl.jena.n3.turtle.ParserBase.<init>(ParserBase.java:25)
+	at com.hp.hpl.jena.n3.turtle.parser.TurtleParser.<init>(TurtleParser.java:777)
+	at com.hp.hpl.jena.n3.turtle.ParserTurtle.parse(ParserTurtle.java:34)
+	... 48 more
+INFO [2016-03-30 06:22:55,198] (ServletContextParameterMap->setup->89): KARMA_USER_HOME not set.  Defaulting to C:\Users\omar\karma
+INFO [2016-03-30 06:22:55,203] (ServletContextParameterMap->setup->99): Karma home: C:\Users\omar\karma\
+INFO [2016-03-30 06:22:55,496] (Reflections->scan->229): Reflections took 215 ms to scan 9 urls, producing 111 keys and 375 values 
+INFO [2016-03-30 06:22:55,514] (ModelingConfiguration->loadParams->300): Load modeling.properties: C:\modeling.properties:true
+INFO [2016-03-30 06:22:55,719] (Reflections->scan->229): Reflections took 103 ms to scan 9 urls, producing 111 keys and 375 values 
+INFO [2016-03-30 06:22:55,754] (ExecutionController->dynamicallyBuildCommandFactoryMap->93): Loaded 0 possible commands
+ERROR [2016-03-30 06:22:56,281] (GenericRDFGenerator->generateRDF->197): Error occurred while generating RDF
+com.hp.hpl.jena.n3.turtle.TurtleParseException: actualValueType
+	at com.hp.hpl.jena.n3.turtle.ParserTurtle.parse(ParserTurtle.java:51)
+	at com.hp.hpl.jena.n3.turtle.TurtleReader.readWorker(TurtleReader.java:21)
+	at com.hp.hpl.jena.n3.JenaReaderBase.readImpl(JenaReaderBase.java:101)
+	at com.hp.hpl.jena.n3.JenaReaderBase.read(JenaReaderBase.java:68)
+	at com.hp.hpl.jena.rdf.model.impl.ModelCom.read(ModelCom.java:226)
+	at edu.isi.karma.kr2rml.mapping.WorksheetR2RMLJenaModelParser.loadSourceModelIntoJenaModel(WorksheetR2RMLJenaModelParser.java:213)
+	at edu.isi.karma.kr2rml.mapping.WorksheetR2RMLJenaModelParser.loadModel(WorksheetR2RMLJenaModelParser.java:107)
+	at edu.isi.karma.kr2rml.mapping.WorksheetR2RMLJenaModelParser.parse(WorksheetR2RMLJenaModelParser.java:114)
+	at edu.isi.karma.rdf.GenericRDFGenerator.generateRDF(GenericRDFGenerator.java:173)
+	at edu.isi.karma.rdf.GenericRDFGenerator.generateRDF(GenericRDFGenerator.java:148)
+	at edu.isi.karma.rdf.GenericRDFGenerator.generateRDF(GenericRDFGenerator.java:225)
+	at test.resources.Modeler.convertor(Modeler.java:53)
+	at test.resources.Start$4.actionPerformed(Start.java:131)
+	at javax.swing.AbstractButton.fireActionPerformed(Unknown Source)
+	at javax.swing.AbstractButton$Handler.actionPerformed(Unknown Source)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(Unknown Source)
+	at javax.swing.DefaultButtonModel.setPressed(Unknown Source)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(Unknown Source)
+	at java.awt.Component.processMouseEvent(Unknown Source)
+	at javax.swing.JComponent.processMouseEvent(Unknown Source)
+	at java.awt.Component.processEvent(Unknown Source)
+	at java.awt.Container.processEvent(Unknown Source)
+	at java.awt.Component.dispatchEventImpl(Unknown Source)
+	at java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.awt.Component.dispatchEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.processMouseEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.dispatchEvent(Unknown Source)
+	at java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.awt.Window.dispatchEventImpl(Unknown Source)
+	at java.awt.Component.dispatchEvent(Unknown Source)
+	at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.awt.EventQueue.access$500(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue$4.run(Unknown Source)
+	at java.awt.EventQueue$4.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.run(Unknown Source)
+Caused by: java.lang.NoSuchFieldError: actualValueType
+	at com.hp.hpl.jena.datatypes.xsd.XSDDatatype.convertValidatedDataValue(XSDDatatype.java:376)
+	at com.hp.hpl.jena.datatypes.xsd.XSDDatatype.parse(XSDDatatype.java:250)
+	at com.hp.hpl.jena.graph.impl.LiteralLabelImpl.setValue(LiteralLabelImpl.java:201)
+	at com.hp.hpl.jena.graph.impl.LiteralLabelImpl.setLiteralLabel_1(LiteralLabelImpl.java:95)
+	at com.hp.hpl.jena.graph.impl.LiteralLabelImpl.<init>(LiteralLabelImpl.java:84)
+	at com.hp.hpl.jena.graph.impl.LiteralLabelFactory.createLiteralLabel(LiteralLabelFactory.java:16)
+	at com.hp.hpl.jena.graph.Node.createLiteral(Node.java:91)
+	at com.hp.hpl.jena.n3.turtle.ParserBase.<init>(ParserBase.java:25)
+	at com.hp.hpl.jena.n3.turtle.parser.TurtleParser.<init>(TurtleParser.java:777)
+	at com.hp.hpl.jena.n3.turtle.ParserTurtle.parse(ParserTurtle.java:34)
+	... 48 more
+INFO [2016-03-30 06:24:27,272] (ServletContextParameterMap->setup->89): KARMA_USER_HOME not set.  Defaulting to C:\Users\omar\karma
+INFO [2016-03-30 06:24:27,275] (ServletContextParameterMap->setup->99): Karma home: C:\Users\omar\karma\
+INFO [2016-03-30 06:24:27,677] (Reflections->scan->205): Reflections took 318 ms to scan 9 urls, producing 111 keys and 375 values 
+INFO [2016-03-30 06:24:27,684] (ModelingConfiguration->loadParams->300): Load modeling.properties: C:\modeling.properties:true
+INFO [2016-03-30 06:24:27,899] (Reflections->scan->205): Reflections took 120 ms to scan 9 urls, producing 111 keys and 375 values 
+INFO [2016-03-30 06:24:27,902] (ExecutionController->dynamicallyBuildCommandFactoryMap->93): Loaded 0 possible commands
+ERROR [2016-03-30 06:24:28,899] (KR2RMLMappingColumnNameHNodeTranslator->translateColumnNameToHNodeId->146): Error retrieving column: euri
+INFO [2016-03-30 06:26:09,334] (ServletContextParameterMap->setup->89): KARMA_USER_HOME not set.  Defaulting to C:\Users\omar\karma
+INFO [2016-03-30 06:26:09,339] (ServletContextParameterMap->setup->99): Karma home: C:\Users\omar\karma\
+INFO [2016-03-30 06:26:09,717] (Reflections->scan->205): Reflections took 328 ms to scan 9 urls, producing 111 keys and 375 values 
+INFO [2016-03-30 06:26:09,727] (ModelingConfiguration->loadParams->300): Load modeling.properties: C:\modeling.properties:true
+INFO [2016-03-30 06:26:09,932] (Reflections->scan->205): Reflections took 92 ms to scan 9 urls, producing 111 keys and 375 values 
+INFO [2016-03-30 06:26:09,935] (ExecutionController->dynamicallyBuildCommandFactoryMap->93): Loaded 0 possible commands
+ERROR [2016-03-30 06:26:10,851] (KR2RMLMappingColumnNameHNodeTranslator->translateColumnNameToHNodeId->146): Error retrieving column: euri
+INFO [2016-03-30 06:27:44,891] (ServletContextParameterMap->setup->89): KARMA_USER_HOME not set.  Defaulting to C:\Users\omar\karma
+INFO [2016-03-30 06:27:44,896] (ServletContextParameterMap->setup->99): Karma home: C:\Users\omar\karma\
+INFO [2016-03-30 06:27:45,187] (Reflections->scan->229): Reflections took 210 ms to scan 9 urls, producing 111 keys and 375 values 
+INFO [2016-03-30 06:27:45,215] (ModelingConfiguration->loadParams->300): Load modeling.properties: C:\modeling.properties:true
+INFO [2016-03-30 06:27:45,412] (Reflections->scan->229): Reflections took 67 ms to scan 9 urls, producing 111 keys and 375 values 
+INFO [2016-03-30 06:27:45,414] (ExecutionController->dynamicallyBuildCommandFactoryMap->93): Loaded 0 possible commands
+ERROR [2016-03-30 06:27:46,354] (KR2RMLMappingColumnNameHNodeTranslator->translateColumnNameToHNodeId->146): Error retrieving column: euri
+INFO [2016-03-30 06:28:52,870] (ServletContextParameterMap->setup->89): KARMA_USER_HOME not set.  Defaulting to C:\Users\omar\karma
+INFO [2016-03-30 06:28:52,878] (ServletContextParameterMap->setup->99): Karma home: C:\Users\omar\karma\
+INFO [2016-03-30 06:28:53,171] (Reflections->scan->229): Reflections took 227 ms to scan 9 urls, producing 111 keys and 375 values 
+INFO [2016-03-30 06:28:53,194] (ModelingConfiguration->loadParams->300): Load modeling.properties: C:\modeling.properties:true
+INFO [2016-03-30 06:28:53,391] (Reflections->scan->229): Reflections took 85 ms to scan 9 urls, producing 111 keys and 375 values 
+INFO [2016-03-30 06:28:53,394] (ExecutionController->dynamicallyBuildCommandFactoryMap->93): Loaded 0 possible commands
+ERROR [2016-03-30 06:28:54,336] (KR2RMLMappingColumnNameHNodeTranslator->translateColumnNameToHNodeId->146): Error retrieving column: euri
+INFO [2016-03-30 06:29:55,143] (ServletContextParameterMap->setup->89): KARMA_USER_HOME not set.  Defaulting to C:\Users\omar\karma
+INFO [2016-03-30 06:29:55,148] (ServletContextParameterMap->setup->99): Karma home: C:\Users\omar\karma\
+INFO [2016-03-30 06:29:55,411] (Reflections->scan->229): Reflections took 175 ms to scan 9 urls, producing 111 keys and 375 values 
+INFO [2016-03-30 06:29:55,431] (ModelingConfiguration->loadParams->300): Load modeling.properties: C:\modeling.properties:true
+INFO [2016-03-30 06:29:55,656] (Reflections->scan->229): Reflections took 107 ms to scan 9 urls, producing 111 keys and 375 values 
+INFO [2016-03-30 06:29:55,661] (ExecutionController->dynamicallyBuildCommandFactoryMap->93): Loaded 0 possible commands
+INFO [2016-03-30 06:36:29,498] (ServletContextParameterMap->setup->89): KARMA_USER_HOME not set.  Defaulting to C:\Users\omar\karma
+INFO [2016-03-30 06:36:29,503] (ServletContextParameterMap->setup->99): Karma home: C:\Users\omar\karma\
+INFO [2016-03-30 06:36:29,804] (Reflections->scan->229): Reflections took 210 ms to scan 9 urls, producing 111 keys and 375 values 
+INFO [2016-03-30 06:36:29,824] (ModelingConfiguration->loadParams->300): Load modeling.properties: C:\modeling.properties:true
+INFO [2016-03-30 06:36:30,047] (Reflections->scan->229): Reflections took 105 ms to scan 9 urls, producing 111 keys and 375 values 
+INFO [2016-03-30 06:36:30,052] (ExecutionController->dynamicallyBuildCommandFactoryMap->93): Loaded 0 possible commands
+ERROR [2016-03-30 06:36:30,597] (GenericRDFGenerator->generateRDF->197): Error occurred while generating RDF
+com.hp.hpl.jena.n3.turtle.TurtleParseException: actualValueType
+	at com.hp.hpl.jena.n3.turtle.ParserTurtle.parse(ParserTurtle.java:51)
+	at com.hp.hpl.jena.n3.turtle.TurtleReader.readWorker(TurtleReader.java:21)
+	at com.hp.hpl.jena.n3.JenaReaderBase.readImpl(JenaReaderBase.java:101)
+	at com.hp.hpl.jena.n3.JenaReaderBase.read(JenaReaderBase.java:68)
+	at com.hp.hpl.jena.rdf.model.impl.ModelCom.read(ModelCom.java:226)
+	at edu.isi.karma.kr2rml.mapping.WorksheetR2RMLJenaModelParser.loadSourceModelIntoJenaModel(WorksheetR2RMLJenaModelParser.java:213)
+	at edu.isi.karma.kr2rml.mapping.WorksheetR2RMLJenaModelParser.loadModel(WorksheetR2RMLJenaModelParser.java:107)
+	at edu.isi.karma.kr2rml.mapping.WorksheetR2RMLJenaModelParser.parse(WorksheetR2RMLJenaModelParser.java:114)
+	at edu.isi.karma.rdf.GenericRDFGenerator.generateRDF(GenericRDFGenerator.java:173)
+	at edu.isi.karma.rdf.GenericRDFGenerator.generateRDF(GenericRDFGenerator.java:148)
+	at edu.isi.karma.rdf.GenericRDFGenerator.generateRDF(GenericRDFGenerator.java:225)
+	at test.resources.Modeler.convertor(Modeler.java:53)
+	at test.resources.Start$4.actionPerformed(Start.java:131)
+	at javax.swing.AbstractButton.fireActionPerformed(Unknown Source)
+	at javax.swing.AbstractButton$Handler.actionPerformed(Unknown Source)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(Unknown Source)
+	at javax.swing.DefaultButtonModel.setPressed(Unknown Source)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(Unknown Source)
+	at java.awt.Component.processMouseEvent(Unknown Source)
+	at javax.swing.JComponent.processMouseEvent(Unknown Source)
+	at java.awt.Component.processEvent(Unknown Source)
+	at java.awt.Container.processEvent(Unknown Source)
+	at java.awt.Component.dispatchEventImpl(Unknown Source)
+	at java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.awt.Component.dispatchEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.processMouseEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.dispatchEvent(Unknown Source)
+	at java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.awt.Window.dispatchEventImpl(Unknown Source)
+	at java.awt.Component.dispatchEvent(Unknown Source)
+	at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.awt.EventQueue.access$500(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue$4.run(Unknown Source)
+	at java.awt.EventQueue$4.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.run(Unknown Source)
+Caused by: java.lang.NoSuchFieldError: actualValueType
+	at com.hp.hpl.jena.datatypes.xsd.XSDDatatype.convertValidatedDataValue(XSDDatatype.java:376)
+	at com.hp.hpl.jena.datatypes.xsd.XSDDatatype.parse(XSDDatatype.java:250)
+	at com.hp.hpl.jena.graph.impl.LiteralLabelImpl.setValue(LiteralLabelImpl.java:201)
+	at com.hp.hpl.jena.graph.impl.LiteralLabelImpl.setLiteralLabel_1(LiteralLabelImpl.java:95)
+	at com.hp.hpl.jena.graph.impl.LiteralLabelImpl.<init>(LiteralLabelImpl.java:84)
+	at com.hp.hpl.jena.graph.impl.LiteralLabelFactory.createLiteralLabel(LiteralLabelFactory.java:16)
+	at com.hp.hpl.jena.graph.Node.createLiteral(Node.java:91)
+	at com.hp.hpl.jena.n3.turtle.ParserBase.<init>(ParserBase.java:25)
+	at com.hp.hpl.jena.n3.turtle.parser.TurtleParser.<init>(TurtleParser.java:777)
+	at com.hp.hpl.jena.n3.turtle.ParserTurtle.parse(ParserTurtle.java:34)
+	... 48 more
+INFO [2016-03-30 06:38:37,633] (ServletContextParameterMap->setup->89): KARMA_USER_HOME not set.  Defaulting to C:\Users\omar\karma
+INFO [2016-03-30 06:38:37,638] (ServletContextParameterMap->setup->99): Karma home: C:\Users\omar\karma\
+INFO [2016-03-30 06:38:37,924] (Reflections->scan->229): Reflections took 215 ms to scan 9 urls, producing 111 keys and 375 values 
+INFO [2016-03-30 06:38:37,944] (ModelingConfiguration->loadParams->300): Load modeling.properties: C:\modeling.properties:true
+INFO [2016-03-30 06:38:38,127] (Reflections->scan->229): Reflections took 78 ms to scan 9 urls, producing 111 keys and 375 values 
+INFO [2016-03-30 06:38:38,129] (ExecutionController->dynamicallyBuildCommandFactoryMap->93): Loaded 0 possible commands
+ERROR [2016-03-30 06:38:39,144] (KR2RMLMappingColumnNameHNodeTranslator->translateColumnNameToHNodeId->146): Error retrieving column: euri
+INFO [2016-03-30 06:43:30,314] (ServletContextParameterMap->setup->89): KARMA_USER_HOME not set.  Defaulting to C:\Users\omar\karma
+INFO [2016-03-30 06:43:30,321] (ServletContextParameterMap->setup->99): Karma home: C:\Users\omar\karma\
+INFO [2016-03-30 06:43:30,560] (Reflections->scan->229): Reflections took 152 ms to scan 3 urls, producing 68 keys and 246 values 
+INFO [2016-03-30 06:43:30,585] (ModelingConfiguration->loadParams->300): Load modeling.properties: C:\modeling.properties:true
