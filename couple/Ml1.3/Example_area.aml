@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CAEXFile FileName="Example_area.aml" SchemaVersion="2.15" xsi:noNamespaceSchemaLocation="./Source/CAEX_ClassModel_V2.15.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<AdditionalInformation AutomationMLVersion="2.0" />
+	<AdditionalInformation>
+		<WriterHeader>
+			<WriterName>AutomationML e.V.</WriterName>
+			<WriterID>AutomationML e.V.</WriterID>
+			<WriterVendor>AutomationML e.V.</WriterVendor>
+			<WriterVendorURL>www.AutomationML.org</WriterVendorURL>
+			<WriterVersion>1.0</WriterVersion>
+			<WriterRelease>1.0</WriterRelease>
+			<LastWritingDateTime>2012-03-26
+			</LastWritingDateTime>
+			<WriterProjectTitle>AutomationML Tutorial Examples</WriterProjectTitle>
+			<WriterProjectID>AutomationML Tutorial Examples
+			</WriterProjectID>
+		</WriterHeader>
+	</AdditionalInformation>
+	<ExternalReference Path="Libs/RoleClass Libraries/AutomationMLBaseRoleClassLib.aml" Alias="BaseRoleClassLib" />
+	<InstanceHierarchy Name="System">
+		<InternalElement Name="Station" ID="85e1dc1e-e22f-411d-b75a-88b9784de36e">
+			<Attribute Name="Höhe" AttributeDataType="xs:float">
+				<Value>2.0</Value>
+			</Attribute>
+			<Attribute Name="Breite" AttributeDataType="xs:float">
+				<Value>3.5</Value>
+			</Attribute>
+			<Attribute Name="Länge" AttributeDataType="xs:float">
+				<Value>10.5</Value>
+			</Attribute>
+			<Attribute Name="Atrea" AttributeDataType="xs:double" />
+			<InternalElement Name="Layout" ID="56d83a97-3be1-4ec8-8a8b-8092e571e26c">
+				<RoleRequirements RefBaseRoleClassPath="MyPropertySetRoleClassLib/Geometry" />
+				<MappingObject>
+					<AttributeNameMapping SystemUnitAttributeName="Höhe" RoleAttributeName="Height" />
+					<AttributeNameMapping SystemUnitAttributeName="Länge" RoleAttributeName="Length" />
+					<AttributeNameMapping SystemUnitAttributeName="Breite" RoleAttributeName="Width" />
+				</MappingObject>
+			</InternalElement>
+			<RoleRequirements RefBaseRoleClassPath="BaseRoleClassLib@AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Resource" />
+		</InternalElement>
+	</InstanceHierarchy>
+	<RoleClassLib Name="MyPropertySetRoleClassLib">
+		<Version>1.0</Version>
+		<RoleClass Name="Geometry" RefBaseClassPath="BaseRoleClassLib@AutomationMLBaseRoleClassLib/AutomationMLBaseRole/PropertySet">
+			<Attribute Name="Height" AttributeDataType="xs:double" Unit="m" />
+			<Attribute Name="Width" AttributeDataType="xs:double" Unit="m" />
+			<Attribute Name="Length" AttributeDataType="xs:double" Unit="m" />
+		</RoleClass>
+	</RoleClassLib>
+</CAEXFile>
