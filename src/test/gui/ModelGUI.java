@@ -1,4 +1,4 @@
-package test.resources;
+package test.gui;
 
 import java.awt.Desktop;
 import java.awt.EventQueue;
@@ -21,9 +21,10 @@ import javax.swing.JTextArea;
 import javax.swing.LayoutStyle.ComponentPlacement;
 import javax.swing.border.EmptyBorder;
 
+import test.modeler.Modeler;
 import edu.isi.karma.webserver.KarmaException;
 
-public class Start extends JFrame {
+public class ModelGUI extends JFrame {
 
 	/**
 	 * 
@@ -31,9 +32,8 @@ public class Start extends JFrame {
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
 	protected JFileChooser fc;
-//	private JTextArea log;
 	private JTextArea textArea;
-	protected static File file3;
+	public static File file3;
 	public static File file2;
 	public static File file;
 	static private final String newline = "\n";
@@ -46,7 +46,7 @@ public class Start extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					Start frame = new Start();
+					 ModelGUI frame = new  ModelGUI();
 					
 					frame.setVisible(true);
 					frame.pack();
@@ -61,7 +61,7 @@ public class Start extends JFrame {
 	/**
 	 * Create the frame.
 	 */
-	public Start() {
+	public  ModelGUI() {
 		fc = new JFileChooser();
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		setBounds(200, 200, 350, 300);
@@ -148,7 +148,7 @@ public class Start extends JFrame {
 		JButton btnRdfIntegration = new JButton("RDF Integration");
 		btnRdfIntegration.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				test.sparql.Start.go();
+				test.gui.SparqlGui.go();
 			}
 		});
 

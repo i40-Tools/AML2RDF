@@ -10,28 +10,28 @@ import org.apache.jena.query.QuerySolution;
 import org.apache.jena.query.ResultSet;
 import org.apache.jena.rdf.model.Literal;
 import org.apache.jena.rdf.model.Model;
+import org.apache.jena.rdf.model.RDFNode;
+import org.apache.jena.rdf.model.Resource;
 import org.apache.jena.util.FileManager;
-public class Main {
+
+import test.gui.SparqlGui;
+public class Sparql {
 	static String abc="Query Result:";
 
 	public static String integrate_double() {
 		// TODO Auto-generated method stub
-		//	OutputStream f=new FileOutputStream("c:/data.rdf");
-		
-	 	//	FileManager.get().addLocatorClassLoader(Main.class.getClassLoader());
-	 	//	Model model=FileManager.get().loadModel("c:/Users/omar/Documents/workspace-sts-3.7.0.RELEASE/IntegrationTool/src/data.rdf");
-	      //  model.write(f,"Turtle");
-	 		 
-			Model modelY=FileManager.get().loadModel(Start.file.getAbsolutePath());		  
-			Model modelX=FileManager.get().loadModel(Start.file2.getAbsolutePath());		  
+	 		
+		// gets file path of two files
+			Model modelY=FileManager.get().loadModel(SparqlGui.file.getAbsolutePath());		  
+			Model modelX=FileManager.get().loadModel(SparqlGui.file2.getAbsolutePath());		  
 
-			
+		// gives those two files a URI for querying data
 			Dataset dataset = DatasetFactory.create() ;
 			dataset.setDefaultModel(modelX) ;
 			dataset.addNamedModel("http://example/named-1", modelX) ;
 			dataset.addNamedModel("http://example/named-2", modelY) ;
 			 
-					
+		// writing the query			
 			String queryString =
 					 "prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#>"+
 	                 "prefix aml:<http://vocab.cs.uni-bonn.de/aml#>"
@@ -54,8 +54,8 @@ public class Main {
 			    for ( ; results.hasNext() ; )
 			    {
 			      QuerySolution soln = results.nextSolution() ;
-	//		      RDFNode x = soln.get("z") ;       // Get a result variable by name.
-	//		      Resource r = soln.getResource("xa") ; // Get a result variable - must be a resource
+			      RDFNode x = soln.get("z") ;       // Get a result variable by name.
+			      Resource r = soln.getResource("xa") ; // Get a result variable - must be a resource
 			      Literal l = soln.getLiteral("double") ;   // Get a result variable - must be a literal
                   abc=abc+"\n"+l; 			      
             

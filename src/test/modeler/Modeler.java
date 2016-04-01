@@ -1,4 +1,4 @@
-package test.resources;
+package test.modeler;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -12,6 +12,7 @@ import java.net.URL;
 import java.util.LinkedList;
 import java.util.List;
 
+import test.gui.ModelGUI;
 import edu.isi.karma.controller.command.selection.SuperSelectionManager;
 import edu.isi.karma.kr2rml.URIFormatter;
 import edu.isi.karma.kr2rml.mapping.R2RMLMappingIdentifier;
@@ -30,16 +31,15 @@ public class Modeler {
 		
 		GenericRDFGenerator rdfGenerator = new GenericRDFGenerator(SuperSelectionManager.DEFAULT_SELECTION_TEST_NAME);
 
-		//Construct a R2RMLMappingIdentifier that provides the location of the model and a name for the model and add the model to the JSONRDFGenerator. You can add multiple models using this API.
+		//Construct a R2RMLMappingIdentifier that provides the location of the model and a name for the model
+		//You can add multiple models using this API.
 		R2RMLMappingIdentifier 	modelIdentifier = new R2RMLMappingIdentifier(
-			                "csv", new File(Start.file.getAbsolutePath()).toURI().toURL());
+			                "csv", new File( ModelGUI.file.getAbsolutePath()).toURI().toURL());
 		rdfGenerator.addModel(modelIdentifier);
 
-		rdfGenerator.addModel(modelIdentifier);
-		
-		
-		FileWriter output=new FileWriter(Start.file3.getAbsolutePath());
-		String filename = Start.file2.getAbsolutePath();
+		// setting up configuration
+		FileWriter output=new FileWriter( ModelGUI.file3.getAbsolutePath());
+		String filename =  ModelGUI.file2.getAbsolutePath();
 		StringWriter sw = new StringWriter();
 		PrintWriter pw = new PrintWriter(sw);
 		List<KR2RMLRDFWriter> writers = this.createBasicWriter(pw);
@@ -49,22 +49,22 @@ public class Modeler {
 		request.setDataType(InputType.XML);
 		request.addWriters(writers);
 		
-//	request.setContextParameters(ContextParametersRegistry.getInstance().getDefault());
 		rdfGenerator.generateRDF(request);
 		
+		// writing the RDF 
 		output.write(sw.toString());
 		output.close();
 		
+		// RDF generated does not include URI adding manually
 		StringBuilder sb = new StringBuilder();
 		   
-		BufferedReader br = new BufferedReader(new FileReader(Start.file3.getAbsolutePath()));
+		BufferedReader br = new BufferedReader(new FileReader( ModelGUI.file3.getAbsolutePath()));
 		try {
 		    String line = br.readLine();
 		
               while (line != null) {
-            	  String line2=line.replaceAll("<(?![<http]+)","<http://vocab.cs.uni-bonn.de/aml#");
-//            	  System.out.println(line2);
-            	     	
+            	  // adding the missing URI
+            	  String line2=line.replaceAll("<(?![<http]+)","<http://vocab.cs.uni-bonn.de/aml#");            	     	
 		        sb.append(line2);
 		        sb.append(System.lineSeparator());
 		        line = br.readLine();
@@ -72,14 +72,9 @@ public class Modeler {
 		} finally {
 		    br.close();
 		}
-		output=new FileWriter(Start.file3.getAbsolutePath());
+		output=new FileWriter( ModelGUI.file3.getAbsolutePath());
 		output.write(sb.toString());
 		output.close();		
-	}
-
-	protected URL getTestResource(String name)
-	{
-		return getClass().getClassLoader().getResource(name);
 	}
 	
 	protected List<KR2RMLRDFWriter> createBasicWriter(PrintWriter pw) {
