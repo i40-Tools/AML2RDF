@@ -28,7 +28,9 @@
 			<Attribute Name="Länge" AttributeDataType="xs:float">
 				<Value>10.5</Value>
 			</Attribute>
-			<Attribute Name="Atrea" AttributeDataType="xs:double" />
+			<Attribute Name="Atrea" AttributeDataType="xs:double">
+				<DefaultValue>0</DefaultValue>
+			</Attribute>
 			<InternalElement Name="Layout" ID="56d83a97-3be1-4ec8-8a8b-8092e571e26c">
 				<RoleRequirements RefBaseRoleClassPath="MyPropertySetRoleClassLib/Geometry" />
 				<MappingObject>

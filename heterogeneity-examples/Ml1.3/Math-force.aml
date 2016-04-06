@@ -27,7 +27,9 @@
 			<Attribute Name="maxTransportationWeight" AttributeDataType="xs:double" Unit="kg">
 				<Value>35.0</Value>
 			</Attribute>
-			<Attribute Name="Force" AttributeDataType="xs:double" />
+			<Attribute Name="Force" AttributeDataType="xs:double">
+				<DefaultValue>0</DefaultValue>
+			</Attribute>
 			<RoleRequirements RefBaseRoleClassPath="BaseRoleClassLib@AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Resource" />
 		</InternalElement>
 	</InstanceHierarchy>
