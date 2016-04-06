@@ -3,28 +3,38 @@ Tool to integrate Industry 4.0 standards using Linked Data
 
 Description
 
-Name of the project or software. If a build is available on Travis add the image link to the status of the build.
+AML2RDF is a java based tool , which converts AML to RDF and performs integration based on SPARQL. AML to RDF conversion is based on
+R2RML mapping generated using KARMA - integration tool.
 
 Documentation
 
-section with links to other documents about the software: papers, wiki pages.
+Available at:
+
+https://docs.google.com/document/d/1YoOr08Gfg8TZjPP_RXflSJ0KElqmOp_YDDjGOsxgaLo/edit?usp=sharing
 
 Requirements
 
-section about software packages, libraries, build tool, operating system, network access required to compile and run the software.
+Java 1.8. JDK
+Maven 3.1
 
 Build
 
-section about how to build the software, which build tool must be used and all the steps
+This software can be compiled using Eclipse. Import the project and run as java Application.
+
 
 Install and Run
 
-section about how to install the software in a local or distributed file system/environment and run it from a release or the compiled code.
+Executable binary available at:
+
+https://drive.google.com/file/d/0B7FScfr1FLRDMF9JbHJEeXl3VUk/view?usp=sharing
 
 Usage
 
-section with a description and examples of the main use cases and the APIs exposed by the software
+Video Tutorial: 
+
+https://drive.google.com/file/d/0B7FScfr1FLRDLXVBcEY3UWNObGc/view?usp=sharing
+
 
 License
 
-section about the type of license that applies
+Copyright (C) 2016 EIS University of Bonn
