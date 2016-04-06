@@ -1,20 +1,30 @@
-# AML2RDF# AML2RDF
-# The aim of this project is to convert AML to RDF
-# Solve the integration issues.
+AML2RDF
+Tool to integrate Industry 4.0 standards using Linked Data
 
-video tutorial to use the tool link : https://drive.google.com/file/d/0B7FScfr1FLRDLXVBcEY3UWNObGc/view?usp=sharing
+Description
 
+Name of the project or software. If a build is available on Travis add the image link to the status of the build.
 
-# Goals:
-# Create a project in java that converts AML to RDF - done
-# Use SPARQL queries  - partially done
-# Use dependancy injection and remove jar files- done
-Give a nice GUI - not done
-# Cleaner code - not done
-# Validate RDF - not done
-# Convert the project into Mavaen / Gradle or Spring - not done
-# Provide Webservice - not done
-# Create an extension for KARMA-  not done
-# Provide A reasoner to solve integration - not done
-# Provide R2RML to XML - not done
- 
+Documentation
+
+section with links to other documents about the software: papers, wiki pages.
+
+Requirements
+
+section about software packages, libraries, build tool, operating system, network access required to compile and run the software.
+
+Build
+
+section about how to build the software, which build tool must be used and all the steps
+
+Install and Run
+
+section about how to install the software in a local or distributed file system/environment and run it from a release or the compiled code.
+
+Usage
+
+section with a description and examples of the main use cases and the APIs exposed by the software
+
+License
+
+section about the type of license that applies
