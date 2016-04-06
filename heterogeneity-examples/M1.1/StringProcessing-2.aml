@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!-- Mit XMLSpy v2011 rel. 3 (http://www.altova.com) von Josef Prinz (INPRO) bearbeitet -->
-<CAEXFile FileName="Example_double.aml" SchemaVersion="2.15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Source/CAEX_ClassModel_V2.15.xsd">
+<CAEXFile FileName="Example_Paper_s.aml" SchemaVersion="2.15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Source/CAEX_ClassModel_V2.15.xsd">
 	<AdditionalInformation AutomationMLVersion="2.0" />
 	<AdditionalInformation>
 		<WriterHeader>
@@ -26,6 +26,12 @@
 			</Attribute>
 			<Attribute Name="maxTransportationWeight" AttributeDataType="xs:double" Unit="kg">
 				<Value>35.0</Value>
+			</Attribute>
+			<Attribute Name="allowsPaper" AttributeDataType="xs:boolean">
+				<DefaultValue>true</DefaultValue>
+			</Attribute>
+			<Attribute Name="paperType" AttributeDataType="xs:string">
+				<Value>Carbon</Value>
 			</Attribute>
 			<RoleRequirements RefBaseRoleClassPath="BaseRoleClassLib@AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Resource" />
 		</InternalElement>
