@@ -26,7 +26,7 @@ This software can be compiled using Eclipse. Import the project and run as java 
 
 Executable binary available at:
 
-*https://drive.google.com/file/d/0B7FScfr1FLRDMF9JbHJEeXl3VUk/view?usp=sharing
+* https://drive.google.com/file/d/0B7FScfr1FLRDMF9JbHJEeXl3VUk/view?usp=sharing
 
 ##Usage
 
