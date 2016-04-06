@@ -10,12 +10,12 @@ R2RML mapping generated using KARMA - integration tool.
 
 Available at:
 
-*https://docs.google.com/document/d/1YoOr08Gfg8TZjPP_RXflSJ0KElqmOp_YDDjGOsxgaLo/edit?usp=sharing
+* https://docs.google.com/document/d/1YoOr08Gfg8TZjPP_RXflSJ0KElqmOp_YDDjGOsxgaLo/edit?usp=sharing
 
 ##Requirements
 
-*Java 1.8. JDK
-*Maven 3.1
+* Java 1.8. JDK
+* Maven 3.1
 
 ##Build
 
@@ -32,7 +32,7 @@ Executable binary available at:
 
 Video Tutorial: 
 
-*https://drive.google.com/file/d/0B7FScfr1FLRDLXVBcEY3UWNObGc/view?usp=sharing
+* https://drive.google.com/file/d/0B7FScfr1FLRDLXVBcEY3UWNObGc/view?usp=sharing
 
 
 ##License
