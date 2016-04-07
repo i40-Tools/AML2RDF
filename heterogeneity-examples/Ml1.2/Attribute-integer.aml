@@ -23,6 +23,7 @@
 		<InternalElement Name="AMLObject" RefBaseSystemUnitPath="" ID="74d0c8ef-ab53-462a-8225-306ed22dc0f3">
 			<Attribute Name="length" AttributeDataType="xs:integer">
 				<Value>35</Value>
+				<RefSemantic CorrespondingAttributePath="ECLASS:0173-1#02-BAA018#004" />
 			</Attribute>
 		</InternalElement>
 	</InstanceHierarchy>
