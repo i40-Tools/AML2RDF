@@ -5,6 +5,7 @@ import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
+import java.io.IOException;
 
 import javax.swing.GroupLayout;
 import javax.swing.GroupLayout.Alignment;
@@ -27,23 +28,26 @@ public class SparqlGui extends JFrame {
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
 	protected JFileChooser fc;
-//	private JTextArea log;
+	// private JTextArea log;
 	private JTextArea textArea;
+	public static File file3;
 	public static File file2;
 	public static File file;
 	static private final String newline = "\n";
+
 	/**
 	 * Launch the application.
-	 * @return 
+	 * 
+	 * @return
 	 */
 	public static void go() {
-		
+
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
 					SparqlGui frame = new SparqlGui();
 					frame.setVisible(true);
-					frame.setSize(500,300);
+					frame.setSize(500, 300);
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
@@ -56,17 +60,20 @@ public class SparqlGui extends JFrame {
 	 */
 	public SparqlGui() {
 		fc = new JFileChooser();
+		File theDirectory = new File(System.getProperty("user.dir")
+				+ "\\heterogeneity-examples\\");
+		fc.setCurrentDirectory(theDirectory);
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		setBounds(200, 200, 350, 300);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
-		
+
 		JLabel lblRdfIntegration = new JLabel("               RDF integration");
 		lblRdfIntegration.setFont(new Font("Serif", Font.PLAIN, 24));
-		
+
 		JLabel lblSelectYourRdf = new JLabel("Select your RDF files");
-		
+
 		JButton btnRdfFile = new JButton("Rdf  File-1");
 		btnRdfFile.addActionListener(new ActionListener() {
 
@@ -74,17 +81,17 @@ public class SparqlGui extends JFrame {
 				int returnVal = fc.showOpenDialog(null);
 
 				if (returnVal == JFileChooser.APPROVE_OPTION) {
-				 file = fc.getSelectedFile();
-				
-				//This is where a real application would open the file.
-				textArea.append("Opening: " + file.getName()+ "." + newline);
+					file = fc.getSelectedFile();
+
+					// This is where a real application would open the file.
+					textArea.append("Loaded: " + file.getName() + "." + newline);
 				} else {
-				textArea.append("Open command cancelled by user." + newline);
+					textArea.append("Open command cancelled by user." + newline);
 				}
 
 			}
 		});
-		
+
 		JButton btnRdfFile_1 = new JButton("Rdf File -2");
 		btnRdfFile_1.addActionListener(new ActionListener() {
 
@@ -92,76 +99,167 @@ public class SparqlGui extends JFrame {
 				int returnVal = fc.showOpenDialog(null);
 
 				if (returnVal == JFileChooser.APPROVE_OPTION) {
-				 file2 = fc.getSelectedFile();
-				
-				//This is where a real application would open the file.
-				textArea.append("Opening: " + file2.getName()+ "." + newline);
+					file2 = fc.getSelectedFile();
+
+					// This is where a real application would open the file.
+					textArea.append("Loaded: " + file2.getName() + "."
+							+ newline);
 				} else {
-				textArea.append("Open command cancelled by user." + newline);
+					textArea.append("Open command cancelled by user." + newline);
 				}
 			}
 		});
-		
-		
+
 		JButton btnGenerateIntegration = new JButton("Generate Integration");
 		btnGenerateIntegration.addActionListener(new ActionListener() {
-			
+
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				String l=Sparql.integrate_double();
-				textArea.append(l.toString());
+				fc.setSelectedFile(new File(""));
+				int returnVal = fc.showSaveDialog(null);
+
+				if (returnVal == JFileChooser.APPROVE_OPTION) {
+					file3 = fc.getSelectedFile();
+					textArea.append("Extracted: " + file3.getAbsolutePath()
+							+ newline);
+					try {
+						Sparql.integrate_double();
+						Runtime.getRuntime().exec(
+								"rundll32 SHELL32.DLL,ShellExec_RunDLL "
+										+ file3);
+					} catch (IOException e1) {
+						// TODO Auto-generated catch block
+						e1.printStackTrace();
+					}
+
+				} else {
+					textArea.append("Save command cancelled by user." + newline);
+				}
+
 			}
 		});
 		JButton btnExit = new JButton("Exit");
-		
-		 textArea = new JTextArea();
-	     textArea.setEditable(false);
+
+		textArea = new JTextArea();
+		textArea.setEditable(false);
 
 		GroupLayout gl_contentPane = new GroupLayout(contentPane);
-		gl_contentPane.setHorizontalGroup(
-			gl_contentPane.createParallelGroup(Alignment.LEADING)
-				.addGroup(gl_contentPane.createSequentialGroup()
-					.addGroup(gl_contentPane.createParallelGroup(Alignment.LEADING)
-						.addGroup(gl_contentPane.createSequentialGroup()
-							.addContainerGap()
-							.addComponent(lblRdfIntegration, GroupLayout.PREFERRED_SIZE, 314, GroupLayout.PREFERRED_SIZE))
-						.addComponent(lblSelectYourRdf, GroupLayout.DEFAULT_SIZE, 324, Short.MAX_VALUE))
-					.addGap(0))
-				.addGroup(gl_contentPane.createSequentialGroup()
-					.addGroup(gl_contentPane.createParallelGroup(Alignment.TRAILING, false)
-						.addComponent(btnGenerateIntegration, Alignment.LEADING, 0, 0, Short.MAX_VALUE)
-						.addComponent(btnRdfFile_1, Alignment.LEADING, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-						.addComponent(btnRdfFile, Alignment.LEADING, GroupLayout.DEFAULT_SIZE, 108, Short.MAX_VALUE))
-					.addGroup(gl_contentPane.createParallelGroup(Alignment.TRAILING)
-						.addGroup(gl_contentPane.createSequentialGroup()
-							.addGap(28)
-							.addComponent(textArea, GroupLayout.DEFAULT_SIZE, 129, Short.MAX_VALUE))
-						.addGroup(gl_contentPane.createSequentialGroup()
-							.addPreferredGap(ComponentPlacement.RELATED)
-							.addComponent(btnExit, GroupLayout.PREFERRED_SIZE, 74, GroupLayout.PREFERRED_SIZE)))
-					.addContainerGap())
-		);
-		gl_contentPane.setVerticalGroup(
-			gl_contentPane.createParallelGroup(Alignment.LEADING)
-				.addGroup(gl_contentPane.createSequentialGroup()
-					.addContainerGap()
-					.addComponent(lblRdfIntegration, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-					.addGap(17)
-					.addComponent(lblSelectYourRdf)
-					.addGap(18)
-					.addGroup(gl_contentPane.createParallelGroup(Alignment.LEADING)
-						.addGroup(gl_contentPane.createSequentialGroup()
-							.addComponent(btnRdfFile)
-							.addGap(26)
-							.addComponent(btnRdfFile_1))
-						.addComponent(textArea, GroupLayout.PREFERRED_SIZE, 88, GroupLayout.PREFERRED_SIZE))
-					.addPreferredGap(ComponentPlacement.UNRELATED)
-					.addGroup(gl_contentPane.createParallelGroup(Alignment.LEADING)
-						.addComponent(btnGenerateIntegration)
-						.addComponent(btnExit))
-					.addGap(20))
-		);
+		gl_contentPane
+				.setHorizontalGroup(gl_contentPane
+						.createParallelGroup(Alignment.LEADING)
+						.addGroup(
+								gl_contentPane
+										.createSequentialGroup()
+										.addGroup(
+												gl_contentPane
+														.createParallelGroup(
+																Alignment.LEADING)
+														.addGroup(
+																gl_contentPane
+																		.createSequentialGroup()
+																		.addContainerGap()
+																		.addComponent(
+																				lblRdfIntegration,
+																				GroupLayout.PREFERRED_SIZE,
+																				314,
+																				GroupLayout.PREFERRED_SIZE))
+														.addComponent(
+																lblSelectYourRdf,
+																GroupLayout.DEFAULT_SIZE,
+																324,
+																Short.MAX_VALUE))
+										.addGap(0))
+						.addGroup(
+								gl_contentPane
+										.createSequentialGroup()
+										.addGroup(
+												gl_contentPane
+														.createParallelGroup(
+																Alignment.TRAILING,
+																false)
+														.addComponent(
+																btnGenerateIntegration,
+																Alignment.LEADING,
+																0, 0,
+																Short.MAX_VALUE)
+														.addComponent(
+																btnRdfFile_1,
+																Alignment.LEADING,
+																GroupLayout.DEFAULT_SIZE,
+																GroupLayout.DEFAULT_SIZE,
+																Short.MAX_VALUE)
+														.addComponent(
+																btnRdfFile,
+																Alignment.LEADING,
+																GroupLayout.DEFAULT_SIZE,
+																108,
+																Short.MAX_VALUE))
+										.addGroup(
+												gl_contentPane
+														.createParallelGroup(
+																Alignment.TRAILING)
+														.addGroup(
+																gl_contentPane
+																		.createSequentialGroup()
+																		.addGap(28)
+																		.addComponent(
+																				textArea,
+																				GroupLayout.DEFAULT_SIZE,
+																				129,
+																				Short.MAX_VALUE))
+														.addGroup(
+																gl_contentPane
+																		.createSequentialGroup()
+																		.addPreferredGap(
+																				ComponentPlacement.RELATED)
+																		.addComponent(
+																				btnExit,
+																				GroupLayout.PREFERRED_SIZE,
+																				74,
+																				GroupLayout.PREFERRED_SIZE)))
+										.addContainerGap()));
+		gl_contentPane
+				.setVerticalGroup(gl_contentPane
+						.createParallelGroup(Alignment.LEADING)
+						.addGroup(
+								gl_contentPane
+										.createSequentialGroup()
+										.addContainerGap()
+										.addComponent(lblRdfIntegration,
+												GroupLayout.DEFAULT_SIZE,
+												GroupLayout.DEFAULT_SIZE,
+												Short.MAX_VALUE)
+										.addGap(17)
+										.addComponent(lblSelectYourRdf)
+										.addGap(18)
+										.addGroup(
+												gl_contentPane
+														.createParallelGroup(
+																Alignment.LEADING)
+														.addGroup(
+																gl_contentPane
+																		.createSequentialGroup()
+																		.addComponent(
+																				btnRdfFile)
+																		.addGap(26)
+																		.addComponent(
+																				btnRdfFile_1))
+														.addComponent(
+																textArea,
+																GroupLayout.PREFERRED_SIZE,
+																88,
+																GroupLayout.PREFERRED_SIZE))
+										.addPreferredGap(
+												ComponentPlacement.UNRELATED)
+										.addGroup(
+												gl_contentPane
+														.createParallelGroup(
+																Alignment.LEADING)
+														.addComponent(
+																btnGenerateIntegration)
+														.addComponent(btnExit))
+										.addGap(20)));
 		contentPane.setLayout(gl_contentPane);
 	}
-	
+
 }
