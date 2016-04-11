@@ -39,7 +39,7 @@ public class RdfGUI extends JFrame {
 	 * Create the frame.
 	 */
 
-	public static void go() {
+	public static void display() {
 
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
@@ -156,7 +156,7 @@ public class RdfGUI extends JFrame {
 	}
 
 	public static void main(String[] args) {
-		RdfGUI.go();
+		RdfGUI.display();
 	}
 
 }
