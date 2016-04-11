@@ -20,6 +20,7 @@ Available at:
 ##Build
 
 This software can be compiled using Eclipse. Import the project and run as java Application.
+The main method is define in RdfGUI.java
 
 
 ##Install and Run
@@ -33,7 +34,9 @@ Executable binary available at:
 Video Tutorial: 
 
 * https://drive.google.com/file/d/0B7FScfr1FLRDLXVBcEY3UWNObGc/view?usp=sharing
-
+* Select multiple AML Files.
+* Click Integration.
+* output is stored in selected AML files folder.
 
 ##License
 
