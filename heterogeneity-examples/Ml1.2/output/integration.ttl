@@ -1,0 +1,50 @@
+@prefix schema:  <http://schema.org/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix aml:  <http://vocab.cs.uni-bonn.de/aml#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+aml:2.15  aml:hasFileName             "Attribute-double.aml" ;
+        aml:hasInstanceHierarchy      aml:MechatronicEngineering ;
+        rdf:type                      aml:CAEXFile ;
+        aml:hasAdditionalInformation  aml:2012-02-20 ;
+        aml:hasExternalReference      aml:BaseInterfaceClassLib ;
+        aml:hasExternalReference      aml:BaseRoleClassLib ;
+        aml:hasSchemaVersion          "2.15" .
+
+aml:74d0c8ef-ab53-462a-8225-306ed22dc0f3
+        aml:internalElementId  "74d0c8ef-ab53-462a-8225-306ed22dc0f3" ;
+        rdf:type               aml:InternalElement ;
+        aml:hasAttribute       aml:length ;
+        schema:name            "AMLObject" .
+
+aml:MechatronicEngineering
+        rdf:type                aml:InstanceHierarchy ;
+        aml:hasInternalElement  aml:74d0c8ef-ab53-462a-8225-306ed22dc0f3 ;
+        schema:name             "MechatronicEngineering" .
+
+aml:BaseRoleClassLib  aml:externalReferenceAlias  "BaseRoleClassLib" ;
+        aml:externalReferencePath   "Libs/RoleClass Libraries/AutomationMLBaseRoleClassLib.aml" ;
+        rdf:type                    aml:ExternalReference .
+
+aml:2.0  rdf:type                   aml:AdditionalInformation ;
+        aml:hasAutomationMLVersion  "2.0" .
+
+aml:2012-02-20  aml:hasWriterVendorURL  "www.AutomationML.org" ;
+        aml:hasWriterVendor     "AutomationML e.V." ;
+        aml:hasWriterId         "AutomationML e.V." ;
+        aml:lastWritingDate     "2012-02-20" ;
+        rdf:type                aml:AdditionalInformation ;
+        aml:hasWriterRelease    "1.0" ;
+        aml:hasWriterName       "AutomationML e.V." ;
+        aml:hasWriterVersion    "1.0" .
+
+aml:BaseInterfaceClassLib
+        aml:externalReferencePath   "Libs/InterfaceClass Libraries/AutomationMLInterfaceClassLib.aml" ;
+        aml:externalReferenceAlias  "BaseInterfaceClassLib" ;
+        rdf:type                    aml:ExternalReference .
+
+aml:length  aml:hasDataType  "xs:double" ;
+        aml:hasValue     "35"^^xsd:double ;
+        rdf:type         aml:Attribute ;
+        schema:name      "length" .

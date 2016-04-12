@@ -91,4 +91,47 @@ public class Integrate {
 
 	}
 
+	/*
+	 * in progress nothing much
+	 * 
+	 * @SuppressWarnings("unchecked") ResultSet convertXML(Model model) {
+	 * 
+	 * Model modelY = FileManager.get().loadModel(new RdfConvertor().getpath() +
+	 * "integration.ttl");
+	 * 
+	 * Dataset dataset = DatasetFactory.create();
+	 * dataset.setDefaultModel(modelY);
+	 * dataset.addNamedModel("http://example/named-3", modelY);
+	 * 
+	 * String queryString = null;
+	 * 
+	 * try (InputStream res =
+	 * (Integrate.class.getResourceAsStream("/test.txt"))) { queryString =
+	 * IOUtils.toString(res); // System.out.println(queryString); } catch
+	 * (IOException e) { // TODO Auto-generated catch block e.printStackTrace();
+	 * }
+	 * 
+	 * Query query = QueryFactory.create(queryString);
+	 * 
+	 * try (QueryExecution qexec = QueryExecutionFactory.create(query, dataset))
+	 * { ResultSet results = qexec.execSelect(); // results =
+	 * ResultSetFactory.copyResults(results); // qexec.close(); //
+	 * ResultSetFormatter.outputAsXML(System.out, results); //
+	 * System.out.println(ResultSetFormatter.asXMLString(results));
+	 * 
+	 * // RDFDataMgr.write(System.out, model, RDFFormat.TURTLE_BLOCKS);
+	 * 
+	 * for (; results.hasNext();) { QuerySolution soln = results.nextSolution();
+	 * RDFNode x = soln.get("z"); // Get a result variable by name. RDFNode y =
+	 * soln.get("xa"); // Get a result variable by name. RDFNode z =
+	 * soln.get("double"); // Get a result variable by // name.
+	 * 
+	 * Resource r = soln.getResource("xa"); // Get a result variable - // must
+	 * be a resource // Literal l = soln.getLiteral("double"); // Get a result
+	 * // variable // - must be a literal
+	 * 
+	 * } return results; // Passes the result set out of the try-resources }
+	 * 
+	 * }
+	 */
 }

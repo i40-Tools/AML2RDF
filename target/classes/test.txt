@@ -3,6 +3,6 @@ prefix aml:<http://vocab.cs.uni-bonn.de/aml#>
 prefix rdfs:<http://www.w3.org/2000/01/rdf-schema#>
 prefix schema:<http://schema.org/>
 prefix xsd:<http://www.w3.org/2001/XMLSchema#>
-+ Select *
+Select *
 from named<http://example/named-3>
 where {?z ?xa ?double}
