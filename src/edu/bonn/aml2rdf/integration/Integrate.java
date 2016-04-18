@@ -130,7 +130,7 @@ public class Integrate {
 	 */
 	void convertXML(Model model) throws Exception {
 
-		ArrayList<String> cNodes = rdf_Classes();
+		ArrayList<String> cNodes = rdfClasses();
 		// Process XML file to remove RDF serialization.
 		processXML(cNodes);
 
@@ -236,7 +236,7 @@ public class Integrate {
 	 * This method gets the Classes from RDF graph using rdf:type property.
 	 * @return ArrayList.
 	 */
-	private ArrayList<String> rdf_Classes() {
+	private ArrayList<String> rdfClasses() {
 		// Array of nodes which will store all the classes of RDF graph.
 		ArrayList<String> cNodes = new ArrayList<String>();
 
@@ -389,7 +389,7 @@ public class Integrate {
 	 * @throws Exception
 	 */
 	ArrayList<String> getAttributes() throws Exception {
-		ArrayList<String> cNodes = rdf_Classes();
+		ArrayList<String> cNodes = rdfClasses();
 		ArrayList<String> aNodes = new ArrayList<>();
 
 		DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
