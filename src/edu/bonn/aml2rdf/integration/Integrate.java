@@ -222,8 +222,8 @@ public class Integrate {
 		// Removes All nodes which were Attributes in the Elements.
 		for (int i = 0; i < nAll_Attribute.size(); i++) {
 			NodeList list = doc.getElementsByTagName(nAll_Attribute.get(i).toString());
-			for (int _i = list.getLength() - 1; _i >= 0; _i--) {
-				Node nNode = list.item(_i);
+			for (int j = list.getLength() - 1; j >= 0; j--) {
+				Node nNode = list.item(j);
 				nNode.getParentNode().removeChild(nNode);
 			}
 		}
@@ -351,6 +351,10 @@ public class Integrate {
 		output.close();
 	}
 
+	/**
+	 * @param doc
+	 * @throws Exception
+	 */
 	private void formatXML(Document doc) throws Exception {
 
 		// Writes the new added Elements Attributes.
