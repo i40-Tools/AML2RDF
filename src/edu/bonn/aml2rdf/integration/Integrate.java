@@ -55,17 +55,13 @@ import nu.xom.Serializer;
 
 public class Integrate {
 
-	/*
-	 * This method integrates the RDF files into single RDF , The default
-	 * conversion is in in Turtle format. Integration is performed through
-	 * SPARQL Query.
-	 * 
-	 */
-
 	private FileWriter output;
 
-	public void integrate_rdf() throws IOException {
-		// TODO Auto-generated method stub
+	/**
+	 * This method integrates the RDF files into single RDF, The default conversion is in in Turtle format. Integration is performed through SPARQL Query.
+	 * @throws IOException
+	 */
+	public void integrateRDF() throws IOException {
 
 		// Sets output file of RDF integration
 		output = new FileWriter(new RdfConvertor().getpath() + "integration.aml.ttl");
@@ -81,8 +77,7 @@ public class Integrate {
 		output.write(sw.toString());
 		output.close();
 		try {
-			convertXML(getNewModel()); // calls for XML conversion for AML
-										// files.
+			convertXML(getNewModel()); // calls for XML conversion for AML files.
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -92,7 +87,6 @@ public class Integrate {
 
 	/**
 	 * creates a new RDF graph using Construct Query.
-	 * 
 	 * @return new model
 	 */
 	protected Model getNewModel() {
@@ -113,7 +107,6 @@ public class Integrate {
 		try (InputStream res = Integrate.class.getResourceAsStream("/M1.2.txt")) {
 			queryString = IOUtils.toString(res);
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		// Executes the Query and returns new model file
@@ -240,12 +233,10 @@ public class Integrate {
 
 	}
 
-	/*
+	/**
 	 * This method gets the Classes from RDF graph using rdf:type property.
-	 * Returns the classes names in an ArrayList.
-	 * 
+	 * @return ArrayList.
 	 */
-
 	private ArrayList<String> rdf_Classes() {
 		// Array of nodes which will store all the classes of RDF graph.
 		ArrayList<String> cNodes = new ArrayList<String>();

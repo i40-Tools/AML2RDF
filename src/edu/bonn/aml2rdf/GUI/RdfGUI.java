@@ -112,7 +112,7 @@ public class RdfGUI extends JFrame {
 				RdfConvertor rdf_conv = new RdfConvertor();
 				try {
 					rdf_conv.convertor();
-					new Integrate().integrate_rdf();
+					new Integrate().integrateRDF();
 					textArea.append("Extracted: " + new RdfConvertor().getpath() + "integration.aml.ttl" + newline);
 
 					try {
