@@ -43,8 +43,8 @@ aml:2.15  aml:hasFileName             "Attribute-double.aml" ;
         rdf:type                      aml:CAEXFile ;
         aml:hasInstanceHierarchy      aml:MechatronicEngineering ;
         aml:hasExternalReference      aml:BaseRoleClassLib ;
-        aml:hasAdditionalInformation  aml:2012-02-20 ;
         aml:hasExternalReference      aml:BaseInterfaceClassLib ;
+        aml:hasAdditionalInformation  aml:2012-02-20 ;
         aml:hasAdditionalInformation  aml:2.0 .
 
 aml:2.0  aml:hasAutomationMLVersion  "2.0" ;

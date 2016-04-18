@@ -14,6 +14,7 @@ import javax.swing.JButton;
 import javax.swing.JFileChooser;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextArea;
 import javax.swing.LayoutStyle.ComponentPlacement;
@@ -32,6 +33,7 @@ public class RdfGUI extends JFrame {
 	private JPanel contentPane;
 	protected JFileChooser fc;
 	private JTextArea textArea;
+	protected static RdfGUI frame;
 	public static File[] files_;
 	static private final String newline = "\n";
 
@@ -44,7 +46,7 @@ public class RdfGUI extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					RdfGUI frame = new RdfGUI();
+					frame = new RdfGUI();
 
 					frame.setVisible(true);
 					frame.pack();
@@ -82,15 +84,18 @@ public class RdfGUI extends JFrame {
 				fc.setCurrentDirectory(theDirectory1);
 
 				int returnVal = fc.showOpenDialog(null);
-
 				if (returnVal == JFileChooser.APPROVE_OPTION) {
 					files_ = fc.getSelectedFiles();
-
-					// This is where a real application would open the file.
-					int i = 0;
-					while (i < files_.length) {
-						textArea.append("Loaded: " + files_[i].getName() + "." + newline);
-						i++;
+					if (files_.length < 2) {
+						JOptionPane.showMessageDialog(frame, "Please Select atleast two AML files.");
+						btnRdfFile_1.doClick();
+					} else {
+						// This is where a real application would open the file.
+						int i = 0;
+						while (i < files_.length) {
+							textArea.append("Loaded: " + files_[i].getName() + "." + newline);
+							i++;
+						}
 					}
 				} else {
 					textArea.append("Open command cancelled by user." + newline);
