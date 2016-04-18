@@ -23,7 +23,13 @@
 	<groupId>org.apache.tika</groupId>
 	<artifactId>tika-app</artifactId>
 	<version>1.12</version>
-</dependency>
+	<exclusions>
+		<exclusion>
+			<artifactId>slf4j-api</artifactId>
+			<groupId>org.slf4j</groupId>
+		</exclusion>
+	</exclusions>
+  	</dependency>
   	<dependency>
 	<groupId>com.ibm.icu</groupId>
 	<artifactId>icu4j</artifactId>
@@ -103,6 +109,12 @@
 	<groupId>com.github.jsonld-java</groupId>
 	<artifactId>jsonld-java</artifactId>
 	<version>0.8.2</version>
+	<exclusions>
+		<exclusion>
+			<artifactId>slf4j-api</artifactId>
+			<groupId>org.slf4j</groupId>
+		</exclusion>
+	</exclusions>
 </dependency>
 <dependency>
 	<groupId>junit</groupId>
@@ -113,6 +125,12 @@
 	<groupId>org.apache.thrift</groupId>
 	<artifactId>libthrift</artifactId>
 	<version>0.9.3</version>
+	<exclusions>
+		<exclusion>
+			<artifactId>slf4j-api</artifactId>
+			<groupId>org.slf4j</groupId>
+		</exclusion>
+	</exclusions>
 </dependency>
 <dependency>
 	<groupId>org.reflections</groupId>
@@ -155,12 +173,24 @@
 	<groupId>org.apache.jena</groupId>
 	<artifactId>jena-arq</artifactId>
 	<version>3.0.1</version>
-</dependency>
+	<exclusions>
+		<exclusion>
+			<artifactId>slf4j-api</artifactId>
+			<groupId>org.slf4j</groupId>
+		</exclusion>
+	</exclusions>
+  </dependency>
   <dependency>
 	<groupId>com.hp.hpl.jena</groupId>
 	<artifactId>jena</artifactId>
 	<version>2.6.4</version>
-</dependency>  	
+	<exclusions>
+		<exclusion>
+			<artifactId>slf4j-api</artifactId>
+			<groupId>org.slf4j</groupId>
+		</exclusion>
+	</exclusions>
+  </dependency>  	
   <dependency>
 	<groupId>xerces</groupId>
 	<artifactId>xercesImpl</artifactId>
@@ -239,7 +269,12 @@
     <systemPath>${project.basedir}/libs/karma-util-0.0.1-SNAPSHOT.jar</systemPath>
 </dependency>
 
-  	
-  </dependencies>
+
+    	<dependency>
+    		<groupId>com.io7m.xom</groupId>
+    		<artifactId>xom</artifactId>
+    		<version>1.2.10</version>
+    	</dependency>
+    </dependencies>
   
 </project>

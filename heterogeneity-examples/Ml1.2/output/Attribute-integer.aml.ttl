@@ -1,49 +1,50 @@
-<http://vocab.cs.uni-bonn.de/aml#2.15>
-        <http://vocab.cs.uni-bonn.de/aml#hasSchemaVersion>  "2.15" ;
-        <http://vocab.cs.uni-bonn.de/aml#hasExternalReference>  <http://vocab.cs.uni-bonn.de/aml#BaseRoleClassLib> ;
-        <http://vocab.cs.uni-bonn.de/aml#hasFileName>  "Attribute-integer.aml" ;
-        <http://vocab.cs.uni-bonn.de/aml#hasExternalReference>  <http://vocab.cs.uni-bonn.de/aml#BaseInterfaceClassLib> ;
-        <http://vocab.cs.uni-bonn.de/aml#hasAdditionalInformation>  <http://vocab.cs.uni-bonn.de/aml#2012-02-20> ;
-        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://vocab.cs.uni-bonn.de/aml#CAEXFile> ;
-        <http://vocab.cs.uni-bonn.de/aml#hasInstanceHierarchy>  <http://vocab.cs.uni-bonn.de/aml#MechatronicEngineering> .
+<http://iais.fraunhofer.de/aml#BaseRoleClassLib>
+        <http://iais.fraunhofer.de/aml#externalReferenceAlias>  "BaseRoleClassLib" ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://iais.fraunhofer.de/aml#ExternalReference> ;
+        <http://iais.fraunhofer.de/aml#externalReferencePath>  "Libs/RoleClass Libraries/AutomationMLBaseRoleClassLib.aml" .
 
-<http://vocab.cs.uni-bonn.de/aml#74d0c8ef-ab53-462a-8225-306ed22dc0f3>
+<http://iais.fraunhofer.de/aml#2012-02-20>
+        <http://iais.fraunhofer.de/aml#hasWriterVendorURL>  "www.AutomationML.org" ;
+        <http://iais.fraunhofer.de/aml#hasWriterName>  "AutomationML e.V." ;
+        <http://iais.fraunhofer.de/aml#hasWriterId>  "AutomationML e.V." ;
+        <http://iais.fraunhofer.de/aml#hasWriterVersion>  "1.0" ;
+        <http://iais.fraunhofer.de/aml#hasWriterRelease>  "1.0" ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://iais.fraunhofer.de/aml#AdditionalInformation> ;
+        <http://iais.fraunhofer.de/aml#hasWriterVendor>  "AutomationML e.V." ;
+        <http://iais.fraunhofer.de/aml#lastWritingDate>  "2012-02-20" .
+
+<http://iais.fraunhofer.de/aml#74d0c8ef-ab53-462a-8225-306ed22dc0f3>
         <http://schema.org/name>  "AMLObject" ;
-        <http://vocab.cs.uni-bonn.de/aml#hasAttribute>  <http://vocab.cs.uni-bonn.de/aml#length> ;
-        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://vocab.cs.uni-bonn.de/aml#InternalElement> ;
-        <http://vocab.cs.uni-bonn.de/aml#internalElementId>  "74d0c8ef-ab53-462a-8225-306ed22dc0f3" .
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://iais.fraunhofer.de/aml#InternalElement> ;
+        <http://iais.fraunhofer.de/aml#hasAttribute>  <http://iais.fraunhofer.de/aml#length> ;
+        <http://iais.fraunhofer.de/aml#internalElementId>  "74d0c8ef-ab53-462a-8225-306ed22dc0f3" .
 
-<http://vocab.cs.uni-bonn.de/aml#MechatronicEngineering>
+<http://iais.fraunhofer.de/aml#length>
+        <http://iais.fraunhofer.de/aml#hasValue>  "35" ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://iais.fraunhofer.de/aml#Attribute> ;
+        <http://iais.fraunhofer.de/aml#hasDataType>  "xs:integer" ;
+        <http://iais.fraunhofer.de/aml#hasAttributeName>  "length" .
+
+<http://iais.fraunhofer.de/aml#BaseInterfaceClassLib>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://iais.fraunhofer.de/aml#ExternalReference> ;
+        <http://iais.fraunhofer.de/aml#externalReferenceAlias>  "BaseInterfaceClassLib" ;
+        <http://iais.fraunhofer.de/aml#externalReferencePath>  "Libs/InterfaceClass Libraries/AutomationMLInterfaceClassLib.aml" .
+
+<http://iais.fraunhofer.de/aml#MechatronicEngineering>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://iais.fraunhofer.de/aml#InstanceHierarchy> ;
         <http://schema.org/name>  "MechatronicEngineering" ;
-        <http://vocab.cs.uni-bonn.de/aml#hasInternalElement>  <http://vocab.cs.uni-bonn.de/aml#74d0c8ef-ab53-462a-8225-306ed22dc0f3> ;
-        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://vocab.cs.uni-bonn.de/aml#InstanceHierarchy> .
+        <http://iais.fraunhofer.de/aml#hasInternalElement>  <http://iais.fraunhofer.de/aml#74d0c8ef-ab53-462a-8225-306ed22dc0f3> .
 
-<http://vocab.cs.uni-bonn.de/aml#BaseRoleClassLib>
-        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://vocab.cs.uni-bonn.de/aml#ExternalReference> ;
-        <http://vocab.cs.uni-bonn.de/aml#externalReferencePath>  "Libs/RoleClass Libraries/AutomationMLBaseRoleClassLib.aml" ;
-        <http://vocab.cs.uni-bonn.de/aml#externalReferenceAlias>  "BaseRoleClassLib" .
+<http://iais.fraunhofer.de/aml#2.15>
+        <http://iais.fraunhofer.de/aml#hasAdditionalInformation>  <http://iais.fraunhofer.de/aml#2.0> ;
+        <http://iais.fraunhofer.de/aml#hasExternalReference>  <http://iais.fraunhofer.de/aml#BaseInterfaceClassLib> ;
+        <http://iais.fraunhofer.de/aml#hasAdditionalInformation>  <http://iais.fraunhofer.de/aml#2012-02-20> ;
+        <http://iais.fraunhofer.de/aml#hasExternalReference>  <http://iais.fraunhofer.de/aml#BaseRoleClassLib> ;
+        <http://iais.fraunhofer.de/aml#hasInstanceHierarchy>  <http://iais.fraunhofer.de/aml#MechatronicEngineering> ;
+        <http://iais.fraunhofer.de/aml#hasFileName>  "Attribute-integer.aml" ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://iais.fraunhofer.de/aml#CAEXFile> ;
+        <http://iais.fraunhofer.de/aml#hasSchemaVersion>  "2.15" .
 
-<http://vocab.cs.uni-bonn.de/aml#2.0>
-        <http://vocab.cs.uni-bonn.de/aml#hasAutomationMLVersion>  "2.0" ;
-        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://vocab.cs.uni-bonn.de/aml#AdditionalInformation> .
-
-<http://vocab.cs.uni-bonn.de/aml#2012-02-20>
-        <http://vocab.cs.uni-bonn.de/aml#hasWriterVersion>  "1.0" ;
-        <http://vocab.cs.uni-bonn.de/aml#hasWriterName>  "AutomationML e.V." ;
-        <http://vocab.cs.uni-bonn.de/aml#hasWriterRelease>  "1.0" ;
-        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://vocab.cs.uni-bonn.de/aml#AdditionalInformation> ;
-        <http://vocab.cs.uni-bonn.de/aml#lastWritingDate>  "2012-02-20" ;
-        <http://vocab.cs.uni-bonn.de/aml#hasWriterId>  "AutomationML e.V." ;
-        <http://vocab.cs.uni-bonn.de/aml#hasWriterVendor>  "AutomationML e.V." ;
-        <http://vocab.cs.uni-bonn.de/aml#hasWriterVendorURL>  "www.AutomationML.org" .
-
-<http://vocab.cs.uni-bonn.de/aml#BaseInterfaceClassLib>
-        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://vocab.cs.uni-bonn.de/aml#ExternalReference> ;
-        <http://vocab.cs.uni-bonn.de/aml#externalReferenceAlias>  "BaseInterfaceClassLib" ;
-        <http://vocab.cs.uni-bonn.de/aml#externalReferencePath>  "Libs/InterfaceClass Libraries/AutomationMLInterfaceClassLib.aml" .
-
-<http://vocab.cs.uni-bonn.de/aml#length>
-        <http://vocab.cs.uni-bonn.de/aml#hasValue>  "35" ;
-        <http://schema.org/name>  "length" ;
-        <http://vocab.cs.uni-bonn.de/aml#hasDataType>  "xs:integer" ;
-        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://vocab.cs.uni-bonn.de/aml#Attribute> .
+<http://iais.fraunhofer.de/aml#2.0>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://iais.fraunhofer.de/aml#AdditionalInformation> ;
+        <http://iais.fraunhofer.de/aml#hasAutomationMLVersion>  "2.0" .

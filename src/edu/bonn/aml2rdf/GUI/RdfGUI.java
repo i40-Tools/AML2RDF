@@ -108,11 +108,11 @@ public class RdfGUI extends JFrame {
 				try {
 					rdf_conv.convertor();
 					new Integrate().integrate_rdf();
-					textArea.append("Extracted: " + new RdfConvertor().getpath() + "integration.ttl" + newline);
+					textArea.append("Extracted: " + new RdfConvertor().getpath() + "integration.aml.ttl" + newline);
 
 					try {
 						Runtime.getRuntime().exec("rundll32 SHELL32.DLL,ShellExec_RunDLL "
-								+ new RdfConvertor().getpath() + "integration.ttl");
+								+ new RdfConvertor().getpath() + "integration.aml");
 					} catch (Exception e1) {
 					}
 

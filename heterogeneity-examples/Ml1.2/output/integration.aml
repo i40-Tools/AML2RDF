@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CAEXFile FileName="Attribute-double.aml" SchemaVersion="2.15">
+    <InstanceHierarchy Name="MechatronicEngineering">
+        <InternalElement Name="AMLObject" internalElementId="74d0c8ef-ab53-462a-8225-306ed22dc0f3">
+            <Attribute AttributeName="length" DataType="xs:double">
+                <Value>35</Value>
+            </Attribute>
+        </InternalElement>
+    </InstanceHierarchy>
+    <ExternalReference externalReferenceAlias="BaseRoleClassLib">
+        <externalReferencePath>Libs/RoleClassLibraries/AutomationMLBaseRoleClassLib.aml</externalReferencePath>
+    </ExternalReference>
+    <ExternalReference externalReferenceAlias="BaseRoleClassLib">
+        <externalReferencePath>Libs/InterfaceClassLibraries/AutomationMLInterfaceClassLib.aml</externalReferencePath>
+    </ExternalReference>
+    <AdditionalInformation AutomationMLVersion="2.0">
+        <lastWritingDate>2012-02-20</lastWritingDate>
+        <WriterVendor>AutomationMLe.V.</WriterVendor>
+        <WriterRelease>1.0</WriterRelease>
+        <WriterVersion>1.0</WriterVersion>
+        <WriterId>AutomationMLe.V.</WriterId>
+        <WriterName>AutomationMLe.V.</WriterName>
+        <WriterVendorURL>www.AutomationML.org</WriterVendorURL>
+    </AdditionalInformation>
+    <AdditionalInformation AutomationMLVersion="2.0"> </AdditionalInformation>
+</CAEXFile>

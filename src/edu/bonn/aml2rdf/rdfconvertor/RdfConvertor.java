@@ -90,7 +90,7 @@ public class RdfConvertor {
 
 				while (line != null) {
 					// adding the missing URI
-					String line2 = line.replaceAll("<(?![<http]+)", "<http://vocab.cs.uni-bonn.de/aml#");
+					String line2 = line.replaceAll("<(?![<http]+)", "<http://iais.fraunhofer.de/aml#");
 					sb.append(line2);
 					sb.append(System.lineSeparator());
 					line = br.readLine();
