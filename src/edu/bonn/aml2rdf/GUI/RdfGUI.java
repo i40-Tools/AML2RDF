@@ -21,7 +21,7 @@ import javax.swing.LayoutStyle.ComponentPlacement;
 import javax.swing.border.EmptyBorder;
 
 import edu.bonn.aml2rdf.integration.Integrate;
-import edu.bonn.aml2rdf.rdfconvertor.RdfConvertor;
+import edu.bonn.aml2rdf.rdfconvertor.RDFConvertor;
 import edu.isi.karma.webserver.KarmaException;
 
 public class RdfGUI extends JFrame {
@@ -109,15 +109,15 @@ public class RdfGUI extends JFrame {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 
-				RdfConvertor rdf_conv = new RdfConvertor();
+				RDFConvertor rdf_conv = new RDFConvertor();
 				try {
 					rdf_conv.convertor();
 					new Integrate().integrateRDF();
-					textArea.append("Extracted: " + new RdfConvertor().getpath() + "integration.aml.ttl" + newline);
+					textArea.append("Extracted: " + new RDFConvertor().getpath() + "integration.aml.ttl" + newline);
 
 					try {
 						Runtime.getRuntime().exec("rundll32 SHELL32.DLL,ShellExec_RunDLL "
-								+ new RdfConvertor().getpath() + "integration.aml");
+								+ new RDFConvertor().getpath() + "integration.aml");
 					} catch (Exception e1) {
 					}
 

@@ -49,10 +49,14 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
 import edu.bonn.aml2rdf.GUI.RdfGUI;
-import edu.bonn.aml2rdf.rdfconvertor.RdfConvertor;
+import edu.bonn.aml2rdf.rdfconvertor.RDFConvertor;
 import nu.xom.Builder;
 import nu.xom.Serializer;
 
+/**
+ * @author Omar
+ * @todo purpose of the class
+ */
 public class Integrate {
 
 	private FileWriter output;
@@ -64,14 +68,14 @@ public class Integrate {
 	public void integrateRDF() throws IOException {
 
 		// Sets output file of RDF integration
-		output = new FileWriter(new RdfConvertor().getpath() + "integration.aml.ttl");
+		output = new FileWriter(new RDFConvertor().getpath() + "integration.aml.ttl");
 		StringWriter sw = new StringWriter();
 		RDFDataMgr.write(sw, getNewModel(), RDFFormat.TURTLE_BLOCKS);
 		output.write(sw.toString());
 		output.close();
 
 		// Sets output format RDF/XML for XML conversion
-		output = new FileWriter(new RdfConvertor().getpath() + "integration.rdf");
+		output = new FileWriter(new RDFConvertor().getpath() + "integration.rdf");
 		sw = new StringWriter();
 		RDFDataMgr.write(sw, getNewModel(), RDFFormat.RDFXML);
 		output.write(sw.toString());
@@ -79,7 +83,6 @@ public class Integrate {
 		try {
 			convertXML(getNewModel()); // calls for XML conversion for AML files.
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 
@@ -92,8 +95,8 @@ public class Integrate {
 	protected Model getNewModel() {
 
 		// loads two RDF files in turtle format from output folder.
-		Model modelY = FileManager.get().loadModel(new RdfConvertor().getpath() + RdfGUI.files_[0].getName() + ".ttl");
-		Model modelX = FileManager.get().loadModel(new RdfConvertor().getpath() + RdfGUI.files_[1].getName() + ".ttl");
+		Model modelY = FileManager.get().loadModel(new RDFConvertor().getpath() + RdfGUI.files_[0].getName() + ".ttl");
+		Model modelX = FileManager.get().loadModel(new RDFConvertor().getpath() + RdfGUI.files_[1].getName() + ".ttl");
 
 		// gives those two files a URI for querying data
 		Dataset dataset = DatasetFactory.create();
@@ -115,25 +118,21 @@ public class Integrate {
 			Model resultModel = qexec.execConstruct();
 			qexec.close();
 			return resultModel;
-
 		}
 
 	}
 
-	/*
-	 * This method converts the RDF file into XML , First of all generalized
-	 * conversion is done for RDF. After that XML is processed in domain of AML
-	 * files only. The output XML is only compatible for AML files and not
-	 * generalized RDF. The output is processed according to AML elements and
-	 * attributes.
-	 * 
+	/**
+	 * This method converts the RDF file into XML. First of all generalized conversion is done for RDF. After that XML is processed in domain of AML
+	 * files only. The output XML is only compatible for AML files and not generalized RDF. The output is processed according to AML elements and attributes.
+	 * @param model
+	 * @throws Exception
 	 */
-
 	void convertXML(Model model) throws Exception {
 
 		ArrayList<String> cNodes = rdf_Classes();
 		// Process XML file to remove RDF serialization.
-		process_XML(cNodes);
+		processXML(cNodes);
 
 		/* Array Holds Attribute, Values, and All Attributes */
 		ArrayList<String> nAttribute = new ArrayList<String>();
@@ -145,7 +144,7 @@ public class Integrate {
 		DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
 		// Path to generated XML without RDF
 		Document doc = dBuilder
-				.parse(new FileInputStream(new File(new RdfConvertor().getpath() + "integration.aml.rdf")));
+				.parse(new FileInputStream(new File(new RDFConvertor().getpath() + "integration.aml.rdf")));
 		doc.getDocumentElement().normalize();
 
 		Node temp_Node = null; // Temporary node to hold values.
@@ -242,7 +241,7 @@ public class Integrate {
 		ArrayList<String> cNodes = new ArrayList<String>();
 
 		// Getting the final RDF and reading all its graph to extract classes.
-		Model modelY = FileManager.get().loadModel(new RdfConvertor().getpath() + "integration.aml.ttl");
+		Model modelY = FileManager.get().loadModel(new RDFConvertor().getpath() + "integration.aml.ttl");
 
 		Dataset dataset = DatasetFactory.create();
 		dataset.setDefaultModel(modelY);
@@ -286,12 +285,12 @@ public class Integrate {
 	}
 
 	/*
-	 * Process the created RDF/XML format through JENA for AML. Reading the
-	 * RDF/XML serialization
+	 * Process the created RDF/XML format through JENA for AML. 
+	 * Reading the RDF/XML serialization
 	 */
-	private void process_XML(ArrayList<String> cNodes) throws Exception {
+	private void processXML(ArrayList<String> cNodes) throws Exception {
 		StringBuilder sb = new StringBuilder();
-		BufferedReader br = new BufferedReader(new FileReader(new RdfConvertor().getpath() + "integration.rdf"));
+		BufferedReader br = new BufferedReader(new FileReader(new RDFConvertor().getpath() + "integration.rdf"));
 		try {
 			String line = br.readLine(); // reads line by line.
 
@@ -347,7 +346,7 @@ public class Integrate {
 		}
 
 		// After processing, output the generalized XML file without RDF.
-		output = new FileWriter((new RdfConvertor().getpath() + "integration.aml.rdf"));
+		output = new FileWriter((new RDFConvertor().getpath() + "integration.aml.rdf"));
 		output.write(sb.toString());
 		output.close();
 	}
@@ -357,10 +356,10 @@ public class Integrate {
 		// Writes the new added Elements Attributes.
 		Transformer transformer = TransformerFactory.newInstance().newTransformer();
 		DOMSource source = new DOMSource(doc);
-		StreamResult result = new StreamResult(new File(new RdfConvertor().getpath() + "integration.aml"));
+		StreamResult result = new StreamResult(new File(new RDFConvertor().getpath() + "integration.aml"));
 		transformer.transform(source, result);
 
-		FileInputStream res = new FileInputStream(new RdfConvertor().getpath() + "integration.aml");
+		FileInputStream res = new FileInputStream(new RDFConvertor().getpath() + "integration.aml");
 		ByteArrayOutputStream out1 = new ByteArrayOutputStream();
 		String xml = IOUtils.toString(res);
 
@@ -369,26 +368,26 @@ public class Integrate {
 		serializer.setIndent(4); // or whatever you like
 		serializer.write(new Builder().build(xml.toString(), ""));
 
-		output = new FileWriter((new RdfConvertor().getpath() + "integration.aml"));
+		output = new FileWriter((new RDFConvertor().getpath() + "integration.aml"));
 		output.write(out1.toString());
 		output.close();
 
-		File file = new File(new RdfConvertor().getpath() + "integration.aml.rdf");
+		File file = new File(new RDFConvertor().getpath() + "integration.aml.rdf");
 		if (file.exists()) {
 			file.delete();
 		}
-		file = new File(new RdfConvertor().getpath() + "integration.rdf");
+		file = new File(new RDFConvertor().getpath() + "integration.rdf");
 		if (file.exists()) {
 			file.delete();
 		}
 	}
 
-	/*
-	 * This method Attributes values from orignal AML Files. These Values are
-	 * then used to match the RDF values to identify as an AML Attribute
-	 * Property. Integrated Values needed to be added manually.
+	/**
+	 * This method Attributes values from original AML Files. These Values are then used to match the RDF values to identify as an AML Attribute Property. 
+	 * Integrated Values needed to be added manually.
+	 * @return
+	 * @throws Exception
 	 */
-
 	ArrayList<String> getAttributes() throws Exception {
 		ArrayList<String> cNodes = rdf_Classes();
 		ArrayList<String> aNodes = new ArrayList<>();
