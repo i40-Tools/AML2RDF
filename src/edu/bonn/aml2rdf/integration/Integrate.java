@@ -95,8 +95,8 @@ public class Integrate {
 	protected Model getNewModel() {
 
 		// loads two RDF files in turtle format from output folder.
-		Model modelY = FileManager.get().loadModel(new RDFConvertor().getpath() + RDFGUI.files_[0].getName() + ".ttl");
-		Model modelX = FileManager.get().loadModel(new RDFConvertor().getpath() + RDFGUI.files_[1].getName() + ".ttl");
+		Model modelY = FileManager.get().loadModel(new RDFConvertor().getpath() + RDFGUI.files[0].getName() + ".ttl");
+		Model modelX = FileManager.get().loadModel(new RDFConvertor().getpath() + RDFGUI.files[1].getName() + ".ttl");
 
 		// gives those two files a URI for querying data
 		Dataset dataset = DatasetFactory.create();
@@ -396,8 +396,8 @@ public class Integrate {
 		dbFactory.setValidating(false);
 		DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
 		int j = 0;
-		while (j < RDFGUI.files_.length) {
-			Document doc = dBuilder.parse(new FileInputStream(RDFGUI.files_[j].getAbsolutePath()));
+		while (j < RDFGUI.files.length) {
+			Document doc = dBuilder.parse(new FileInputStream(RDFGUI.files[j].getAbsolutePath()));
 			doc.getDocumentElement().normalize();
 
 			for (int k = 0; k < cNodes.size(); k++) {

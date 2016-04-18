@@ -62,11 +62,11 @@ public class RDFConvertor {
 		int i = 0;
 
 		// Loop through selected files and generate RDF in Ntriples without URI
-		while (i < RDFGUI.files_.length) {
+		while (i < RDFGUI.files.length) {
 			// setting up configuration
 
-			FileWriter output = new FileWriter(getpath() + RDFGUI.files_[i].getName() + ".ttl");
-			String filename = RDFGUI.files_[i].getAbsolutePath();
+			FileWriter output = new FileWriter(getpath() + RDFGUI.files[i].getName() + ".ttl");
+			String filename = RDFGUI.files[i].getAbsolutePath();
 			StringWriter sw = new StringWriter();
 			PrintWriter pw = new PrintWriter(sw);
 			N3KR2RMLRDFWriter writer = new N3KR2RMLRDFWriter(new URIFormatter(), pw);
@@ -83,7 +83,7 @@ public class RDFConvertor {
 
 			// RDF generated does not include URI adding manually
 			StringBuilder sb = new StringBuilder();
-			BufferedReader br = new BufferedReader(new FileReader(getpath() + RDFGUI.files_[i].getName() + ".ttl"));
+			BufferedReader br = new BufferedReader(new FileReader(getpath() + RDFGUI.files[i].getName() + ".ttl"));
 
 			try {
 				String line = br.readLine();
@@ -98,15 +98,15 @@ public class RDFConvertor {
 			} finally {
 				br.close();
 			}
-			output = new FileWriter(getpath() + RDFGUI.files_[i].getName() + ".ttl");
+			output = new FileWriter(getpath() + RDFGUI.files[i].getName() + ".ttl");
 			output.write(sb.toString());
 			output.close();
 
 			// conversion to Turtle format
-			Model modelX = FileManager.get().loadModel(getpath() + RDFGUI.files_[i].getName() + ".ttl");
+			Model modelX = FileManager.get().loadModel(getpath() + RDFGUI.files[i].getName() + ".ttl");
 			sw = new StringWriter();
 			RDFDataMgr.write(sw, modelX, RDFFormat.TURTLE_BLOCKS);
-			output = new FileWriter(getpath() + RDFGUI.files_[i].getName() + ".ttl");
+			output = new FileWriter(getpath() + RDFGUI.files[i].getName() + ".ttl");
 			output.write(sw.toString());
 			output.close();
 			i++;
@@ -119,7 +119,7 @@ public class RDFConvertor {
 	 * @return
 	 */
 	public String getpath() {
-		String path = RDFGUI.files_[0].getParent() + "\\" + "output\\";
+		String path = RDFGUI.files[0].getParent() + "\\" + "output\\";
 		return path;
 	}
 

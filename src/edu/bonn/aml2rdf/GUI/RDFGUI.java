@@ -39,7 +39,7 @@ public class RDFGUI extends JFrame {
 	protected JFileChooser fc;
 	private JTextArea textArea;
 	protected static RDFGUI frame;
-	public static File[] files_;
+	public static File[] files;
 	static private final String newline = "\n";
 
 	/**
@@ -90,15 +90,15 @@ public class RDFGUI extends JFrame {
 
 				int returnVal = fc.showOpenDialog(null);
 				if (returnVal == JFileChooser.APPROVE_OPTION) {
-					files_ = fc.getSelectedFiles();
-					if (files_.length < 2) {
+					files = fc.getSelectedFiles();
+					if (files.length < 2) {
 						JOptionPane.showMessageDialog(frame, "Please Select atleast two AML files.");
 						btnRdfFile_1.doClick();
 					} else {
 						// This is where a real application would open the file.
 						int i = 0;
-						while (i < files_.length) {
-							textArea.append("Loaded: " + files_[i].getName() + "." + newline);
+						while (i < files.length) {
+							textArea.append("Loaded: " + files[i].getName() + "." + newline);
 							i++;
 						}
 					}
