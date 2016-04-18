@@ -24,7 +24,12 @@ import edu.bonn.aml2rdf.integration.Integrate;
 import edu.bonn.aml2rdf.rdfconvertor.RDFConvertor;
 import edu.isi.karma.webserver.KarmaException;
 
-public class RdfGUI extends JFrame {
+/**
+ * 
+ * @author Omar
+ *
+ */
+public class RDFGUI extends JFrame {
 
 	/**
 	 * 
@@ -33,7 +38,7 @@ public class RdfGUI extends JFrame {
 	private JPanel contentPane;
 	protected JFileChooser fc;
 	private JTextArea textArea;
-	protected static RdfGUI frame;
+	protected static RDFGUI frame;
 	public static File[] files_;
 	static private final String newline = "\n";
 
@@ -46,7 +51,7 @@ public class RdfGUI extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					frame = new RdfGUI();
+					frame = new RDFGUI();
 
 					frame.setVisible(true);
 					frame.pack();
@@ -58,7 +63,7 @@ public class RdfGUI extends JFrame {
 		});
 	}
 
-	public RdfGUI() {
+	public RDFGUI() {
 		fc = new JFileChooser();
 		fc.setMultiSelectionEnabled(true);
 
@@ -161,7 +166,7 @@ public class RdfGUI extends JFrame {
 	}
 
 	public static void main(String[] args) {
-		RdfGUI.display();
+		RDFGUI.display();
 	}
 
 }
