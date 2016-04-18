@@ -35,18 +35,18 @@ import edu.isi.karma.webserver.KarmaException;
 
 /**
  * @author omar
- *
+ * @todo Purpose of the class
  */
 
-public class RdfConvertor {
+public class RDFConvertor {
 
-	/*
-	 * This method converts the AML files into RDF , The default conversion is
-	 * in N triples. We have to manually add the URI for the triples. We then
-	 * apply the Turtle format for better Readability.
-	 * 
+	/**
+	 * This method converts the AML files into RDF. The default conversion is in N triples. We have to manually add the URI for the triples. 
+	 * We then  apply the Turtle format for better Readability.
+	 * @throws URISyntaxException
+	 * @throws KarmaException
+	 * @throws IOException
 	 */
-
 	public void convertor() throws URISyntaxException, KarmaException, IOException {
 
 		// Setting properties
@@ -114,13 +114,20 @@ public class RdfConvertor {
 		}
 	}
 
-	// gets the path from where the aml files were selected and saves in output
+	/**
+	 * Gets the path from where the aml files were selected and saves in output
+	 * @return
+	 */
 	public String getpath() {
 		String path = RdfGUI.files_[0].getParent() + "\\" + "output\\";
 		return path;
 	}
 
-	// gets the resource folder
+	/**
+	 * Gets the resource folder
+	 * @param name
+	 * @return
+	 */
 	protected URL getTestResource(String name) {
 		return getClass().getClassLoader().getResource(name);
 	}
