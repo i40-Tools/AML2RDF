@@ -8,6 +8,10 @@ aml:BaseRoleClassLib  aml:externalReferencePath  "Libs/RoleClass Libraries/Autom
         rdf:type                    aml:ExternalReference ;
         aml:externalReferenceAlias  "BaseRoleClassLib" .
 
+aml:length  aml:hasDataType   "xs:double" ;
+        aml:hasAttributeName  "length" ;
+        rdf:type              aml:Attribute .
+
 aml:74d0c8ef-ab53-462a-8225-306ed22dc0f3
         aml:internalElementId  "74d0c8ef-ab53-462a-8225-306ed22dc0f3" ;
         aml:hasAttribute       aml:length ;
@@ -22,11 +26,6 @@ aml:2012-02-20  aml:lastWritingDate  "2012-02-20" ;
         aml:hasWriterId         "AutomationML e.V." ;
         aml:hasWriterName       "AutomationML e.V." ;
         aml:hasWriterVendorURL  "www.AutomationML.org" .
-
-aml:length  aml:hasDataType   "xs:double" ;
-        aml:hasValue          "35"^^xsd:double ;
-        aml:hasAttributeName  "length" ;
-        rdf:type              aml:Attribute .
 
 aml:BaseInterfaceClassLib
         aml:externalReferencePath   "Libs/InterfaceClass Libraries/AutomationMLInterfaceClassLib.aml" ;

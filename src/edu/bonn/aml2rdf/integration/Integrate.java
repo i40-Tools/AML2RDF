@@ -60,7 +60,7 @@ import nu.xom.Serializer;
 public class Integrate {
 
 	private FileWriter output;
-
+    public final static String AML_NAMESPACE = "http://iais.fraunhofer.de/aml#";
 	/**
 	 * This method integrates the RDF files into single RDF, The default conversion is in in Turtle format. Integration is performed through SPARQL Query.
 	 * @throws IOException
@@ -95,14 +95,14 @@ public class Integrate {
 	protected Model getNewModel() {
 
 		// loads two RDF files in turtle format from output folder.
-		Model modelY = FileManager.get().loadModel(new RDFConvertor().getpath() + RDFGUI.files[0].getName() + ".ttl");
-		Model modelX = FileManager.get().loadModel(new RDFConvertor().getpath() + RDFGUI.files[1].getName() + ".ttl");
+		Model firstModel = FileManager.get().loadModel(new RDFConvertor().getpath() + RDFGUI.files[0].getName() + ".ttl");
+		Model secondModel = FileManager.get().loadModel(new RDFConvertor().getpath() + RDFGUI.files[1].getName() + ".ttl");
 
 		// gives those two files a URI for querying data
 		Dataset dataset = DatasetFactory.create();
-		dataset.setDefaultModel(modelX);
-		dataset.addNamedModel("http://example/named-1", modelX);
-		dataset.addNamedModel("http://example/named-2", modelY);
+		dataset.setDefaultModel(secondModel);
+		dataset.addNamedModel("http://example/" + "named-1", firstModel);
+		dataset.addNamedModel("http://example/" + "named-2", secondModel);
 
 		String queryString = null;
 

@@ -2,9 +2,7 @@
 <CAEXFile FileName="Attribute-double.aml" SchemaVersion="2.15">
     <InstanceHierarchy Name="MechatronicEngineering">
         <InternalElement Name="AMLObject" internalElementId="74d0c8ef-ab53-462a-8225-306ed22dc0f3">
-            <Attribute AttributeName="length" DataType="xs:double">
-                <Value>35</Value>
-            </Attribute>
+            <Attribute AttributeName="length" DataType="xs:double"> </Attribute>
         </InternalElement>
     </InstanceHierarchy>
     <ExternalReference externalReferenceAlias="BaseRoleClassLib">
