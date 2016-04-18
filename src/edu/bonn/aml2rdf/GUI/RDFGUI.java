@@ -92,7 +92,7 @@ public class RDFGUI extends JFrame {
 				if (returnVal == JFileChooser.APPROVE_OPTION) {
 					files = fc.getSelectedFiles();
 					if (files.length < 2) {
-						JOptionPane.showMessageDialog(frame, "Please Select atleast two AML files.");
+						JOptionPane.showMessageDialog(frame, "Please Select at least two AML files.");
 						btnRdfFile_1.doClick();
 					} else {
 						// This is where a real application would open the file.
@@ -165,6 +165,10 @@ public class RDFGUI extends JFrame {
 		contentPane.setLayout(gl_contentPane);
 	}
 
+	/**
+	 * Main method
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		RDFGUI.display();
 	}

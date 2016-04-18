@@ -107,7 +107,7 @@ public class Integrate {
 		String queryString = null;
 
 		// Reads the Query from file
-		try (InputStream res = Integrate.class.getResourceAsStream("/M1.2.txt")) {
+		try (InputStream res = Integrate.class.getResourceAsStream("/M1.2Query.rq")) {
 			queryString = IOUtils.toString(res);
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -249,7 +249,7 @@ public class Integrate {
 		String queryString = null;
 
 		// Query to read all the graph values
-		try (InputStream res = (Integrate.class.getResourceAsStream("/test.txt"))) {
+		try (InputStream res = (Integrate.class.getResourceAsStream("/M12query.rq"))) {
 			try {
 				queryString = IOUtils.toString(res);
 			} catch (IOException e) {

@@ -37,8 +37,8 @@
 
 <http://iais.fraunhofer.de/aml#2.15>
         <http://iais.fraunhofer.de/aml#hasAdditionalInformation>  <http://iais.fraunhofer.de/aml#2.0> ;
-        <http://iais.fraunhofer.de/aml#hasAdditionalInformation>  <http://iais.fraunhofer.de/aml#2012-02-20> ;
         <http://iais.fraunhofer.de/aml#hasExternalReference>  <http://iais.fraunhofer.de/aml#BaseInterfaceClassLib> ;
+        <http://iais.fraunhofer.de/aml#hasAdditionalInformation>  <http://iais.fraunhofer.de/aml#2012-02-20> ;
         <http://iais.fraunhofer.de/aml#hasExternalReference>  <http://iais.fraunhofer.de/aml#BaseRoleClassLib> ;
         <http://iais.fraunhofer.de/aml#hasInstanceHierarchy>  <http://iais.fraunhofer.de/aml#MechatronicEngineering> ;
         <http://iais.fraunhofer.de/aml#hasFileName>  "Attribute-float.aml" ;
