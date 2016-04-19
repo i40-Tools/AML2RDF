@@ -1,34 +1,40 @@
-<http://iais.fraunhofer.de/aml#BaseRoleClassLib>
-        <http://iais.fraunhofer.de/aml#externalReferenceAlias>  "BaseRoleClassLib" ;
-        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://iais.fraunhofer.de/aml#ExternalReference> ;
-        <http://iais.fraunhofer.de/aml#externalReferencePath>  "Libs/RoleClass Libraries/AutomationMLBaseRoleClassLib.aml" .
-
-<http://iais.fraunhofer.de/aml#2012-02-20>
-        <http://iais.fraunhofer.de/aml#hasWriterVendorURL>  "www.AutomationML.org" ;
-        <http://iais.fraunhofer.de/aml#hasWriterName>  "AutomationML e.V." ;
-        <http://iais.fraunhofer.de/aml#hasWriterId>  "AutomationML e.V." ;
+<http://iais.fraunhofer.de/aml#AutomationMLTutorialExamples>
         <http://iais.fraunhofer.de/aml#hasWriterVersion>  "1.0" ;
-        <http://iais.fraunhofer.de/aml#hasWriterRelease>  "1.0" ;
-        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://iais.fraunhofer.de/aml#AdditionalInformation> ;
+        <http://iais.fraunhofer.de/aml#hasWriterID>  "AutomationML e.V." ;
+        <http://iais.fraunhofer.de/aml#hasWriterName>  "AutomationML e.V." ;
+        <http://iais.fraunhofer.de/aml#hasLastWritingDateTime>  "2012-02-20" ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://iais.fraunhofer.de/aml#WriterHeader> ;
         <http://iais.fraunhofer.de/aml#hasWriterVendor>  "AutomationML e.V." ;
-        <http://iais.fraunhofer.de/aml#lastWritingDate>  "2012-02-20" .
+        <http://iais.fraunhofer.de/aml#hasWriterVendorURL>  "www.AutomationML.org" ;
+        <http://iais.fraunhofer.de/aml#hasWriterProjectID>  "AutomationML Tutorial Examples" ;
+        <http://iais.fraunhofer.de/aml#hasWriterProjectTitle>  "AutomationML Tutorial Examples" ;
+        <http://iais.fraunhofer.de/aml#hasWriterRelease>  "1.0" .
+
+<http://iais.fraunhofer.de/aml#1.0>
+        <http://iais.fraunhofer.de/aml#hasWriterHeader>  <http://iais.fraunhofer.de/aml#AutomationMLTutorialExamples> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://iais.fraunhofer.de/aml#AdditionalInformation> .
+
+<http://iais.fraunhofer.de/aml#BaseRoleClassLib>
+        <http://iais.fraunhofer.de/aml#hasPath>  "Libs/RoleClass Libraries/AutomationMLBaseRoleClassLib.aml" ;
+        <http://iais.fraunhofer.de/aml#hasAlias>  "BaseRoleClassLib" ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://iais.fraunhofer.de/aml#ExternalReference> .
 
 <http://iais.fraunhofer.de/aml#74d0c8ef-ab53-462a-8225-306ed22dc0f3>
         <http://schema.org/name>  "AMLObject" ;
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://iais.fraunhofer.de/aml#InternalElement> ;
-        <http://iais.fraunhofer.de/aml#hasAttribute>  <http://iais.fraunhofer.de/aml#length> ;
-        <http://iais.fraunhofer.de/aml#internalElementId>  "74d0c8ef-ab53-462a-8225-306ed22dc0f3" .
+        <http://iais.fraunhofer.de/aml#hasID>  "74d0c8ef-ab53-462a-8225-306ed22dc0f3" ;
+        <http://iais.fraunhofer.de/aml#hasAttribute>  <http://iais.fraunhofer.de/aml#length> .
 
 <http://iais.fraunhofer.de/aml#length>
         <http://iais.fraunhofer.de/aml#hasValue>  "35" ;
+        <http://iais.fraunhofer.de/aml#hasAttributeDataType>  "xs:integer" ;
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://iais.fraunhofer.de/aml#Attribute> ;
-        <http://iais.fraunhofer.de/aml#hasDataType>  "xs:integer" ;
-        <http://iais.fraunhofer.de/aml#hasAttributeName>  "length" .
+        <http://iais.fraunhofer.de/aml#hasName>  "length" .
 
 <http://iais.fraunhofer.de/aml#BaseInterfaceClassLib>
+        <http://iais.fraunhofer.de/aml#hasPath>  "Libs/InterfaceClass Libraries/AutomationMLInterfaceClassLib.aml" ;
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://iais.fraunhofer.de/aml#ExternalReference> ;
-        <http://iais.fraunhofer.de/aml#externalReferenceAlias>  "BaseInterfaceClassLib" ;
-        <http://iais.fraunhofer.de/aml#externalReferencePath>  "Libs/InterfaceClass Libraries/AutomationMLInterfaceClassLib.aml" .
+        <http://iais.fraunhofer.de/aml#hasAlias>  "BaseInterfaceClassLib" .
 
 <http://iais.fraunhofer.de/aml#MechatronicEngineering>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://iais.fraunhofer.de/aml#InstanceHierarchy> ;
@@ -38,11 +44,11 @@
 <http://iais.fraunhofer.de/aml#2.15>
         <http://iais.fraunhofer.de/aml#hasAdditionalInformation>  <http://iais.fraunhofer.de/aml#2.0> ;
         <http://iais.fraunhofer.de/aml#hasExternalReference>  <http://iais.fraunhofer.de/aml#BaseInterfaceClassLib> ;
-        <http://iais.fraunhofer.de/aml#hasAdditionalInformation>  <http://iais.fraunhofer.de/aml#2012-02-20> ;
         <http://iais.fraunhofer.de/aml#hasExternalReference>  <http://iais.fraunhofer.de/aml#BaseRoleClassLib> ;
         <http://iais.fraunhofer.de/aml#hasInstanceHierarchy>  <http://iais.fraunhofer.de/aml#MechatronicEngineering> ;
         <http://iais.fraunhofer.de/aml#hasFileName>  "Attribute-integer.aml" ;
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://iais.fraunhofer.de/aml#CAEXFile> ;
+        <http://iais.fraunhofer.de/aml#hasAdditionalInformation>  <http://iais.fraunhofer.de/aml#1.0> ;
         <http://iais.fraunhofer.de/aml#hasSchemaVersion>  "2.15" .
 
 <http://iais.fraunhofer.de/aml#2.0>

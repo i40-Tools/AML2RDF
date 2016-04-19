@@ -1,24 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CAEXFile FileName="Attribute-double.aml" SchemaVersion="2.15">
+    <AdditionalInformation AutomationMLVersion="2.0">
+        <WriterHeader>
+            <LastWritingDateTime>2012-02-20</LastWritingDateTime>
+            <WriterID>AutomationMLe.V.</WriterID>
+            <WriterName>AutomationMLe.V.</WriterName>
+            <WriterProjectID>AutomationMLTutorialExamples</WriterProjectID>
+            <WriterProjectTitle>AutomationMLTutorialExamples</WriterProjectTitle>
+            <WriterRelease>1.0</WriterRelease>
+            <WriterVendor>AutomationMLe.V.</WriterVendor>
+            <WriterVendorURL>www.AutomationML.org</WriterVendorURL>
+            <WriterVersion>1.0</WriterVersion>
+        </WriterHeader>
+    </AdditionalInformation>
+    <AdditionalInformation AutomationMLVersion="2.0"/>
+    <ExternalReference Alias="BaseInterfaceClassLib" Path="Libs/InterfaceClassLibraries/AutomationMLInterfaceClassLib.aml"/>
+    <ExternalReference Alias="BaseRoleClassLib" Path="Libs/RoleClassLibraries/AutomationMLBaseRoleClassLib.aml"/>
     <InstanceHierarchy Name="MechatronicEngineering">
-        <InternalElement Name="AMLObject" internalElementId="74d0c8ef-ab53-462a-8225-306ed22dc0f3">
-            <Attribute AttributeName="length" DataType="xs:double"> </Attribute>
+        <InternalElement ID="74d0c8ef-ab53-462a-8225-306ed22dc0f3" Name="AMLObject">
+            <Attribute AttributeDataType="xs:double" Name="length">
+                <Value>35</Value>
+            </Attribute>
         </InternalElement>
     </InstanceHierarchy>
-    <ExternalReference externalReferenceAlias="BaseRoleClassLib">
-        <externalReferencePath>Libs/RoleClassLibraries/AutomationMLBaseRoleClassLib.aml</externalReferencePath>
-    </ExternalReference>
-    <ExternalReference externalReferenceAlias="BaseRoleClassLib">
-        <externalReferencePath>Libs/InterfaceClassLibraries/AutomationMLInterfaceClassLib.aml</externalReferencePath>
-    </ExternalReference>
-    <AdditionalInformation AutomationMLVersion="2.0">
-        <lastWritingDate>2012-02-20</lastWritingDate>
-        <WriterVendor>AutomationMLe.V.</WriterVendor>
-        <WriterRelease>1.0</WriterRelease>
-        <WriterVersion>1.0</WriterVersion>
-        <WriterId>AutomationMLe.V.</WriterId>
-        <WriterName>AutomationMLe.V.</WriterName>
-        <WriterVendorURL>www.AutomationML.org</WriterVendorURL>
-    </AdditionalInformation>
-    <AdditionalInformation AutomationMLVersion="2.0"> </AdditionalInformation>
 </CAEXFile>

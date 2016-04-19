@@ -26,6 +26,7 @@ import javax.xml.transform.Transformer;
 import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
+import javax.xml.transform.stream.StreamSource;
 
 import org.apache.commons.io.IOUtils;
 import org.apache.commons.lang.StringUtils;
@@ -60,9 +61,13 @@ import nu.xom.Serializer;
 public class Integrate {
 
 	private FileWriter output;
-    public final static String AML_NAMESPACE = "http://iais.fraunhofer.de/aml#";
+	public final static String AML_NAMESPACE = "http://iais.fraunhofer.de/aml#";
+
 	/**
-	 * This method integrates the RDF files into single RDF, The default conversion is in in Turtle format. Integration is performed through SPARQL Query.
+	 * This method integrates the RDF files into single RDF, The default
+	 * conversion is in in Turtle format. Integration is performed through
+	 * SPARQL Query.
+	 * 
 	 * @throws IOException
 	 */
 	public void integrateRDF() throws IOException {
@@ -81,26 +86,29 @@ public class Integrate {
 		output.write(sw.toString());
 		output.close();
 		try {
-			convertXML(getNewModel()); // calls for XML conversion for AML files.
+			convertXML(getNewModel()); // calls for XML conversion for AML
+										// files.
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-
 	}
 
 	/**
 	 * creates a new RDF graph using Construct Query.
+	 * 
 	 * @return new model
 	 */
 	protected Model getNewModel() {
 
 		// loads two RDF files in turtle format from output folder.
-		Model firstModel = FileManager.get().loadModel(new RDFConvertor().getpath() + RDFGUI.files[0].getName() + ".ttl");
-		Model secondModel = FileManager.get().loadModel(new RDFConvertor().getpath() + RDFGUI.files[1].getName() + ".ttl");
+		Model firstModel = FileManager.get()
+				.loadModel(new RDFConvertor().getpath() + RDFGUI.files[0].getName() + ".ttl");
+		Model secondModel = FileManager.get()
+				.loadModel(new RDFConvertor().getpath() + RDFGUI.files[1].getName() + ".ttl");
 
 		// gives those two files a URI for querying data
 		Dataset dataset = DatasetFactory.create();
-		dataset.setDefaultModel(secondModel);
+		dataset.setDefaultModel(firstModel);
 		dataset.addNamedModel("http://example/" + "named-1", firstModel);
 		dataset.addNamedModel("http://example/" + "named-2", secondModel);
 
@@ -123,8 +131,12 @@ public class Integrate {
 	}
 
 	/**
-	 * This method converts the RDF file into XML. First of all generalized conversion is done for RDF. After that XML is processed in domain of AML
-	 * files only. The output XML is only compatible for AML files and not generalized RDF. The output is processed according to AML elements and attributes.
+	 * This method converts the RDF file into XML. First of all generalized
+	 * conversion is done for RDF. After that XML is processed in domain of AML
+	 * files only. The output XML is only compatible for AML files and not
+	 * generalized RDF. The output is processed according to AML elements and
+	 * attributes.
+	 * 
 	 * @param model
 	 * @throws Exception
 	 */
@@ -172,10 +184,9 @@ public class Integrate {
 
 						// Gets Attributes values from orignal AML files.
 						ArrayList<String> tempNodes = getAttributes();
-						// Manually Added integration Values
-						if (tempNodes
-								.contains(eElement.getElementsByTagName(nNode1.getNodeName()).item(0).getTextContent())
-								|| nNode1.getNodeName().equals("DataType") || nNode1.getNodeName().equals("FileName")) {
+
+						// Compares if its attribute
+						if (tempNodes.contains(nNode1.getNodeName())) {
 
 							// Gets Attributes,Value and All nodes in Array.
 							nAttribute.add(nNode1.getNodeName());
@@ -234,6 +245,7 @@ public class Integrate {
 
 	/**
 	 * This method gets the Classes from RDF graph using rdf:type property.
+	 * 
 	 * @return ArrayList.
 	 */
 	private ArrayList<String> rdfClasses() {
@@ -285,8 +297,8 @@ public class Integrate {
 	}
 
 	/*
-	 * Process the created RDF/XML format through JENA for AML. 
-	 * Reading the RDF/XML serialization
+	 * Process the created RDF/XML format through JENA for AML. Reading the
+	 * RDF/XML serialization
 	 */
 	private void processXML(ArrayList<String> cNodes) throws Exception {
 		StringBuilder sb = new StringBuilder();
@@ -306,12 +318,8 @@ public class Integrate {
 						line = line.replaceAll("aml:", "");
 					}
 					// removes Schema URI
-					if (line.contains("schema:")) {
-						line = line.replaceAll("schema:", "");
-					}
-					// Capitals schema:name -> Name
-					if (line.contains("name")) {
-						line = line.replaceAll("name", "Name");
+					if (line.contains("schema:name")) {
+						line = line.replaceAll("schema:name", "Name");
 					}
 					// Removes rdf:about column as its not needed for AML
 					String temp = StringUtils.substringBetween(line, "rdf", ">");
@@ -321,7 +329,7 @@ public class Integrate {
 					boolean flag = true;
 					for (int i = 0; i < cNodes.size(); i++) {
 						// matches has+Class+Name.
-						if (!line.contains("has" + cNodes.get(i) + "Name"))
+						if (!line.contains("has" + cNodes.get(i) + "DataType"))
 							if (line.contains("has" + cNodes.get(i))) {
 								flag = false; // Class found.
 							}
@@ -357,8 +365,9 @@ public class Integrate {
 	 */
 	private void formatXML(Document doc) throws Exception {
 
-		// Writes the new added Elements Attributes.
-		Transformer transformer = TransformerFactory.newInstance().newTransformer();
+		// Writes the new added Elements Attributes with sylesheet sorting.
+		Transformer transformer = TransformerFactory.newInstance()
+				.newTransformer(new StreamSource(getClass().getClassLoader().getResourceAsStream("sort.xsl")));
 		DOMSource source = new DOMSource(doc);
 		StreamResult result = new StreamResult(new File(new RDFConvertor().getpath() + "integration.aml"));
 		transformer.transform(source, result);
@@ -387,8 +396,10 @@ public class Integrate {
 	}
 
 	/**
-	 * This method Attributes values from original AML Files. These Values are then used to match the RDF values to identify as an AML Attribute Property. 
-	 * Integrated Values needed to be added manually.
+	 * This method Attributes values from original AML Files. These Values are
+	 * then used to match the RDF values to identify as an AML Attribute
+	 * Property. Integrated Values needed to be added manually.
+	 * 
 	 * @return
 	 * @throws Exception
 	 */
@@ -414,7 +425,7 @@ public class Integrate {
 					// System.out.println(attr.getNodeName() + " = \"" +
 					// attr.getNodeValue() + "\"");
 					if (!cNodes.contains(attr.getNodeName())) {
-						aNodes.add(attr.getNodeValue());
+						aNodes.add(attr.getNodeName());
 					}
 				}
 			}
@@ -423,4 +434,5 @@ public class Integrate {
 
 		return aNodes;
 	}
+
 }

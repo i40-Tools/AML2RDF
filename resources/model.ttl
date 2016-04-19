@@ -3,6 +3,7 @@
 @prefix foaf: <http://xmlns.com/foaf/spec/> .
 @prefix aml: <http://iais.fraunhofer.de/aml#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsi: <http://www.w3.org/2001/XMLSchema-instance#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
@@ -17,12 +18,12 @@
 @prefix rr: <http://www.w3.org/ns/r2rml#> .
 @prefix km-dev: <http://isi.edu/integration/karma/dev#> .
 
-_:node1aghc1r9ix1 a km-dev:R2RMLMapping ;
+_:node1agmib5kgx1 a km-dev:R2RMLMapping ;
 	km-dev:sourceName "ExampleInstanceHierarchy.aml" ;
-	km-dev:modelPublicationTime "1460871949618"^^xsd:long ;
+	km-dev:modelPublicationTime "1461046318736"^^xsd:long ;
 	km-dev:modelVersion "1.7" ;
-	km-dev:hasInputColumns "[[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"InstanceHierarchy\"},{\"columnName\":\"InternalElement\"},{\"columnName\":\"Attribute\"},{\"columnName\":\"Name\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"AdditionalInformation\"},{\"columnName\":\"WriterHeader\"},{\"columnName\":\"WriterRelease\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"AdditionalInformation\"},{\"columnName\":\"WriterHeader\"},{\"columnName\":\"LastWritingDateTime\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"SchemaVersion\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"AdditionalInformation\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"ExternalReference\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"InstanceHierarchy\"},{\"columnName\":\"InternalElement\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"AdditionalInformation\"},{\"columnName\":\"WriterHeader\"},{\"columnName\":\"WriterVendorURL\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"AdditionalInformation\"},{\"columnName\":\"WriterHeader\"},{\"columnName\":\"WriterID\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"AdditionalInformation\"},{\"columnName\":\"AutomationMLVersion\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"InstanceHierarchy\"},{\"columnName\":\"InternalElement\"},{\"columnName\":\"Name\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"InstanceHierarchy\"},{\"columnName\":\"Name\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"ExternalReference\"},{\"columnName\":\"Path\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"InstanceHierarchy\"},{\"columnName\":\"InternalElement\"},{\"columnName\":\"Attribute\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"ExternalReference\"},{\"columnName\":\"Alias\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"InstanceHierarchy\"},{\"columnName\":\"InternalElement\"},{\"columnName\":\"Attribute\"},{\"columnName\":\"AttributeDataType\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"AdditionalInformation\"},{\"columnName\":\"WriterHeader\"},{\"columnName\":\"WriterName\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"InstanceHierarchy\"},{\"columnName\":\"InternalElement\"},{\"columnName\":\"Attribute\"},{\"columnName\":\"Value\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"InstanceHierarchy\"},{\"columnName\":\"InternalElement\"},{\"columnName\":\"RoleRequirements\"},{\"columnName\":\"RefBaseRoleClassPath\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"AdditionalInformation\"},{\"columnName\":\"WriterHeader\"},{\"columnName\":\"WriterVendor\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"AdditionalInformation\"},{\"columnName\":\"WriterHeader\"},{\"columnName\":\"WriterVersion\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"InstanceHierarchy\"},{\"columnName\":\"InternalElement\"},{\"columnName\":\"ID\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"InstanceHierarchy\"},{\"columnName\":\"InternalElement\"},{\"columnName\":\"RefBaseSystemUnitPath\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"FileName\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"InstanceHierarchy\"},{\"columnName\":\"InternalElement\"},{\"columnName\":\"Attribute\"},{\"columnName\":\"Unit\"}]]" ;
-	km-dev:hasOutputColumns "[[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"InstanceHierarchy\"},{\"columnName\":\"InternalElement\"},{\"columnName\":\"Attribute\"},{\"columnName\":\"Name\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"AdditionalInformation\"},{\"columnName\":\"WriterHeader\"},{\"columnName\":\"WriterRelease\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"AdditionalInformation\"},{\"columnName\":\"WriterHeader\"},{\"columnName\":\"LastWritingDateTime\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"SchemaVersion\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"AdditionalInformation\"},{\"columnName\":\"WriterHeader\"},{\"columnName\":\"WriterVendorURL\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"AdditionalInformation\"},{\"columnName\":\"WriterHeader\"},{\"columnName\":\"wnameuri\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"AdditionalInformation\"},{\"columnName\":\"WriterHeader\"},{\"columnName\":\"WriterID\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"ExternalURI\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"AdditionalInformation\"},{\"columnName\":\"AutomationMLVersion\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"euri\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"InstanceHierarchy\"},{\"columnName\":\"InternalElement\"},{\"columnName\":\"uriname\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"fileuri\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"AdditionalInformation\"},{\"columnName\":\"WriterHeader\"},{\"columnName\":\"releaseuri\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"InstanceHierarchy\"},{\"columnName\":\"InternalElement\"},{\"columnName\":\"Name\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"AdditionalInformation\"},{\"columnName\":\"WriterHeader\"},{\"columnName\":\"Writerreleaseuri\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"AdditionalInformation\"},{\"columnName\":\"WriterHeader\"},{\"columnName\":\"iduri\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"Additionuri\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"InstanceHierarchy\"},{\"columnName\":\"InternalElement\"},{\"columnName\":\"Attribute\"},{\"columnName\":\"unituri\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"InstanceHierarchy\"},{\"columnName\":\"Name\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"InstanceHierarchy\"},{\"columnName\":\"InternalElement\"},{\"columnName\":\"uriA\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"InstanceURI\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"AdditionalInformation\"},{\"columnName\":\"WriterHeader\"},{\"columnName\":\"writeuri\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"ExternalReference\"},{\"columnName\":\"Path\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"ExternalReference\"},{\"columnName\":\"Alias\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"InstanceHierarchy\"},{\"columnName\":\"InternalElement\"},{\"columnName\":\"Attribute\"},{\"columnName\":\"AttributeDataType\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"AdditionalInformation\"},{\"columnName\":\"WriterHeader\"},{\"columnName\":\"WriterName\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"InstanceHierarchy\"},{\"columnName\":\"InternalElement\"},{\"columnName\":\"Attribute\"},{\"columnName\":\"Value\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"InstanceHierarchy\"},{\"columnName\":\"InternalElement\"},{\"columnName\":\"RoleRequirements\"},{\"columnName\":\"RefBaseRoleClassPath\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"AdditionalInformation\"},{\"columnName\":\"WriterHeader\"},{\"columnName\":\"writinguri\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"AdditionalInformation\"},{\"columnName\":\"WriterHeader\"},{\"columnName\":\"writervendoruri\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"AdditionalInformation\"},{\"columnName\":\"WriterHeader\"},{\"columnName\":\"WriterVendor\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"AdditionalInformation\"},{\"columnName\":\"WriterHeader\"},{\"columnName\":\"vendirurluri\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"AdditionalInformation\"},{\"columnName\":\"WriterHeader\"},{\"columnName\":\"WriterVersion\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"InstanceHierarchy\"},{\"columnName\":\"InternalElement\"},{\"columnName\":\"RoleRequirements\"},{\"columnName\":\"urirole\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"InstanceHierarchy\"},{\"columnName\":\"InternalElement\"},{\"columnName\":\"ID\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"InstanceHierarchy\"},{\"columnName\":\"InternalUR\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"AdditionalInformation\"},{\"columnName\":\"Automluri\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"InstanceHierarchy\"},{\"columnName\":\"InternalElement\"},{\"columnName\":\"RefBaseSystemUnitPath\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"ExternalReference\"},{\"columnName\":\"uripath\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"InstanceHierarchy\"},{\"columnName\":\"uriname2\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"ExternalReference\"},{\"columnName\":\"urialias\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"InstanceHierarchy\"},{\"columnName\":\"InternalElement\"},{\"columnName\":\"Attribute\"},{\"columnName\":\"urname\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"AdditionalInformation\"},{\"columnName\":\"WriterHeader\"},{\"columnName\":\"wversion\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"InstanceHierarchy\"},{\"columnName\":\"InternalElement\"},{\"columnName\":\"IDuri\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"InstanceHierarchy\"},{\"columnName\":\"InternalElement\"},{\"columnName\":\"Attribute\"},{\"columnName\":\"uriv\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"FileName\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"uriScheam\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"InstanceHierarchy\"},{\"columnName\":\"InternalElement\"},{\"columnName\":\"Attribute\"},{\"columnName\":\"Unit\"}]]" ;
+	km-dev:hasInputColumns "[[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"InstanceHierarchy\"},{\"columnName\":\"InternalElement\"},{\"columnName\":\"Attribute\"},{\"columnName\":\"Name\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"AdditionalInformation\"},{\"columnName\":\"WriterHeader\"},{\"columnName\":\"WriterRelease\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"AdditionalInformation\"},{\"columnName\":\"WriterHeader\"},{\"columnName\":\"LastWritingDateTime\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"SchemaVersion\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"AdditionalInformation\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"ExternalReference\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"InstanceHierarchy\"},{\"columnName\":\"InternalElement\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"AdditionalInformation\"},{\"columnName\":\"WriterHeader\"},{\"columnName\":\"WriterVendorURL\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"AdditionalInformation\"},{\"columnName\":\"WriterHeader\"},{\"columnName\":\"WriterID\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"AdditionalInformation\"},{\"columnName\":\"AutomationMLVersion\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"AdditionalInformation\"},{\"columnName\":\"WriterHeader\"},{\"columnName\":\"WriterProjectTitle\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"InstanceHierarchy\"},{\"columnName\":\"InternalElement\"},{\"columnName\":\"Name\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"InstanceHierarchy\"},{\"columnName\":\"Name\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"ExternalReference\"},{\"columnName\":\"Path\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"InstanceHierarchy\"},{\"columnName\":\"InternalElement\"},{\"columnName\":\"Attribute\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"ExternalReference\"},{\"columnName\":\"Alias\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"InstanceHierarchy\"},{\"columnName\":\"InternalElement\"},{\"columnName\":\"Attribute\"},{\"columnName\":\"AttributeDataType\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"AdditionalInformation\"},{\"columnName\":\"WriterHeader\"},{\"columnName\":\"WriterProjectID\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"AdditionalInformation\"},{\"columnName\":\"WriterHeader\"},{\"columnName\":\"WriterName\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"InstanceHierarchy\"},{\"columnName\":\"InternalElement\"},{\"columnName\":\"Attribute\"},{\"columnName\":\"Value\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"InstanceHierarchy\"},{\"columnName\":\"InternalElement\"},{\"columnName\":\"RoleRequirements\"},{\"columnName\":\"RefBaseRoleClassPath\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"AdditionalInformation\"},{\"columnName\":\"WriterHeader\"},{\"columnName\":\"WriterVendor\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"AdditionalInformation\"},{\"columnName\":\"WriterHeader\"},{\"columnName\":\"WriterVersion\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"InstanceHierarchy\"},{\"columnName\":\"InternalElement\"},{\"columnName\":\"ID\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"InstanceHierarchy\"},{\"columnName\":\"InternalElement\"},{\"columnName\":\"RefBaseSystemUnitPath\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"FileName\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"InstanceHierarchy\"},{\"columnName\":\"InternalElement\"},{\"columnName\":\"Attribute\"},{\"columnName\":\"Unit\"}]]" ;
+	km-dev:hasOutputColumns "[[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"InstanceHierarchy\"},{\"columnName\":\"InternalElement\"},{\"columnName\":\"Attribute\"},{\"columnName\":\"Name\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"AdditionalInformation\"},{\"columnName\":\"WriterHeader\"},{\"columnName\":\"LastWritingDateTime\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"SchemaVersion\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"AdditionalInformation\"},{\"columnName\":\"WriterHeader\"},{\"columnName\":\"wnameuri\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"AdditionalInformation\"},{\"columnName\":\"AutomationMLVersion\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"euri\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"fileuri\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"AdditionalInformation\"},{\"columnName\":\"WriterHeader\"},{\"columnName\":\"Writerreleaseuri\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"AdditionalInformation\"},{\"columnName\":\"WriterHeader\"},{\"columnName\":\"iduri\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"InstanceHierarchy\"},{\"columnName\":\"InternalElement\"},{\"columnName\":\"Attribute\"},{\"columnName\":\"unituri\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"InstanceURI\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"AdditionalInformation\"},{\"columnName\":\"WriterHeader\"},{\"columnName\":\"wpuri\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"InstanceHierarchy\"},{\"columnName\":\"InternalElement\"},{\"columnName\":\"Attribute\"},{\"columnName\":\"AttributeDataType\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"AdditionalInformation\"},{\"columnName\":\"WriterHeader\"},{\"columnName\":\"WriterProjectID\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"AdditionalInformation\"},{\"columnName\":\"WriterHeader\"},{\"columnName\":\"WriterName\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"InstanceHierarchy\"},{\"columnName\":\"InternalElement\"},{\"columnName\":\"Attribute\"},{\"columnName\":\"Value\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"InstanceHierarchy\"},{\"columnName\":\"InternalElement\"},{\"columnName\":\"RoleRequirements\"},{\"columnName\":\"RefBaseRoleClassPath\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"AdditionalInformation\"},{\"columnName\":\"WriterHeader\"},{\"columnName\":\"writinguri\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"InstanceHierarchy\"},{\"columnName\":\"InternalElement\"},{\"columnName\":\"RoleRequirements\"},{\"columnName\":\"urirole\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"AdditionalInformation\"},{\"columnName\":\"WriterHeader\"},{\"columnName\":\"WriterVersion\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"InstanceHierarchy\"},{\"columnName\":\"InternalElement\"},{\"columnName\":\"ID\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"AdditionalInformation\"},{\"columnName\":\"Automluri\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"InstanceHierarchy\"},{\"columnName\":\"InternalElement\"},{\"columnName\":\"RefBaseSystemUnitPath\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"InstanceHierarchy\"},{\"columnName\":\"InternalElement\"},{\"columnName\":\"Attribute\"},{\"columnName\":\"urname\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"AdditionalInformation\"},{\"columnName\":\"WriterHeader\"},{\"columnName\":\"wversion\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"InstanceHierarchy\"},{\"columnName\":\"InternalElement\"},{\"columnName\":\"Attribute\"},{\"columnName\":\"uriv\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"uriScheam\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"InstanceHierarchy\"},{\"columnName\":\"InternalElement\"},{\"columnName\":\"Attribute\"},{\"columnName\":\"Unit\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"AdditionalInformation\"},{\"columnName\":\"WriterHeader\"},{\"columnName\":\"WriterRelease\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"AdditionalInformation\"},{\"columnName\":\"WriterHeader\"},{\"columnName\":\"WriterVendorURL\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"AdditionalInformation\"},{\"columnName\":\"WriterHeader\"},{\"columnName\":\"WriterID\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"AdditionalInformation\"},{\"columnName\":\"WriterHeader\"},{\"columnName\":\"wpiduri\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"ExternalURI\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"AdditionalInformation\"},{\"columnName\":\"WriterHeader\"},{\"columnName\":\"WriterProjectTitle\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"InstanceHierarchy\"},{\"columnName\":\"InternalElement\"},{\"columnName\":\"uriname\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"AdditionalInformation\"},{\"columnName\":\"WriterHeader\"},{\"columnName\":\"releaseuri\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"InstanceHierarchy\"},{\"columnName\":\"InternalElement\"},{\"columnName\":\"Name\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"Additionuri\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"InstanceHierarchy\"},{\"columnName\":\"Name\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"InstanceHierarchy\"},{\"columnName\":\"InternalElement\"},{\"columnName\":\"uriA\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"AdditionalInformation\"},{\"columnName\":\"WriterHeader\"},{\"columnName\":\"writeuri\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"ExternalReference\"},{\"columnName\":\"Path\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"ExternalReference\"},{\"columnName\":\"Alias\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"AdditionalInformation\"},{\"columnName\":\"WriterHeader\"},{\"columnName\":\"writervendoruri\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"AdditionalInformation\"},{\"columnName\":\"WriterHeader\"},{\"columnName\":\"WriterVendor\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"AdditionalInformation\"},{\"columnName\":\"WriterHeader\"},{\"columnName\":\"vendirurluri\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"InstanceHierarchy\"},{\"columnName\":\"InternalUR\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"ExternalReference\"},{\"columnName\":\"uripath\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"InstanceHierarchy\"},{\"columnName\":\"uriname2\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"ExternalReference\"},{\"columnName\":\"urialias\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"InstanceHierarchy\"},{\"columnName\":\"InternalElement\"},{\"columnName\":\"IDuri\"}],[{\"columnName\":\"CAEXFile\"},{\"columnName\":\"FileName\"}]]" ;
 	km-dev:hasModelLabel "ExampleInstanceHierarchy.aml" ;
 	km-dev:hasBaseURI "http://iais.fraunhofer.de/aml#" ;
 	km-dev:hasWorksheetHistory """[
@@ -9335,6 +9336,120 @@ _:node1aghc1r9ix1 a km-dev:R2RMLMapping ;
         \"tags\": [\"Transformation\"]
     },
     {
+        \"commandName\": \"SubmitPythonTransformationCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"CAEXFile\"},
+                    {\"columnName\": \"AdditionalInformation\"},
+                    {\"columnName\": \"WriterHeader\"},
+                    {\"columnName\": \"WriterProjectTitle\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"type\": \"other\",
+                \"value\": \"wpuri\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"type\": \"other\",
+                \"value\": \"return getValue(\\\"WriterProjectTitle\\\")\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"type\": \"other\",
+                \"value\": \"false\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"CAEXFile\\\"},{\\\"columnName\\\":\\\"AdditionalInformation\\\"},{\\\"columnName\\\":\\\"WriterHeader\\\"},{\\\"columnName\\\":\\\"WriterProjectTitle\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"CAEXFile\\\"},{\\\"columnName\\\":\\\"AdditionalInformation\\\"},{\\\"columnName\\\":\\\"WriterHeader\\\"},{\\\"columnName\\\":\\\"wpuri\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"SubmitPythonTransformationCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"CAEXFile\"},
+                    {\"columnName\": \"AdditionalInformation\"},
+                    {\"columnName\": \"WriterHeader\"},
+                    {\"columnName\": \"WriterProjectID\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"type\": \"other\",
+                \"value\": \"wpiduri\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"type\": \"other\",
+                \"value\": \"return getValue(\\\"WriterProjectID\\\")\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"type\": \"other\",
+                \"value\": \"false\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"CAEXFile\\\"},{\\\"columnName\\\":\\\"AdditionalInformation\\\"},{\\\"columnName\\\":\\\"WriterHeader\\\"},{\\\"columnName\\\":\\\"WriterProjectID\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"CAEXFile\\\"},{\\\"columnName\\\":\\\"AdditionalInformation\\\"},{\\\"columnName\\\":\\\"WriterHeader\\\"},{\\\"columnName\\\":\\\"wpiduri\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
         \"commandName\": \"SetSemanticTypeCommand\",
         \"model\": \"new\",
         \"inputParameters\": [
@@ -9362,11 +9477,11 @@ _:node1aghc1r9ix1 a km-dev:R2RMLMapping ;
                 \"name\": \"SemanticTypesArray\",
                 \"type\": \"other\",
                 \"value\": [{
-                    \"DomainUri\": \"http://iais.fraunhofer.de/aml#AdditionalInformation\",
-                    \"DomainId\": \"http://iais.fraunhofer.de/aml#AdditionalInformation1\",
+                    \"DomainUri\": \"http://iais.fraunhofer.de/aml#WriterHeader\",
+                    \"DomainId\": \"http://iais.fraunhofer.de/aml#WriterHeader1\",
                     \"isPrimary\": true,
                     \"FullType\": \"http://iais.fraunhofer.de/aml#hasWriterVendor\",
-                    \"DomainLabel\": \"aml:AdditionalInformation1 (add)\"
+                    \"DomainLabel\": \"aml:WriterHeader1\"
                 }]
             },
             {
@@ -9388,79 +9503,6 @@ _:node1aghc1r9ix1 a km-dev:R2RMLMapping ;
                 \"name\": \"outputColumns\",
                 \"type\": \"hNodeIdList\",
                 \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"CAEXFile\\\"},{\\\"columnName\\\":\\\"AdditionalInformation\\\"},{\\\"columnName\\\":\\\"WriterHeader\\\"},{\\\"columnName\\\":\\\"WriterVendor\\\"}]}]\"
-            }
-        ],
-        \"tags\": [\"SemanticType\"]
-    },
-    {
-        \"commandName\": \"SetMetaPropertyCommand\",
-        \"model\": \"new\",
-        \"inputParameters\": [
-            {
-                \"name\": \"hNodeId\",
-                \"type\": \"hNodeId\",
-                \"value\": [
-                    {\"columnName\": \"CAEXFile\"},
-                    {\"columnName\": \"AdditionalInformation\"},
-                    {\"columnName\": \"WriterHeader\"},
-                    {\"columnName\": \"writervendoruri\"}
-                ]
-            },
-            {
-                \"name\": \"worksheetId\",
-                \"type\": \"worksheetId\",
-                \"value\": \"W\"
-            },
-            {
-                \"name\": \"selectionName\",
-                \"type\": \"other\",
-                \"value\": \"DEFAULT_TEST\"
-            },
-            {
-                \"name\": \"metaPropertyName\",
-                \"type\": \"other\",
-                \"value\": \"isUriOfClass\"
-            },
-            {
-                \"name\": \"metaPropertyUri\",
-                \"type\": \"other\",
-                \"value\": \"http://vocab.cs.uni-bonn.de/aml#AdditionalInformation\"
-            },
-            {
-                \"name\": \"metaPropertyId\",
-                \"type\": \"other\",
-                \"value\": \"http://vocab.cs.uni-bonn.de/aml#AdditionalInformation1\"
-            },
-            {
-                \"name\": \"SemanticTypesArray\",
-                \"type\": \"other\",
-                \"value\": [{
-                    \"DomainUri\": \"http://vocab.cs.uni-bonn.de/aml#AdditionalInformation\",
-                    \"DomainId\": \"http://vocab.cs.uni-bonn.de/aml#AdditionalInformation1\",
-                    \"isPrimary\": true,
-                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
-                    \"DomainLabel\": \"aml:AdditionalInformation1\"
-                }]
-            },
-            {
-                \"name\": \"trainAndShowUpdates\",
-                \"type\": \"other\",
-                \"value\": true
-            },
-            {
-                \"name\": \"rdfLiteralType\",
-                \"type\": \"other\",
-                \"value\": \"\"
-            },
-            {
-                \"name\": \"inputColumns\",
-                \"type\": \"hNodeIdList\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"CAEXFile\\\"},{\\\"columnName\\\":\\\"AdditionalInformation\\\"},{\\\"columnName\\\":\\\"WriterHeader\\\"},{\\\"columnName\\\":\\\"writervendoruri\\\"}]}]\"
-            },
-            {
-                \"name\": \"outputColumns\",
-                \"type\": \"hNodeIdList\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"CAEXFile\\\"},{\\\"columnName\\\":\\\"AdditionalInformation\\\"},{\\\"columnName\\\":\\\"WriterHeader\\\"},{\\\"columnName\\\":\\\"writervendoruri\\\"}]}]\"
             }
         ],
         \"tags\": [\"SemanticType\"]
@@ -9493,11 +9535,11 @@ _:node1aghc1r9ix1 a km-dev:R2RMLMapping ;
                 \"name\": \"SemanticTypesArray\",
                 \"type\": \"other\",
                 \"value\": [{
-                    \"DomainUri\": \"http://iais.fraunhofer.de/aml#AdditionalInformation\",
-                    \"DomainId\": \"http://iais.fraunhofer.de/aml#AdditionalInformation1\",
+                    \"DomainUri\": \"http://iais.fraunhofer.de/aml#WriterHeader\",
+                    \"DomainId\": \"http://iais.fraunhofer.de/aml#WriterHeader1\",
                     \"isPrimary\": true,
                     \"FullType\": \"http://iais.fraunhofer.de/aml#hasWriterRelease\",
-                    \"DomainLabel\": \"aml:AdditionalInformation1\"
+                    \"DomainLabel\": \"aml:WriterHeader1\"
                 }]
             },
             {
@@ -9816,7 +9858,7 @@ _:node1aghc1r9ix1 a km-dev:R2RMLMapping ;
                     \"DomainUri\": \"http://iais.fraunhofer.de/aml#InternalElement\",
                     \"DomainId\": \"http://iais.fraunhofer.de/aml#InternalElement1\",
                     \"isPrimary\": true,
-                    \"FullType\": \"http://iais.fraunhofer.de/aml#internalElementId\",
+                    \"FullType\": \"http://iais.fraunhofer.de/aml#hasID\",
                     \"DomainLabel\": \"aml:InternalElement1\"
                 }]
             },
@@ -10345,11 +10387,11 @@ _:node1aghc1r9ix1 a km-dev:R2RMLMapping ;
                 \"name\": \"SemanticTypesArray\",
                 \"type\": \"other\",
                 \"value\": [{
-                    \"DomainUri\": \"http://iais.fraunhofer.de/aml#AdditionalInformation\",
-                    \"DomainId\": \"http://iais.fraunhofer.de/aml#AdditionalInformation1\",
+                    \"DomainUri\": \"http://iais.fraunhofer.de/aml#WriterHeader\",
+                    \"DomainId\": \"http://iais.fraunhofer.de/aml#WriterHeader1\",
                     \"isPrimary\": true,
-                    \"FullType\": \"http://iais.fraunhofer.de/aml#hasWriterId\",
-                    \"DomainLabel\": \"aml:AdditionalInformation1\"
+                    \"FullType\": \"http://iais.fraunhofer.de/aml#hasWriterID\",
+                    \"DomainLabel\": \"aml:WriterHeader1\"
                 }]
             },
             {
@@ -10476,11 +10518,11 @@ _:node1aghc1r9ix1 a km-dev:R2RMLMapping ;
                 \"name\": \"SemanticTypesArray\",
                 \"type\": \"other\",
                 \"value\": [{
-                    \"DomainUri\": \"http://iais.fraunhofer.de/aml#AdditionalInformation\",
-                    \"DomainId\": \"http://iais.fraunhofer.de/aml#AdditionalInformation1\",
+                    \"DomainUri\": \"http://iais.fraunhofer.de/aml#WriterHeader\",
+                    \"DomainId\": \"http://iais.fraunhofer.de/aml#WriterHeader1\",
                     \"isPrimary\": true,
                     \"FullType\": \"http://iais.fraunhofer.de/aml#hasWriterName\",
-                    \"DomainLabel\": \"aml:AdditionalInformation1\"
+                    \"DomainLabel\": \"aml:WriterHeader1\"
                 }]
             },
             {
@@ -10534,11 +10576,11 @@ _:node1aghc1r9ix1 a km-dev:R2RMLMapping ;
                 \"name\": \"SemanticTypesArray\",
                 \"type\": \"other\",
                 \"value\": [{
-                    \"DomainUri\": \"http://iais.fraunhofer.de/aml#AdditionalInformation\",
-                    \"DomainId\": \"http://iais.fraunhofer.de/aml#AdditionalInformation1\",
+                    \"DomainUri\": \"http://iais.fraunhofer.de/aml#WriterHeader\",
+                    \"DomainId\": \"http://iais.fraunhofer.de/aml#WriterHeader1\",
                     \"isPrimary\": true,
                     \"FullType\": \"http://iais.fraunhofer.de/aml#hasWriterVersion\",
-                    \"DomainLabel\": \"aml:AdditionalInformation1\"
+                    \"DomainLabel\": \"aml:WriterHeader1\"
                 }]
             },
             {
@@ -10592,11 +10634,11 @@ _:node1aghc1r9ix1 a km-dev:R2RMLMapping ;
                 \"name\": \"SemanticTypesArray\",
                 \"type\": \"other\",
                 \"value\": [{
-                    \"DomainUri\": \"http://iais.fraunhofer.de/aml#AdditionalInformation\",
-                    \"DomainId\": \"http://iais.fraunhofer.de/aml#AdditionalInformation1\",
+                    \"DomainUri\": \"http://iais.fraunhofer.de/aml#WriterHeader\",
+                    \"DomainId\": \"http://iais.fraunhofer.de/aml#WriterHeader1\",
                     \"isPrimary\": true,
-                    \"FullType\": \"http://iais.fraunhofer.de/aml#lastWritingDate\",
-                    \"DomainLabel\": \"aml:AdditionalInformation1\"
+                    \"FullType\": \"http://iais.fraunhofer.de/aml#hasLastWritingDateTime\",
+                    \"DomainLabel\": \"aml:WriterHeader1\"
                 }]
             },
             {
@@ -11017,8 +11059,8 @@ _:node1aghc1r9ix1 a km-dev:R2RMLMapping ;
                     \"DomainUri\": \"http://iais.fraunhofer.de/aml#ExternalReference\",
                     \"DomainId\": \"http://iais.fraunhofer.de/aml#ExternalReference1\",
                     \"isPrimary\": true,
-                    \"FullType\": \"http://iais.fraunhofer.de/aml#externalReferencePath\",
-                    \"DomainLabel\": \"aml:ExternalReference1 (add)\"
+                    \"FullType\": \"http://iais.fraunhofer.de/aml#hasPath\",
+                    \"DomainLabel\": \"aml:ExternalReference1\"
                 }]
             },
             {
@@ -11074,7 +11116,7 @@ _:node1aghc1r9ix1 a km-dev:R2RMLMapping ;
                     \"DomainUri\": \"http://iais.fraunhofer.de/aml#ExternalReference\",
                     \"DomainId\": \"http://iais.fraunhofer.de/aml#ExternalReference1\",
                     \"isPrimary\": true,
-                    \"FullType\": \"http://iais.fraunhofer.de/aml#externalReferenceAlias\",
+                    \"FullType\": \"http://iais.fraunhofer.de/aml#hasAlias\",
                     \"DomainLabel\": \"aml:ExternalReference1\"
                 }]
             },
@@ -11712,79 +11754,6 @@ _:node1aghc1r9ix1 a km-dev:R2RMLMapping ;
                 \"name\": \"outputColumns\",
                 \"type\": \"hNodeIdList\",
                 \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"CAEXFile\\\"},{\\\"columnName\\\":\\\"AdditionalInformation\\\"},{\\\"columnName\\\":\\\"WriterHeader\\\"},{\\\"columnName\\\":\\\"writervendoruri\\\"}]}]\"
-            }
-        ],
-        \"tags\": [\"SemanticType\"]
-    },
-    {
-        \"commandName\": \"SetMetaPropertyCommand\",
-        \"model\": \"new\",
-        \"inputParameters\": [
-            {
-                \"name\": \"hNodeId\",
-                \"type\": \"hNodeId\",
-                \"value\": [
-                    {\"columnName\": \"CAEXFile\"},
-                    {\"columnName\": \"AdditionalInformation\"},
-                    {\"columnName\": \"WriterHeader\"},
-                    {\"columnName\": \"Writerreleaseuri\"}
-                ]
-            },
-            {
-                \"name\": \"worksheetId\",
-                \"type\": \"worksheetId\",
-                \"value\": \"W\"
-            },
-            {
-                \"name\": \"selectionName\",
-                \"type\": \"other\",
-                \"value\": \"DEFAULT_TEST\"
-            },
-            {
-                \"name\": \"metaPropertyName\",
-                \"type\": \"other\",
-                \"value\": \"isUriOfClass\"
-            },
-            {
-                \"name\": \"metaPropertyUri\",
-                \"type\": \"other\",
-                \"value\": \"http://vocab.cs.uni-bonn.de/aml#AdditionalInformation\"
-            },
-            {
-                \"name\": \"metaPropertyId\",
-                \"type\": \"other\",
-                \"value\": \"http://vocab.cs.uni-bonn.de/aml#AdditionalInformation1\"
-            },
-            {
-                \"name\": \"SemanticTypesArray\",
-                \"type\": \"other\",
-                \"value\": [{
-                    \"DomainUri\": \"http://vocab.cs.uni-bonn.de/aml#AdditionalInformation\",
-                    \"DomainId\": \"http://vocab.cs.uni-bonn.de/aml#AdditionalInformation1\",
-                    \"isPrimary\": true,
-                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
-                    \"DomainLabel\": \"aml:AdditionalInformation1\"
-                }]
-            },
-            {
-                \"name\": \"trainAndShowUpdates\",
-                \"type\": \"other\",
-                \"value\": true
-            },
-            {
-                \"name\": \"rdfLiteralType\",
-                \"type\": \"other\",
-                \"value\": \"\"
-            },
-            {
-                \"name\": \"inputColumns\",
-                \"type\": \"hNodeIdList\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"CAEXFile\\\"},{\\\"columnName\\\":\\\"AdditionalInformation\\\"},{\\\"columnName\\\":\\\"WriterHeader\\\"},{\\\"columnName\\\":\\\"Writerreleaseuri\\\"}]}]\"
-            },
-            {
-                \"name\": \"outputColumns\",
-                \"type\": \"hNodeIdList\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"CAEXFile\\\"},{\\\"columnName\\\":\\\"AdditionalInformation\\\"},{\\\"columnName\\\":\\\"WriterHeader\\\"},{\\\"columnName\\\":\\\"Writerreleaseuri\\\"}]}]\"
             }
         ],
         \"tags\": [\"SemanticType\"]
@@ -20298,11 +20267,11 @@ _:node1aghc1r9ix1 a km-dev:R2RMLMapping ;
                 \"name\": \"SemanticTypesArray\",
                 \"type\": \"other\",
                 \"value\": [{
-                    \"DomainUri\": \"http://iais.fraunhofer.de/aml#AdditionalInformation\",
-                    \"DomainId\": \"http://iais.fraunhofer.de/aml#AdditionalInformation1\",
+                    \"DomainUri\": \"http://iais.fraunhofer.de/aml#WriterHeader\",
+                    \"DomainId\": \"http://iais.fraunhofer.de/aml#WriterHeader1\",
                     \"isPrimary\": true,
                     \"FullType\": \"http://iais.fraunhofer.de/aml#hasWriterVendorURL\",
-                    \"DomainLabel\": \"aml:AdditionalInformation1\"
+                    \"DomainLabel\": \"aml:WriterHeader1\"
                 }]
             },
             {
@@ -21304,7 +21273,7 @@ _:node1aghc1r9ix1 a km-dev:R2RMLMapping ;
                     \"DomainUri\": \"http://iais.fraunhofer.de/aml#Attribute\",
                     \"DomainId\": \"http://iais.fraunhofer.de/aml#Attribute1\",
                     \"isPrimary\": true,
-                    \"FullType\": \"http://iais.fraunhofer.de/aml#hasAttributeName\",
+                    \"FullType\": \"http://iais.fraunhofer.de/aml#hasName\",
                     \"DomainLabel\": \"aml:Attribute1\"
                 }]
             },
@@ -21422,7 +21391,7 @@ _:node1aghc1r9ix1 a km-dev:R2RMLMapping ;
                     \"DomainUri\": \"http://iais.fraunhofer.de/aml#Attribute\",
                     \"DomainId\": \"http://iais.fraunhofer.de/aml#Attribute1\",
                     \"isPrimary\": true,
-                    \"FullType\": \"http://iais.fraunhofer.de/aml#hasDataType\",
+                    \"FullType\": \"http://iais.fraunhofer.de/aml#hasAttributeDataType\",
                     \"DomainLabel\": \"aml:Attribute1\"
                 }]
             },
@@ -21711,6 +21680,779 @@ _:node1aghc1r9ix1 a km-dev:R2RMLMapping ;
                 \"name\": \"outputColumns\",
                 \"type\": \"hNodeIdList\",
                 \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"CAEXFile\\\"},{\\\"columnName\\\":\\\"InstanceHierarchy\\\"},{\\\"columnName\\\":\\\"InternalElement\\\"},{\\\"columnName\\\":\\\"RoleRequirements\\\"},{\\\"columnName\\\":\\\"urirole\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"CAEXFile\"},
+                    {\"columnName\": \"AdditionalInformation\"},
+                    {\"columnName\": \"WriterHeader\"},
+                    {\"columnName\": \"writeuri\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://iais.fraunhofer.de/aml#WriterHeader\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://iais.fraunhofer.de/aml#WriterHeader1\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://iais.fraunhofer.de/aml#WriterHeader\",
+                    \"DomainId\": \"http://iais.fraunhofer.de/aml#WriterHeader1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"aml:WriterHeader1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"CAEXFile\\\"},{\\\"columnName\\\":\\\"AdditionalInformation\\\"},{\\\"columnName\\\":\\\"WriterHeader\\\"},{\\\"columnName\\\":\\\"writeuri\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"CAEXFile\\\"},{\\\"columnName\\\":\\\"AdditionalInformation\\\"},{\\\"columnName\\\":\\\"WriterHeader\\\"},{\\\"columnName\\\":\\\"writeuri\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"CAEXFile\"},
+                    {\"columnName\": \"AdditionalInformation\"},
+                    {\"columnName\": \"WriterHeader\"},
+                    {\"columnName\": \"releaseuri\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://iais.fraunhofer.de/aml#WriterHeader\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://iais.fraunhofer.de/aml#WriterHeader1\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://iais.fraunhofer.de/aml#WriterHeader\",
+                    \"DomainId\": \"http://iais.fraunhofer.de/aml#WriterHeader1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"aml:WriterHeader1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"CAEXFile\\\"},{\\\"columnName\\\":\\\"AdditionalInformation\\\"},{\\\"columnName\\\":\\\"WriterHeader\\\"},{\\\"columnName\\\":\\\"releaseuri\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"CAEXFile\\\"},{\\\"columnName\\\":\\\"AdditionalInformation\\\"},{\\\"columnName\\\":\\\"WriterHeader\\\"},{\\\"columnName\\\":\\\"releaseuri\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"CAEXFile\"},
+                    {\"columnName\": \"AdditionalInformation\"},
+                    {\"columnName\": \"WriterHeader\"},
+                    {\"columnName\": \"vendirurluri\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://iais.fraunhofer.de/aml#WriterHeader\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://iais.fraunhofer.de/aml#WriterHeader1\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://iais.fraunhofer.de/aml#WriterHeader\",
+                    \"DomainId\": \"http://iais.fraunhofer.de/aml#WriterHeader1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"aml:WriterHeader1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"CAEXFile\\\"},{\\\"columnName\\\":\\\"AdditionalInformation\\\"},{\\\"columnName\\\":\\\"WriterHeader\\\"},{\\\"columnName\\\":\\\"vendirurluri\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"CAEXFile\\\"},{\\\"columnName\\\":\\\"AdditionalInformation\\\"},{\\\"columnName\\\":\\\"WriterHeader\\\"},{\\\"columnName\\\":\\\"vendirurluri\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"CAEXFile\"},
+                    {\"columnName\": \"AdditionalInformation\"},
+                    {\"columnName\": \"WriterHeader\"},
+                    {\"columnName\": \"iduri\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://iais.fraunhofer.de/aml#WriterHeader\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://iais.fraunhofer.de/aml#WriterHeader1\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://iais.fraunhofer.de/aml#WriterHeader\",
+                    \"DomainId\": \"http://iais.fraunhofer.de/aml#WriterHeader1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"aml:WriterHeader1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"CAEXFile\\\"},{\\\"columnName\\\":\\\"AdditionalInformation\\\"},{\\\"columnName\\\":\\\"WriterHeader\\\"},{\\\"columnName\\\":\\\"iduri\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"CAEXFile\\\"},{\\\"columnName\\\":\\\"AdditionalInformation\\\"},{\\\"columnName\\\":\\\"WriterHeader\\\"},{\\\"columnName\\\":\\\"iduri\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"CAEXFile\"},
+                    {\"columnName\": \"AdditionalInformation\"},
+                    {\"columnName\": \"WriterHeader\"},
+                    {\"columnName\": \"WriterProjectTitle\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://iais.fraunhofer.de/aml#WriterHeader\",
+                    \"DomainId\": \"http://iais.fraunhofer.de/aml#WriterHeader1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://iais.fraunhofer.de/aml#hasWriterProjectTitle\",
+                    \"DomainLabel\": \"aml:WriterHeader1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"CAEXFile\\\"},{\\\"columnName\\\":\\\"AdditionalInformation\\\"},{\\\"columnName\\\":\\\"WriterHeader\\\"},{\\\"columnName\\\":\\\"WriterProjectTitle\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"CAEXFile\\\"},{\\\"columnName\\\":\\\"AdditionalInformation\\\"},{\\\"columnName\\\":\\\"WriterHeader\\\"},{\\\"columnName\\\":\\\"WriterProjectTitle\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"CAEXFile\"},
+                    {\"columnName\": \"AdditionalInformation\"},
+                    {\"columnName\": \"WriterHeader\"},
+                    {\"columnName\": \"wpuri\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://iais.fraunhofer.de/aml#WriterHeader\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://iais.fraunhofer.de/aml#WriterHeader1\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://iais.fraunhofer.de/aml#WriterHeader\",
+                    \"DomainId\": \"http://iais.fraunhofer.de/aml#WriterHeader1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"aml:WriterHeader1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"CAEXFile\\\"},{\\\"columnName\\\":\\\"AdditionalInformation\\\"},{\\\"columnName\\\":\\\"WriterHeader\\\"},{\\\"columnName\\\":\\\"wpuri\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"CAEXFile\\\"},{\\\"columnName\\\":\\\"AdditionalInformation\\\"},{\\\"columnName\\\":\\\"WriterHeader\\\"},{\\\"columnName\\\":\\\"wpuri\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"CAEXFile\"},
+                    {\"columnName\": \"AdditionalInformation\"},
+                    {\"columnName\": \"WriterHeader\"},
+                    {\"columnName\": \"wnameuri\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://iais.fraunhofer.de/aml#WriterHeader\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://iais.fraunhofer.de/aml#WriterHeader1\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://iais.fraunhofer.de/aml#WriterHeader\",
+                    \"DomainId\": \"http://iais.fraunhofer.de/aml#WriterHeader1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"aml:WriterHeader1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"CAEXFile\\\"},{\\\"columnName\\\":\\\"AdditionalInformation\\\"},{\\\"columnName\\\":\\\"WriterHeader\\\"},{\\\"columnName\\\":\\\"wnameuri\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"CAEXFile\\\"},{\\\"columnName\\\":\\\"AdditionalInformation\\\"},{\\\"columnName\\\":\\\"WriterHeader\\\"},{\\\"columnName\\\":\\\"wnameuri\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"CAEXFile\"},
+                    {\"columnName\": \"AdditionalInformation\"},
+                    {\"columnName\": \"WriterHeader\"},
+                    {\"columnName\": \"wversion\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://iais.fraunhofer.de/aml#WriterHeader\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://iais.fraunhofer.de/aml#WriterHeader1\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://iais.fraunhofer.de/aml#WriterHeader\",
+                    \"DomainId\": \"http://iais.fraunhofer.de/aml#WriterHeader1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"aml:WriterHeader1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"CAEXFile\\\"},{\\\"columnName\\\":\\\"AdditionalInformation\\\"},{\\\"columnName\\\":\\\"WriterHeader\\\"},{\\\"columnName\\\":\\\"wversion\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"CAEXFile\\\"},{\\\"columnName\\\":\\\"AdditionalInformation\\\"},{\\\"columnName\\\":\\\"WriterHeader\\\"},{\\\"columnName\\\":\\\"wversion\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"CAEXFile\"},
+                    {\"columnName\": \"AdditionalInformation\"},
+                    {\"columnName\": \"WriterHeader\"},
+                    {\"columnName\": \"writinguri\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://iais.fraunhofer.de/aml#WriterHeader\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://iais.fraunhofer.de/aml#WriterHeader1\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://iais.fraunhofer.de/aml#WriterHeader\",
+                    \"DomainId\": \"http://iais.fraunhofer.de/aml#WriterHeader1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"aml:WriterHeader1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"CAEXFile\\\"},{\\\"columnName\\\":\\\"AdditionalInformation\\\"},{\\\"columnName\\\":\\\"WriterHeader\\\"},{\\\"columnName\\\":\\\"writinguri\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"CAEXFile\\\"},{\\\"columnName\\\":\\\"AdditionalInformation\\\"},{\\\"columnName\\\":\\\"WriterHeader\\\"},{\\\"columnName\\\":\\\"writinguri\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"CAEXFile\"},
+                    {\"columnName\": \"AdditionalInformation\"},
+                    {\"columnName\": \"WriterHeader\"},
+                    {\"columnName\": \"WriterProjectID\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://iais.fraunhofer.de/aml#WriterHeader\",
+                    \"DomainId\": \"http://iais.fraunhofer.de/aml#WriterHeader1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://iais.fraunhofer.de/aml#hasWriterProjectID\",
+                    \"DomainLabel\": \"aml:WriterHeader1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"CAEXFile\\\"},{\\\"columnName\\\":\\\"AdditionalInformation\\\"},{\\\"columnName\\\":\\\"WriterHeader\\\"},{\\\"columnName\\\":\\\"WriterProjectID\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"CAEXFile\\\"},{\\\"columnName\\\":\\\"AdditionalInformation\\\"},{\\\"columnName\\\":\\\"WriterHeader\\\"},{\\\"columnName\\\":\\\"WriterProjectID\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"CAEXFile\"},
+                    {\"columnName\": \"AdditionalInformation\"},
+                    {\"columnName\": \"WriterHeader\"},
+                    {\"columnName\": \"wpiduri\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://iais.fraunhofer.de/aml#WriterHeader\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://iais.fraunhofer.de/aml#WriterHeader1\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://iais.fraunhofer.de/aml#WriterHeader\",
+                    \"DomainId\": \"http://iais.fraunhofer.de/aml#WriterHeader1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"aml:WriterHeader1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"CAEXFile\\\"},{\\\"columnName\\\":\\\"AdditionalInformation\\\"},{\\\"columnName\\\":\\\"WriterHeader\\\"},{\\\"columnName\\\":\\\"wpiduri\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"CAEXFile\\\"},{\\\"columnName\\\":\\\"AdditionalInformation\\\"},{\\\"columnName\\\":\\\"WriterHeader\\\"},{\\\"columnName\\\":\\\"wpiduri\\\"}]}]\"
             }
         ],
         \"tags\": [\"SemanticType\"]
@@ -23786,706 +24528,828 @@ _:node1aghc1r9ix1 a km-dev:R2RMLMapping ;
             }
         ],
         \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"ChangeInternalNodeLinksCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"type\": \"other\",
+                \"value\": []
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"type\": \"other\",
+                \"value\": \"WSP19:WS1AL\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"edgeTargetId\": \"http://iais.fraunhofer.de/aml#WriterHeader1\",
+                    \"edgeId\": \"http://iais.fraunhofer.de/aml#hasWriterHeader\",
+                    \"edgeTargetUri\": \"http://iais.fraunhofer.de/aml#WriterHeader\",
+                    \"edgeSourceId\": \"http://iais.fraunhofer.de/aml#AdditionalInformation1\",
+                    \"edgeSourceUri\": \"http://iais.fraunhofer.de/aml#AdditionalInformation\"
+                }]
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
     }
 ]""" .
 
-km-dev:TriplesMap_02db554e-d01b-45a4-a3fb-b80858abff35 a rr:TriplesMap .
+km-dev:TriplesMap_a7362cbd-b360-4bd6-8eda-608213a6bdb1 a rr:TriplesMap .
 
-_:node1aghc1r9ix1 km-dev:hasTriplesMap km-dev:TriplesMap_02db554e-d01b-45a4-a3fb-b80858abff35 .
+_:node1agmib5kgx1 km-dev:hasTriplesMap km-dev:TriplesMap_a7362cbd-b360-4bd6-8eda-608213a6bdb1 .
 
-km-dev:TriplesMap_02db554e-d01b-45a4-a3fb-b80858abff35 km-dev:isPartOfMapping _:node1aghc1r9ix1 .
+km-dev:TriplesMap_a7362cbd-b360-4bd6-8eda-608213a6bdb1 km-dev:isPartOfMapping _:node1agmib5kgx1 .
 
-_:node1aghc1r9ix2 rr:tableName "ExampleInstanceHierarchy.aml" ;
+_:node1agmib5kgx2 rr:tableName "ExampleInstanceHierarchy.aml" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node1aghc1r9ix1 .
+	km-dev:isPartOfMapping _:node1agmib5kgx1 .
 
-_:node1aghc1r9ix1 km-dev:hasLogicalTable _:node1aghc1r9ix2 .
+_:node1agmib5kgx1 km-dev:hasLogicalTable _:node1agmib5kgx2 .
 
-km-dev:TriplesMap_02db554e-d01b-45a4-a3fb-b80858abff35 rr:logicalTable _:node1aghc1r9ix2 ;
-	rr:subjectMap _:node1aghc1r9ix3 .
+km-dev:TriplesMap_a7362cbd-b360-4bd6-8eda-608213a6bdb1 rr:logicalTable _:node1agmib5kgx2 ;
+	rr:subjectMap _:node1agmib5kgx3 .
 
-_:node1aghc1r9ix1 km-dev:hasSubjectMap _:node1aghc1r9ix3 .
+_:node1agmib5kgx1 km-dev:hasSubjectMap _:node1agmib5kgx3 .
 
-_:node1aghc1r9ix3 km-dev:isPartOfMapping _:node1aghc1r9ix1 ;
+_:node1agmib5kgx3 km-dev:isPartOfMapping _:node1agmib5kgx1 ;
 	a rr:SubjectMap ;
 	km-dev:alignmentNodeId "http://iais.fraunhofer.de/aml#AdditionalInformation1" ;
 	rr:class aml:AdditionalInformation ;
-	rr:template "{[\"CAEXFile\",\"AdditionalInformation\",\"WriterHeader\",\"LastWritingDateTime\"]}" .
+	rr:template "{[\"CAEXFile\",\"AdditionalInformation\",\"WriterHeader\",\"WriterRelease\"]}" .
 
-km-dev:PredicateObjectMap_2bcf6116-0e65-4828-8e8a-6b052f39a85e rr:predicate aml:hasWriterId .
+km-dev:PredicateObjectMap_1af32f44-56a0-4b3f-9b05-7dbcd1764691 rr:predicate aml:hasWriterHeader .
 
-_:node1aghc1r9ix4 rr:column "[\"CAEXFile\",\"AdditionalInformation\",\"WriterHeader\",\"WriterID\"]" ;
-	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1aghc1r9ix1 .
+km-dev:RefObjectMap_116af408-b8af-4e55-86af-c3d9bf82c465 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_3caf653a-a34f-43c8-bd38-5c7d44cf5dad ;
+	km-dev:isPartOfMapping _:node1agmib5kgx1 .
 
-_:node1aghc1r9ix1 km-dev:hasObjectMap _:node1aghc1r9ix4 .
+_:node1agmib5kgx1 km-dev:hasObjectMap km-dev:RefObjectMap_116af408-b8af-4e55-86af-c3d9bf82c465 .
 
-km-dev:PredicateObjectMap_2bcf6116-0e65-4828-8e8a-6b052f39a85e rr:objectMap _:node1aghc1r9ix4 .
+km-dev:PredicateObjectMap_1af32f44-56a0-4b3f-9b05-7dbcd1764691 rr:objectMap km-dev:RefObjectMap_116af408-b8af-4e55-86af-c3d9bf82c465 .
 
-km-dev:TriplesMap_02db554e-d01b-45a4-a3fb-b80858abff35 rr:predicateObjectMap km-dev:PredicateObjectMap_2bcf6116-0e65-4828-8e8a-6b052f39a85e .
+km-dev:TriplesMap_a7362cbd-b360-4bd6-8eda-608213a6bdb1 rr:predicateObjectMap km-dev:PredicateObjectMap_1af32f44-56a0-4b3f-9b05-7dbcd1764691 .
 
-km-dev:PredicateObjectMap_2bcf6116-0e65-4828-8e8a-6b052f39a85e a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1aghc1r9ix1 .
+km-dev:PredicateObjectMap_1af32f44-56a0-4b3f-9b05-7dbcd1764691 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1agmib5kgx1 .
 
-_:node1aghc1r9ix1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_2bcf6116-0e65-4828-8e8a-6b052f39a85e .
+_:node1agmib5kgx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_1af32f44-56a0-4b3f-9b05-7dbcd1764691 .
 
-km-dev:PredicateObjectMap_b5ad9a94-7e70-412e-b9b8-1b79ef6d3a52 rr:predicate aml:hasWriterName .
+km-dev:TriplesMap_3caf653a-a34f-43c8-bd38-5c7d44cf5dad a rr:TriplesMap .
 
-_:node1aghc1r9ix5 rr:column "[\"CAEXFile\",\"AdditionalInformation\",\"WriterHeader\",\"WriterName\"]" ;
-	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1aghc1r9ix1 .
+_:node1agmib5kgx1 km-dev:hasTriplesMap km-dev:TriplesMap_3caf653a-a34f-43c8-bd38-5c7d44cf5dad .
 
-_:node1aghc1r9ix1 km-dev:hasObjectMap _:node1aghc1r9ix5 .
+km-dev:TriplesMap_3caf653a-a34f-43c8-bd38-5c7d44cf5dad km-dev:isPartOfMapping _:node1agmib5kgx1 .
 
-km-dev:PredicateObjectMap_b5ad9a94-7e70-412e-b9b8-1b79ef6d3a52 rr:objectMap _:node1aghc1r9ix5 .
-
-km-dev:TriplesMap_02db554e-d01b-45a4-a3fb-b80858abff35 rr:predicateObjectMap km-dev:PredicateObjectMap_b5ad9a94-7e70-412e-b9b8-1b79ef6d3a52 .
-
-km-dev:PredicateObjectMap_b5ad9a94-7e70-412e-b9b8-1b79ef6d3a52 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1aghc1r9ix1 .
-
-_:node1aghc1r9ix1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_b5ad9a94-7e70-412e-b9b8-1b79ef6d3a52 .
-
-km-dev:PredicateObjectMap_56553cbf-0ee3-46e7-9f83-0832ae2f86b1 rr:predicate aml:hasWriterRelease .
-
-_:node1aghc1r9ix6 rr:column "[\"CAEXFile\",\"AdditionalInformation\",\"WriterHeader\",\"WriterRelease\"]" ;
-	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1aghc1r9ix1 .
-
-_:node1aghc1r9ix1 km-dev:hasObjectMap _:node1aghc1r9ix6 .
-
-km-dev:PredicateObjectMap_56553cbf-0ee3-46e7-9f83-0832ae2f86b1 rr:objectMap _:node1aghc1r9ix6 .
-
-km-dev:TriplesMap_02db554e-d01b-45a4-a3fb-b80858abff35 rr:predicateObjectMap km-dev:PredicateObjectMap_56553cbf-0ee3-46e7-9f83-0832ae2f86b1 .
-
-km-dev:PredicateObjectMap_56553cbf-0ee3-46e7-9f83-0832ae2f86b1 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1aghc1r9ix1 .
-
-_:node1aghc1r9ix1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_56553cbf-0ee3-46e7-9f83-0832ae2f86b1 .
-
-km-dev:PredicateObjectMap_6f14abdc-ea3a-4278-9a3c-bb1e7c2c19b2 rr:predicate aml:hasWriterVendor .
-
-_:node1aghc1r9ix7 rr:column "[\"CAEXFile\",\"AdditionalInformation\",\"WriterHeader\",\"WriterVendor\"]" ;
-	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1aghc1r9ix1 .
-
-_:node1aghc1r9ix1 km-dev:hasObjectMap _:node1aghc1r9ix7 .
-
-km-dev:PredicateObjectMap_6f14abdc-ea3a-4278-9a3c-bb1e7c2c19b2 rr:objectMap _:node1aghc1r9ix7 .
-
-km-dev:TriplesMap_02db554e-d01b-45a4-a3fb-b80858abff35 rr:predicateObjectMap km-dev:PredicateObjectMap_6f14abdc-ea3a-4278-9a3c-bb1e7c2c19b2 .
-
-km-dev:PredicateObjectMap_6f14abdc-ea3a-4278-9a3c-bb1e7c2c19b2 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1aghc1r9ix1 .
-
-_:node1aghc1r9ix1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_6f14abdc-ea3a-4278-9a3c-bb1e7c2c19b2 .
-
-km-dev:PredicateObjectMap_9c725480-af54-4746-9b50-ddfb3659007f rr:predicate aml:hasWriterVendorURL .
-
-_:node1aghc1r9ix8 rr:column "[\"CAEXFile\",\"AdditionalInformation\",\"WriterHeader\",\"WriterVendorURL\"]" ;
-	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1aghc1r9ix1 .
-
-_:node1aghc1r9ix1 km-dev:hasObjectMap _:node1aghc1r9ix8 .
-
-km-dev:PredicateObjectMap_9c725480-af54-4746-9b50-ddfb3659007f rr:objectMap _:node1aghc1r9ix8 .
-
-km-dev:TriplesMap_02db554e-d01b-45a4-a3fb-b80858abff35 rr:predicateObjectMap km-dev:PredicateObjectMap_9c725480-af54-4746-9b50-ddfb3659007f .
-
-km-dev:PredicateObjectMap_9c725480-af54-4746-9b50-ddfb3659007f a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1aghc1r9ix1 .
-
-_:node1aghc1r9ix1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_9c725480-af54-4746-9b50-ddfb3659007f .
-
-km-dev:PredicateObjectMap_e0b17a55-380b-4738-972f-d2b61fdbd58f rr:predicate aml:hasWriterVersion .
-
-_:node1aghc1r9ix9 rr:column "[\"CAEXFile\",\"AdditionalInformation\",\"WriterHeader\",\"WriterVersion\"]" ;
-	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1aghc1r9ix1 .
-
-_:node1aghc1r9ix1 km-dev:hasObjectMap _:node1aghc1r9ix9 .
-
-km-dev:PredicateObjectMap_e0b17a55-380b-4738-972f-d2b61fdbd58f rr:objectMap _:node1aghc1r9ix9 .
-
-km-dev:TriplesMap_02db554e-d01b-45a4-a3fb-b80858abff35 rr:predicateObjectMap km-dev:PredicateObjectMap_e0b17a55-380b-4738-972f-d2b61fdbd58f .
-
-km-dev:PredicateObjectMap_e0b17a55-380b-4738-972f-d2b61fdbd58f a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1aghc1r9ix1 .
-
-_:node1aghc1r9ix1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_e0b17a55-380b-4738-972f-d2b61fdbd58f .
-
-km-dev:PredicateObjectMap_05c04b91-998c-48f7-bfb4-2392cf675a6b rr:predicate aml:lastWritingDate .
-
-_:node1aghc1r9ix10 rr:column "[\"CAEXFile\",\"AdditionalInformation\",\"WriterHeader\",\"LastWritingDateTime\"]" ;
-	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1aghc1r9ix1 .
-
-_:node1aghc1r9ix1 km-dev:hasObjectMap _:node1aghc1r9ix10 .
-
-km-dev:PredicateObjectMap_05c04b91-998c-48f7-bfb4-2392cf675a6b rr:objectMap _:node1aghc1r9ix10 .
-
-km-dev:TriplesMap_02db554e-d01b-45a4-a3fb-b80858abff35 rr:predicateObjectMap km-dev:PredicateObjectMap_05c04b91-998c-48f7-bfb4-2392cf675a6b .
-
-km-dev:PredicateObjectMap_05c04b91-998c-48f7-bfb4-2392cf675a6b a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1aghc1r9ix1 .
-
-_:node1aghc1r9ix1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_05c04b91-998c-48f7-bfb4-2392cf675a6b .
-
-km-dev:TriplesMap_15d69132-d6fd-4b78-a20d-3c2d71022a9d a rr:TriplesMap .
-
-_:node1aghc1r9ix1 km-dev:hasTriplesMap km-dev:TriplesMap_15d69132-d6fd-4b78-a20d-3c2d71022a9d .
-
-km-dev:TriplesMap_15d69132-d6fd-4b78-a20d-3c2d71022a9d km-dev:isPartOfMapping _:node1aghc1r9ix1 .
-
-_:node1aghc1r9ix11 rr:tableName "ExampleInstanceHierarchy.aml" ;
+_:node1agmib5kgx4 rr:tableName "ExampleInstanceHierarchy.aml" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node1aghc1r9ix1 .
+	km-dev:isPartOfMapping _:node1agmib5kgx1 .
 
-_:node1aghc1r9ix1 km-dev:hasLogicalTable _:node1aghc1r9ix11 .
+_:node1agmib5kgx1 km-dev:hasLogicalTable _:node1agmib5kgx4 .
 
-km-dev:TriplesMap_15d69132-d6fd-4b78-a20d-3c2d71022a9d rr:logicalTable _:node1aghc1r9ix11 ;
-	rr:subjectMap _:node1aghc1r9ix12 .
+km-dev:TriplesMap_3caf653a-a34f-43c8-bd38-5c7d44cf5dad rr:logicalTable _:node1agmib5kgx4 ;
+	rr:subjectMap _:node1agmib5kgx5 .
 
-_:node1aghc1r9ix1 km-dev:hasSubjectMap _:node1aghc1r9ix12 .
+_:node1agmib5kgx1 km-dev:hasSubjectMap _:node1agmib5kgx5 .
 
-_:node1aghc1r9ix12 km-dev:isPartOfMapping _:node1aghc1r9ix1 ;
+_:node1agmib5kgx5 km-dev:isPartOfMapping _:node1agmib5kgx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://iais.fraunhofer.de/aml#WriterHeader1" ;
+	rr:class aml:WriterHeader ;
+	rr:template "{[\"CAEXFile\",\"AdditionalInformation\",\"WriterHeader\",\"WriterProjectID\"]}" .
+
+km-dev:PredicateObjectMap_99de34f4-8d3d-4f87-b1a8-bc8ab09de8bb rr:predicate aml:hasLastWritingDateTime .
+
+_:node1agmib5kgx6 rr:column "[\"CAEXFile\",\"AdditionalInformation\",\"WriterHeader\",\"LastWritingDateTime\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1agmib5kgx1 .
+
+_:node1agmib5kgx1 km-dev:hasObjectMap _:node1agmib5kgx6 .
+
+km-dev:PredicateObjectMap_99de34f4-8d3d-4f87-b1a8-bc8ab09de8bb rr:objectMap _:node1agmib5kgx6 .
+
+km-dev:TriplesMap_3caf653a-a34f-43c8-bd38-5c7d44cf5dad rr:predicateObjectMap km-dev:PredicateObjectMap_99de34f4-8d3d-4f87-b1a8-bc8ab09de8bb .
+
+km-dev:PredicateObjectMap_99de34f4-8d3d-4f87-b1a8-bc8ab09de8bb a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1agmib5kgx1 .
+
+_:node1agmib5kgx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_99de34f4-8d3d-4f87-b1a8-bc8ab09de8bb .
+
+km-dev:PredicateObjectMap_548f93c1-3966-447b-a0a7-f2d460ee0c09 rr:predicate aml:hasWriterID .
+
+_:node1agmib5kgx7 rr:column "[\"CAEXFile\",\"AdditionalInformation\",\"WriterHeader\",\"WriterID\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1agmib5kgx1 .
+
+_:node1agmib5kgx1 km-dev:hasObjectMap _:node1agmib5kgx7 .
+
+km-dev:PredicateObjectMap_548f93c1-3966-447b-a0a7-f2d460ee0c09 rr:objectMap _:node1agmib5kgx7 .
+
+km-dev:TriplesMap_3caf653a-a34f-43c8-bd38-5c7d44cf5dad rr:predicateObjectMap km-dev:PredicateObjectMap_548f93c1-3966-447b-a0a7-f2d460ee0c09 .
+
+km-dev:PredicateObjectMap_548f93c1-3966-447b-a0a7-f2d460ee0c09 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1agmib5kgx1 .
+
+_:node1agmib5kgx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_548f93c1-3966-447b-a0a7-f2d460ee0c09 .
+
+km-dev:PredicateObjectMap_bda8bb70-5501-4830-902b-d35be9539e35 rr:predicate aml:hasWriterName .
+
+_:node1agmib5kgx8 rr:column "[\"CAEXFile\",\"AdditionalInformation\",\"WriterHeader\",\"WriterName\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1agmib5kgx1 .
+
+_:node1agmib5kgx1 km-dev:hasObjectMap _:node1agmib5kgx8 .
+
+km-dev:PredicateObjectMap_bda8bb70-5501-4830-902b-d35be9539e35 rr:objectMap _:node1agmib5kgx8 .
+
+km-dev:TriplesMap_3caf653a-a34f-43c8-bd38-5c7d44cf5dad rr:predicateObjectMap km-dev:PredicateObjectMap_bda8bb70-5501-4830-902b-d35be9539e35 .
+
+km-dev:PredicateObjectMap_bda8bb70-5501-4830-902b-d35be9539e35 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1agmib5kgx1 .
+
+_:node1agmib5kgx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_bda8bb70-5501-4830-902b-d35be9539e35 .
+
+km-dev:PredicateObjectMap_35d645de-9618-4c52-918b-8470ae3a84c5 rr:predicate aml:hasWriterProjectID .
+
+_:node1agmib5kgx9 rr:column "[\"CAEXFile\",\"AdditionalInformation\",\"WriterHeader\",\"WriterProjectID\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1agmib5kgx1 .
+
+_:node1agmib5kgx1 km-dev:hasObjectMap _:node1agmib5kgx9 .
+
+km-dev:PredicateObjectMap_35d645de-9618-4c52-918b-8470ae3a84c5 rr:objectMap _:node1agmib5kgx9 .
+
+km-dev:TriplesMap_3caf653a-a34f-43c8-bd38-5c7d44cf5dad rr:predicateObjectMap km-dev:PredicateObjectMap_35d645de-9618-4c52-918b-8470ae3a84c5 .
+
+km-dev:PredicateObjectMap_35d645de-9618-4c52-918b-8470ae3a84c5 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1agmib5kgx1 .
+
+_:node1agmib5kgx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_35d645de-9618-4c52-918b-8470ae3a84c5 .
+
+km-dev:PredicateObjectMap_6c8bf74e-44eb-479b-8dd6-f7655f1fba34 rr:predicate aml:hasWriterProjectTitle .
+
+_:node1agmib5kgx10 rr:column "[\"CAEXFile\",\"AdditionalInformation\",\"WriterHeader\",\"WriterProjectTitle\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1agmib5kgx1 .
+
+_:node1agmib5kgx1 km-dev:hasObjectMap _:node1agmib5kgx10 .
+
+km-dev:PredicateObjectMap_6c8bf74e-44eb-479b-8dd6-f7655f1fba34 rr:objectMap _:node1agmib5kgx10 .
+
+km-dev:TriplesMap_3caf653a-a34f-43c8-bd38-5c7d44cf5dad rr:predicateObjectMap km-dev:PredicateObjectMap_6c8bf74e-44eb-479b-8dd6-f7655f1fba34 .
+
+km-dev:PredicateObjectMap_6c8bf74e-44eb-479b-8dd6-f7655f1fba34 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1agmib5kgx1 .
+
+_:node1agmib5kgx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_6c8bf74e-44eb-479b-8dd6-f7655f1fba34 .
+
+km-dev:PredicateObjectMap_4dbe50ba-84ab-4c5d-bd2d-f95851cc59ff rr:predicate aml:hasWriterRelease .
+
+_:node1agmib5kgx11 rr:column "[\"CAEXFile\",\"AdditionalInformation\",\"WriterHeader\",\"WriterRelease\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1agmib5kgx1 .
+
+_:node1agmib5kgx1 km-dev:hasObjectMap _:node1agmib5kgx11 .
+
+km-dev:PredicateObjectMap_4dbe50ba-84ab-4c5d-bd2d-f95851cc59ff rr:objectMap _:node1agmib5kgx11 .
+
+km-dev:TriplesMap_3caf653a-a34f-43c8-bd38-5c7d44cf5dad rr:predicateObjectMap km-dev:PredicateObjectMap_4dbe50ba-84ab-4c5d-bd2d-f95851cc59ff .
+
+km-dev:PredicateObjectMap_4dbe50ba-84ab-4c5d-bd2d-f95851cc59ff a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1agmib5kgx1 .
+
+_:node1agmib5kgx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_4dbe50ba-84ab-4c5d-bd2d-f95851cc59ff .
+
+km-dev:PredicateObjectMap_930e8a21-6ffa-4364-a25e-7042a677f6ae rr:predicate aml:hasWriterVendor .
+
+_:node1agmib5kgx12 rr:column "[\"CAEXFile\",\"AdditionalInformation\",\"WriterHeader\",\"WriterVendor\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1agmib5kgx1 .
+
+_:node1agmib5kgx1 km-dev:hasObjectMap _:node1agmib5kgx12 .
+
+km-dev:PredicateObjectMap_930e8a21-6ffa-4364-a25e-7042a677f6ae rr:objectMap _:node1agmib5kgx12 .
+
+km-dev:TriplesMap_3caf653a-a34f-43c8-bd38-5c7d44cf5dad rr:predicateObjectMap km-dev:PredicateObjectMap_930e8a21-6ffa-4364-a25e-7042a677f6ae .
+
+km-dev:PredicateObjectMap_930e8a21-6ffa-4364-a25e-7042a677f6ae a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1agmib5kgx1 .
+
+_:node1agmib5kgx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_930e8a21-6ffa-4364-a25e-7042a677f6ae .
+
+km-dev:PredicateObjectMap_57af1ffe-b190-4ab1-b5ce-471db39d082b rr:predicate aml:hasWriterVendorURL .
+
+_:node1agmib5kgx13 rr:column "[\"CAEXFile\",\"AdditionalInformation\",\"WriterHeader\",\"WriterVendorURL\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1agmib5kgx1 .
+
+_:node1agmib5kgx1 km-dev:hasObjectMap _:node1agmib5kgx13 .
+
+km-dev:PredicateObjectMap_57af1ffe-b190-4ab1-b5ce-471db39d082b rr:objectMap _:node1agmib5kgx13 .
+
+km-dev:TriplesMap_3caf653a-a34f-43c8-bd38-5c7d44cf5dad rr:predicateObjectMap km-dev:PredicateObjectMap_57af1ffe-b190-4ab1-b5ce-471db39d082b .
+
+km-dev:PredicateObjectMap_57af1ffe-b190-4ab1-b5ce-471db39d082b a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1agmib5kgx1 .
+
+_:node1agmib5kgx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_57af1ffe-b190-4ab1-b5ce-471db39d082b .
+
+km-dev:PredicateObjectMap_ef32ff4a-5e03-40dc-a7de-049c0699a5f7 rr:predicate aml:hasWriterVersion .
+
+_:node1agmib5kgx14 rr:column "[\"CAEXFile\",\"AdditionalInformation\",\"WriterHeader\",\"WriterVersion\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1agmib5kgx1 .
+
+_:node1agmib5kgx1 km-dev:hasObjectMap _:node1agmib5kgx14 .
+
+km-dev:PredicateObjectMap_ef32ff4a-5e03-40dc-a7de-049c0699a5f7 rr:objectMap _:node1agmib5kgx14 .
+
+km-dev:TriplesMap_3caf653a-a34f-43c8-bd38-5c7d44cf5dad rr:predicateObjectMap km-dev:PredicateObjectMap_ef32ff4a-5e03-40dc-a7de-049c0699a5f7 .
+
+km-dev:PredicateObjectMap_ef32ff4a-5e03-40dc-a7de-049c0699a5f7 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1agmib5kgx1 .
+
+_:node1agmib5kgx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_ef32ff4a-5e03-40dc-a7de-049c0699a5f7 .
+
+km-dev:TriplesMap_f148fb9c-309d-4a68-8943-df5d7ed3283d a rr:TriplesMap .
+
+_:node1agmib5kgx1 km-dev:hasTriplesMap km-dev:TriplesMap_f148fb9c-309d-4a68-8943-df5d7ed3283d .
+
+km-dev:TriplesMap_f148fb9c-309d-4a68-8943-df5d7ed3283d km-dev:isPartOfMapping _:node1agmib5kgx1 .
+
+_:node1agmib5kgx15 rr:tableName "ExampleInstanceHierarchy.aml" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1agmib5kgx1 .
+
+_:node1agmib5kgx1 km-dev:hasLogicalTable _:node1agmib5kgx15 .
+
+km-dev:TriplesMap_f148fb9c-309d-4a68-8943-df5d7ed3283d rr:logicalTable _:node1agmib5kgx15 ;
+	rr:subjectMap _:node1agmib5kgx16 .
+
+_:node1agmib5kgx1 km-dev:hasSubjectMap _:node1agmib5kgx16 .
+
+_:node1agmib5kgx16 km-dev:isPartOfMapping _:node1agmib5kgx1 ;
 	a rr:SubjectMap ;
 	km-dev:alignmentNodeId "http://iais.fraunhofer.de/aml#AdditionalInformation2" ;
 	rr:class aml:AdditionalInformation ;
 	rr:template "{[\"CAEXFile\",\"AdditionalInformation\",\"AutomationMLVersion\"]}" .
 
-km-dev:PredicateObjectMap_f421d862-a39a-4ad1-9651-591760bf58c4 rr:predicate aml:hasAutomationMLVersion .
+km-dev:PredicateObjectMap_c05b1841-63fe-4b3d-85ab-cd9684683d23 rr:predicate aml:hasAutomationMLVersion .
 
-_:node1aghc1r9ix13 rr:column "[\"CAEXFile\",\"AdditionalInformation\",\"AutomationMLVersion\"]" ;
+_:node1agmib5kgx17 rr:column "[\"CAEXFile\",\"AdditionalInformation\",\"AutomationMLVersion\"]" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1aghc1r9ix1 .
+	km-dev:isPartOfMapping _:node1agmib5kgx1 .
 
-_:node1aghc1r9ix1 km-dev:hasObjectMap _:node1aghc1r9ix13 .
+_:node1agmib5kgx1 km-dev:hasObjectMap _:node1agmib5kgx17 .
 
-km-dev:PredicateObjectMap_f421d862-a39a-4ad1-9651-591760bf58c4 rr:objectMap _:node1aghc1r9ix13 .
+km-dev:PredicateObjectMap_c05b1841-63fe-4b3d-85ab-cd9684683d23 rr:objectMap _:node1agmib5kgx17 .
 
-km-dev:TriplesMap_15d69132-d6fd-4b78-a20d-3c2d71022a9d rr:predicateObjectMap km-dev:PredicateObjectMap_f421d862-a39a-4ad1-9651-591760bf58c4 .
+km-dev:TriplesMap_f148fb9c-309d-4a68-8943-df5d7ed3283d rr:predicateObjectMap km-dev:PredicateObjectMap_c05b1841-63fe-4b3d-85ab-cd9684683d23 .
 
-km-dev:PredicateObjectMap_f421d862-a39a-4ad1-9651-591760bf58c4 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1aghc1r9ix1 .
+km-dev:PredicateObjectMap_c05b1841-63fe-4b3d-85ab-cd9684683d23 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1agmib5kgx1 .
 
-_:node1aghc1r9ix1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_f421d862-a39a-4ad1-9651-591760bf58c4 .
+_:node1agmib5kgx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_c05b1841-63fe-4b3d-85ab-cd9684683d23 .
 
-km-dev:TriplesMap_9ecba680-9cac-4bae-8427-b53ce2a6b2c5 a rr:TriplesMap .
+km-dev:TriplesMap_bee981eb-1725-43e2-81b9-6f1b12699244 a rr:TriplesMap .
 
-_:node1aghc1r9ix1 km-dev:hasTriplesMap km-dev:TriplesMap_9ecba680-9cac-4bae-8427-b53ce2a6b2c5 .
+_:node1agmib5kgx1 km-dev:hasTriplesMap km-dev:TriplesMap_bee981eb-1725-43e2-81b9-6f1b12699244 .
 
-km-dev:TriplesMap_9ecba680-9cac-4bae-8427-b53ce2a6b2c5 km-dev:isPartOfMapping _:node1aghc1r9ix1 .
+km-dev:TriplesMap_bee981eb-1725-43e2-81b9-6f1b12699244 km-dev:isPartOfMapping _:node1agmib5kgx1 .
 
-_:node1aghc1r9ix14 rr:tableName "ExampleInstanceHierarchy.aml" ;
+_:node1agmib5kgx18 rr:tableName "ExampleInstanceHierarchy.aml" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node1aghc1r9ix1 .
+	km-dev:isPartOfMapping _:node1agmib5kgx1 .
 
-_:node1aghc1r9ix1 km-dev:hasLogicalTable _:node1aghc1r9ix14 .
+_:node1agmib5kgx1 km-dev:hasLogicalTable _:node1agmib5kgx18 .
 
-km-dev:TriplesMap_9ecba680-9cac-4bae-8427-b53ce2a6b2c5 rr:logicalTable _:node1aghc1r9ix14 ;
-	rr:subjectMap _:node1aghc1r9ix15 .
+km-dev:TriplesMap_bee981eb-1725-43e2-81b9-6f1b12699244 rr:logicalTable _:node1agmib5kgx18 ;
+	rr:subjectMap _:node1agmib5kgx19 .
 
-_:node1aghc1r9ix1 km-dev:hasSubjectMap _:node1aghc1r9ix15 .
+_:node1agmib5kgx1 km-dev:hasSubjectMap _:node1agmib5kgx19 .
 
-_:node1aghc1r9ix15 km-dev:isPartOfMapping _:node1aghc1r9ix1 ;
+_:node1agmib5kgx19 km-dev:isPartOfMapping _:node1agmib5kgx1 ;
 	a rr:SubjectMap ;
 	km-dev:alignmentNodeId "http://iais.fraunhofer.de/aml#Attribute1" ;
 	rr:class aml:Attribute ;
 	rr:template "{[\"CAEXFile\",\"InstanceHierarchy\",\"InternalElement\",\"Attribute\",\"Name\"]}" .
 
-km-dev:PredicateObjectMap_7bdae77b-1055-47aa-9844-b67845001ffb rr:predicate aml:hasAttributeName .
+km-dev:PredicateObjectMap_f3e739db-e595-4fb7-a991-93226b4509ec rr:predicate aml:hasAttributeDataType .
 
-_:node1aghc1r9ix16 rr:column "[\"CAEXFile\",\"InstanceHierarchy\",\"InternalElement\",\"Attribute\",\"Name\"]" ;
+_:node1agmib5kgx20 rr:column "[\"CAEXFile\",\"InstanceHierarchy\",\"InternalElement\",\"Attribute\",\"AttributeDataType\"]" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1aghc1r9ix1 .
+	km-dev:isPartOfMapping _:node1agmib5kgx1 .
 
-_:node1aghc1r9ix1 km-dev:hasObjectMap _:node1aghc1r9ix16 .
+_:node1agmib5kgx1 km-dev:hasObjectMap _:node1agmib5kgx20 .
 
-km-dev:PredicateObjectMap_7bdae77b-1055-47aa-9844-b67845001ffb rr:objectMap _:node1aghc1r9ix16 .
+km-dev:PredicateObjectMap_f3e739db-e595-4fb7-a991-93226b4509ec rr:objectMap _:node1agmib5kgx20 .
 
-km-dev:TriplesMap_9ecba680-9cac-4bae-8427-b53ce2a6b2c5 rr:predicateObjectMap km-dev:PredicateObjectMap_7bdae77b-1055-47aa-9844-b67845001ffb .
+km-dev:TriplesMap_bee981eb-1725-43e2-81b9-6f1b12699244 rr:predicateObjectMap km-dev:PredicateObjectMap_f3e739db-e595-4fb7-a991-93226b4509ec .
 
-km-dev:PredicateObjectMap_7bdae77b-1055-47aa-9844-b67845001ffb a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1aghc1r9ix1 .
+km-dev:PredicateObjectMap_f3e739db-e595-4fb7-a991-93226b4509ec a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1agmib5kgx1 .
 
-_:node1aghc1r9ix1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_7bdae77b-1055-47aa-9844-b67845001ffb .
+_:node1agmib5kgx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_f3e739db-e595-4fb7-a991-93226b4509ec .
 
-km-dev:PredicateObjectMap_82b82c07-1b29-4e1d-b966-7cd009445cf2 rr:predicate aml:hasDataType .
+km-dev:PredicateObjectMap_967349da-9d9a-46ac-a025-a7296ce596ff rr:predicate aml:hasName .
 
-_:node1aghc1r9ix17 rr:column "[\"CAEXFile\",\"InstanceHierarchy\",\"InternalElement\",\"Attribute\",\"AttributeDataType\"]" ;
+_:node1agmib5kgx21 rr:column "[\"CAEXFile\",\"InstanceHierarchy\",\"InternalElement\",\"Attribute\",\"Name\"]" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1aghc1r9ix1 .
+	km-dev:isPartOfMapping _:node1agmib5kgx1 .
 
-_:node1aghc1r9ix1 km-dev:hasObjectMap _:node1aghc1r9ix17 .
+_:node1agmib5kgx1 km-dev:hasObjectMap _:node1agmib5kgx21 .
 
-km-dev:PredicateObjectMap_82b82c07-1b29-4e1d-b966-7cd009445cf2 rr:objectMap _:node1aghc1r9ix17 .
+km-dev:PredicateObjectMap_967349da-9d9a-46ac-a025-a7296ce596ff rr:objectMap _:node1agmib5kgx21 .
 
-km-dev:TriplesMap_9ecba680-9cac-4bae-8427-b53ce2a6b2c5 rr:predicateObjectMap km-dev:PredicateObjectMap_82b82c07-1b29-4e1d-b966-7cd009445cf2 .
+km-dev:TriplesMap_bee981eb-1725-43e2-81b9-6f1b12699244 rr:predicateObjectMap km-dev:PredicateObjectMap_967349da-9d9a-46ac-a025-a7296ce596ff .
 
-km-dev:PredicateObjectMap_82b82c07-1b29-4e1d-b966-7cd009445cf2 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1aghc1r9ix1 .
+km-dev:PredicateObjectMap_967349da-9d9a-46ac-a025-a7296ce596ff a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1agmib5kgx1 .
 
-_:node1aghc1r9ix1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_82b82c07-1b29-4e1d-b966-7cd009445cf2 .
+_:node1agmib5kgx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_967349da-9d9a-46ac-a025-a7296ce596ff .
 
-km-dev:PredicateObjectMap_1ebea1ae-c252-49e2-b771-b3424a817c5e rr:predicate aml:hasValue .
+km-dev:PredicateObjectMap_d8416580-5f86-43c5-9071-f4516ff956ed rr:predicate aml:hasValue .
 
-_:node1aghc1r9ix18 rr:column "[\"CAEXFile\",\"InstanceHierarchy\",\"InternalElement\",\"Attribute\",\"Value\"]" ;
+_:node1agmib5kgx22 rr:column "[\"CAEXFile\",\"InstanceHierarchy\",\"InternalElement\",\"Attribute\",\"Value\"]" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1aghc1r9ix1 .
+	km-dev:isPartOfMapping _:node1agmib5kgx1 .
 
-_:node1aghc1r9ix1 km-dev:hasObjectMap _:node1aghc1r9ix18 .
+_:node1agmib5kgx1 km-dev:hasObjectMap _:node1agmib5kgx22 .
 
-km-dev:PredicateObjectMap_1ebea1ae-c252-49e2-b771-b3424a817c5e rr:objectMap _:node1aghc1r9ix18 .
+km-dev:PredicateObjectMap_d8416580-5f86-43c5-9071-f4516ff956ed rr:objectMap _:node1agmib5kgx22 .
 
-km-dev:TriplesMap_9ecba680-9cac-4bae-8427-b53ce2a6b2c5 rr:predicateObjectMap km-dev:PredicateObjectMap_1ebea1ae-c252-49e2-b771-b3424a817c5e .
+km-dev:TriplesMap_bee981eb-1725-43e2-81b9-6f1b12699244 rr:predicateObjectMap km-dev:PredicateObjectMap_d8416580-5f86-43c5-9071-f4516ff956ed .
 
-km-dev:PredicateObjectMap_1ebea1ae-c252-49e2-b771-b3424a817c5e a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1aghc1r9ix1 .
+km-dev:PredicateObjectMap_d8416580-5f86-43c5-9071-f4516ff956ed a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1agmib5kgx1 .
 
-_:node1aghc1r9ix1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_1ebea1ae-c252-49e2-b771-b3424a817c5e .
+_:node1agmib5kgx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_d8416580-5f86-43c5-9071-f4516ff956ed .
 
-km-dev:TriplesMap_8bc59946-94dd-448c-b01c-fd3876e9ed3f a rr:TriplesMap .
+km-dev:TriplesMap_6ccd5153-2a42-46a6-841e-847fabf347b6 a rr:TriplesMap .
 
-_:node1aghc1r9ix1 km-dev:hasTriplesMap km-dev:TriplesMap_8bc59946-94dd-448c-b01c-fd3876e9ed3f .
+_:node1agmib5kgx1 km-dev:hasTriplesMap km-dev:TriplesMap_6ccd5153-2a42-46a6-841e-847fabf347b6 .
 
-km-dev:TriplesMap_8bc59946-94dd-448c-b01c-fd3876e9ed3f km-dev:isPartOfMapping _:node1aghc1r9ix1 .
+km-dev:TriplesMap_6ccd5153-2a42-46a6-841e-847fabf347b6 km-dev:isPartOfMapping _:node1agmib5kgx1 .
 
-_:node1aghc1r9ix19 rr:tableName "ExampleInstanceHierarchy.aml" ;
+_:node1agmib5kgx23 rr:tableName "ExampleInstanceHierarchy.aml" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node1aghc1r9ix1 .
+	km-dev:isPartOfMapping _:node1agmib5kgx1 .
 
-_:node1aghc1r9ix1 km-dev:hasLogicalTable _:node1aghc1r9ix19 .
+_:node1agmib5kgx1 km-dev:hasLogicalTable _:node1agmib5kgx23 .
 
-km-dev:TriplesMap_8bc59946-94dd-448c-b01c-fd3876e9ed3f rr:logicalTable _:node1aghc1r9ix19 ;
-	rr:subjectMap _:node1aghc1r9ix20 .
+km-dev:TriplesMap_6ccd5153-2a42-46a6-841e-847fabf347b6 rr:logicalTable _:node1agmib5kgx23 ;
+	rr:subjectMap _:node1agmib5kgx24 .
 
-_:node1aghc1r9ix1 km-dev:hasSubjectMap _:node1aghc1r9ix20 .
+_:node1agmib5kgx1 km-dev:hasSubjectMap _:node1agmib5kgx24 .
 
-_:node1aghc1r9ix20 km-dev:isPartOfMapping _:node1aghc1r9ix1 ;
+_:node1agmib5kgx24 km-dev:isPartOfMapping _:node1agmib5kgx1 ;
 	a rr:SubjectMap ;
 	km-dev:alignmentNodeId "http://iais.fraunhofer.de/aml#Attribute2" ;
 	rr:class aml:Attribute ;
 	rr:template "{[\"CAEXFile\",\"InstanceHierarchy\",\"InternalElement\",\"Attribute\",\"Unit\"]}" .
 
-km-dev:PredicateObjectMap_9b070fc9-b741-47cf-be56-c26e460a3e8b rr:predicate aml:hasUnit .
+km-dev:PredicateObjectMap_09c9f66a-1dc1-4f7f-8d8a-777710945807 rr:predicate aml:hasUnit .
 
-_:node1aghc1r9ix21 rr:column "[\"CAEXFile\",\"InstanceHierarchy\",\"InternalElement\",\"Attribute\",\"Unit\"]" ;
+_:node1agmib5kgx25 rr:column "[\"CAEXFile\",\"InstanceHierarchy\",\"InternalElement\",\"Attribute\",\"Unit\"]" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1aghc1r9ix1 .
+	km-dev:isPartOfMapping _:node1agmib5kgx1 .
 
-_:node1aghc1r9ix1 km-dev:hasObjectMap _:node1aghc1r9ix21 .
+_:node1agmib5kgx1 km-dev:hasObjectMap _:node1agmib5kgx25 .
 
-km-dev:PredicateObjectMap_9b070fc9-b741-47cf-be56-c26e460a3e8b rr:objectMap _:node1aghc1r9ix21 .
+km-dev:PredicateObjectMap_09c9f66a-1dc1-4f7f-8d8a-777710945807 rr:objectMap _:node1agmib5kgx25 .
 
-km-dev:TriplesMap_8bc59946-94dd-448c-b01c-fd3876e9ed3f rr:predicateObjectMap km-dev:PredicateObjectMap_9b070fc9-b741-47cf-be56-c26e460a3e8b .
+km-dev:TriplesMap_6ccd5153-2a42-46a6-841e-847fabf347b6 rr:predicateObjectMap km-dev:PredicateObjectMap_09c9f66a-1dc1-4f7f-8d8a-777710945807 .
 
-km-dev:PredicateObjectMap_9b070fc9-b741-47cf-be56-c26e460a3e8b a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1aghc1r9ix1 .
+km-dev:PredicateObjectMap_09c9f66a-1dc1-4f7f-8d8a-777710945807 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1agmib5kgx1 .
 
-_:node1aghc1r9ix1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_9b070fc9-b741-47cf-be56-c26e460a3e8b .
+_:node1agmib5kgx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_09c9f66a-1dc1-4f7f-8d8a-777710945807 .
 
-km-dev:TriplesMap_d7ffc844-9968-4895-99d6-d66470e48f32 a rr:TriplesMap .
+km-dev:TriplesMap_7956164b-f389-43d5-86bf-ba61ae66462b a rr:TriplesMap .
 
-_:node1aghc1r9ix1 km-dev:hasTriplesMap km-dev:TriplesMap_d7ffc844-9968-4895-99d6-d66470e48f32 .
+_:node1agmib5kgx1 km-dev:hasTriplesMap km-dev:TriplesMap_7956164b-f389-43d5-86bf-ba61ae66462b .
 
-km-dev:TriplesMap_d7ffc844-9968-4895-99d6-d66470e48f32 km-dev:isPartOfMapping _:node1aghc1r9ix1 .
+km-dev:TriplesMap_7956164b-f389-43d5-86bf-ba61ae66462b km-dev:isPartOfMapping _:node1agmib5kgx1 .
 
-_:node1aghc1r9ix22 rr:tableName "ExampleInstanceHierarchy.aml" ;
+_:node1agmib5kgx26 rr:tableName "ExampleInstanceHierarchy.aml" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node1aghc1r9ix1 .
+	km-dev:isPartOfMapping _:node1agmib5kgx1 .
 
-_:node1aghc1r9ix1 km-dev:hasLogicalTable _:node1aghc1r9ix22 .
+_:node1agmib5kgx1 km-dev:hasLogicalTable _:node1agmib5kgx26 .
 
-km-dev:TriplesMap_d7ffc844-9968-4895-99d6-d66470e48f32 rr:logicalTable _:node1aghc1r9ix22 ;
-	rr:subjectMap _:node1aghc1r9ix23 .
+km-dev:TriplesMap_7956164b-f389-43d5-86bf-ba61ae66462b rr:logicalTable _:node1agmib5kgx26 ;
+	rr:subjectMap _:node1agmib5kgx27 .
 
-_:node1aghc1r9ix1 km-dev:hasSubjectMap _:node1aghc1r9ix23 .
+_:node1agmib5kgx1 km-dev:hasSubjectMap _:node1agmib5kgx27 .
 
-_:node1aghc1r9ix23 km-dev:isPartOfMapping _:node1aghc1r9ix1 ;
+_:node1agmib5kgx27 km-dev:isPartOfMapping _:node1agmib5kgx1 ;
 	a rr:SubjectMap ;
 	km-dev:alignmentNodeId "http://iais.fraunhofer.de/aml#CAEXFile2" ;
 	rr:class aml:CAEXFile ;
 	rr:template "{[\"CAEXFile\",\"SchemaVersion\"]}" ;
 	a km-dev:steinerTreeRootNode .
 
-km-dev:PredicateObjectMap_accb6c4d-e801-46e2-8bf9-c5c6f7e1e6fe rr:predicate aml:hasAdditionalInformation .
+km-dev:PredicateObjectMap_7cec8692-f178-4d57-9cb4-8108d85c640c rr:predicate aml:hasAdditionalInformation .
 
-km-dev:RefObjectMap_e3e740ff-9d3d-494e-9701-4fafd623b234 a rr:RefObjectMap , rr:ObjectMap ;
-	rr:parentTriplesMap km-dev:TriplesMap_02db554e-d01b-45a4-a3fb-b80858abff35 ;
-	km-dev:isPartOfMapping _:node1aghc1r9ix1 .
+km-dev:RefObjectMap_e3b75151-3a53-4b17-a541-c392808d3195 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_a7362cbd-b360-4bd6-8eda-608213a6bdb1 ;
+	km-dev:isPartOfMapping _:node1agmib5kgx1 .
 
-_:node1aghc1r9ix1 km-dev:hasObjectMap km-dev:RefObjectMap_e3e740ff-9d3d-494e-9701-4fafd623b234 .
+_:node1agmib5kgx1 km-dev:hasObjectMap km-dev:RefObjectMap_e3b75151-3a53-4b17-a541-c392808d3195 .
 
-km-dev:PredicateObjectMap_accb6c4d-e801-46e2-8bf9-c5c6f7e1e6fe rr:objectMap km-dev:RefObjectMap_e3e740ff-9d3d-494e-9701-4fafd623b234 .
+km-dev:PredicateObjectMap_7cec8692-f178-4d57-9cb4-8108d85c640c rr:objectMap km-dev:RefObjectMap_e3b75151-3a53-4b17-a541-c392808d3195 .
 
-km-dev:TriplesMap_d7ffc844-9968-4895-99d6-d66470e48f32 rr:predicateObjectMap km-dev:PredicateObjectMap_accb6c4d-e801-46e2-8bf9-c5c6f7e1e6fe .
+km-dev:TriplesMap_7956164b-f389-43d5-86bf-ba61ae66462b rr:predicateObjectMap km-dev:PredicateObjectMap_7cec8692-f178-4d57-9cb4-8108d85c640c .
 
-km-dev:PredicateObjectMap_accb6c4d-e801-46e2-8bf9-c5c6f7e1e6fe a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1aghc1r9ix1 .
+km-dev:PredicateObjectMap_7cec8692-f178-4d57-9cb4-8108d85c640c a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1agmib5kgx1 .
 
-_:node1aghc1r9ix1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_accb6c4d-e801-46e2-8bf9-c5c6f7e1e6fe .
+_:node1agmib5kgx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_7cec8692-f178-4d57-9cb4-8108d85c640c .
 
-km-dev:PredicateObjectMap_a25ceab2-5179-4585-bfbc-a77e77b3d2d0 rr:predicate aml:hasAdditionalInformation .
+km-dev:PredicateObjectMap_ecdcf61c-75f6-4568-9c8f-71659c45cbef rr:predicate aml:hasAdditionalInformation .
 
-km-dev:RefObjectMap_e57af058-1afd-4e10-9a26-ce35e3d16cc5 a rr:RefObjectMap , rr:ObjectMap ;
-	rr:parentTriplesMap km-dev:TriplesMap_15d69132-d6fd-4b78-a20d-3c2d71022a9d ;
-	km-dev:isPartOfMapping _:node1aghc1r9ix1 .
+km-dev:RefObjectMap_659e1c6f-c9f2-40ad-98c6-93055325fea2 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_f148fb9c-309d-4a68-8943-df5d7ed3283d ;
+	km-dev:isPartOfMapping _:node1agmib5kgx1 .
 
-_:node1aghc1r9ix1 km-dev:hasObjectMap km-dev:RefObjectMap_e57af058-1afd-4e10-9a26-ce35e3d16cc5 .
+_:node1agmib5kgx1 km-dev:hasObjectMap km-dev:RefObjectMap_659e1c6f-c9f2-40ad-98c6-93055325fea2 .
 
-km-dev:PredicateObjectMap_a25ceab2-5179-4585-bfbc-a77e77b3d2d0 rr:objectMap km-dev:RefObjectMap_e57af058-1afd-4e10-9a26-ce35e3d16cc5 .
+km-dev:PredicateObjectMap_ecdcf61c-75f6-4568-9c8f-71659c45cbef rr:objectMap km-dev:RefObjectMap_659e1c6f-c9f2-40ad-98c6-93055325fea2 .
 
-km-dev:TriplesMap_d7ffc844-9968-4895-99d6-d66470e48f32 rr:predicateObjectMap km-dev:PredicateObjectMap_a25ceab2-5179-4585-bfbc-a77e77b3d2d0 .
+km-dev:TriplesMap_7956164b-f389-43d5-86bf-ba61ae66462b rr:predicateObjectMap km-dev:PredicateObjectMap_ecdcf61c-75f6-4568-9c8f-71659c45cbef .
 
-km-dev:PredicateObjectMap_a25ceab2-5179-4585-bfbc-a77e77b3d2d0 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1aghc1r9ix1 .
+km-dev:PredicateObjectMap_ecdcf61c-75f6-4568-9c8f-71659c45cbef a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1agmib5kgx1 .
 
-_:node1aghc1r9ix1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_a25ceab2-5179-4585-bfbc-a77e77b3d2d0 .
+_:node1agmib5kgx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_ecdcf61c-75f6-4568-9c8f-71659c45cbef .
 
-km-dev:PredicateObjectMap_b31b2897-97b5-4620-b2b5-e6f0757261ac rr:predicate aml:hasExternalReference .
+km-dev:PredicateObjectMap_fe2b763b-f02b-465e-9cbf-851ad6c95f0a rr:predicate aml:hasExternalReference .
 
-km-dev:RefObjectMap_79a37f04-abcd-48a3-9544-e041f99040dc a rr:RefObjectMap , rr:ObjectMap ;
-	rr:parentTriplesMap km-dev:TriplesMap_3578ee61-5383-4795-9358-215c47f2a695 ;
-	km-dev:isPartOfMapping _:node1aghc1r9ix1 .
+km-dev:RefObjectMap_c34eb352-51b5-4732-9724-e59186b48c77 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_2b21c834-ffd5-445f-837f-672b14e28ec8 ;
+	km-dev:isPartOfMapping _:node1agmib5kgx1 .
 
-_:node1aghc1r9ix1 km-dev:hasObjectMap km-dev:RefObjectMap_79a37f04-abcd-48a3-9544-e041f99040dc .
+_:node1agmib5kgx1 km-dev:hasObjectMap km-dev:RefObjectMap_c34eb352-51b5-4732-9724-e59186b48c77 .
 
-km-dev:PredicateObjectMap_b31b2897-97b5-4620-b2b5-e6f0757261ac rr:objectMap km-dev:RefObjectMap_79a37f04-abcd-48a3-9544-e041f99040dc .
+km-dev:PredicateObjectMap_fe2b763b-f02b-465e-9cbf-851ad6c95f0a rr:objectMap km-dev:RefObjectMap_c34eb352-51b5-4732-9724-e59186b48c77 .
 
-km-dev:TriplesMap_d7ffc844-9968-4895-99d6-d66470e48f32 rr:predicateObjectMap km-dev:PredicateObjectMap_b31b2897-97b5-4620-b2b5-e6f0757261ac .
+km-dev:TriplesMap_7956164b-f389-43d5-86bf-ba61ae66462b rr:predicateObjectMap km-dev:PredicateObjectMap_fe2b763b-f02b-465e-9cbf-851ad6c95f0a .
 
-km-dev:PredicateObjectMap_b31b2897-97b5-4620-b2b5-e6f0757261ac a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1aghc1r9ix1 .
+km-dev:PredicateObjectMap_fe2b763b-f02b-465e-9cbf-851ad6c95f0a a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1agmib5kgx1 .
 
-_:node1aghc1r9ix1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_b31b2897-97b5-4620-b2b5-e6f0757261ac .
+_:node1agmib5kgx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_fe2b763b-f02b-465e-9cbf-851ad6c95f0a .
 
-km-dev:PredicateObjectMap_08016b3e-2da1-43c5-b7ec-6dff62452eb0 rr:predicate aml:hasFileName .
+km-dev:PredicateObjectMap_3010fea9-6cfe-4909-8f2b-89210a81240c rr:predicate aml:hasFileName .
 
-_:node1aghc1r9ix24 rr:column "[\"CAEXFile\",\"FileName\"]" ;
+_:node1agmib5kgx28 rr:column "[\"CAEXFile\",\"FileName\"]" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1aghc1r9ix1 .
+	km-dev:isPartOfMapping _:node1agmib5kgx1 .
 
-_:node1aghc1r9ix1 km-dev:hasObjectMap _:node1aghc1r9ix24 .
+_:node1agmib5kgx1 km-dev:hasObjectMap _:node1agmib5kgx28 .
 
-km-dev:PredicateObjectMap_08016b3e-2da1-43c5-b7ec-6dff62452eb0 rr:objectMap _:node1aghc1r9ix24 .
+km-dev:PredicateObjectMap_3010fea9-6cfe-4909-8f2b-89210a81240c rr:objectMap _:node1agmib5kgx28 .
 
-km-dev:TriplesMap_d7ffc844-9968-4895-99d6-d66470e48f32 rr:predicateObjectMap km-dev:PredicateObjectMap_08016b3e-2da1-43c5-b7ec-6dff62452eb0 .
+km-dev:TriplesMap_7956164b-f389-43d5-86bf-ba61ae66462b rr:predicateObjectMap km-dev:PredicateObjectMap_3010fea9-6cfe-4909-8f2b-89210a81240c .
 
-km-dev:PredicateObjectMap_08016b3e-2da1-43c5-b7ec-6dff62452eb0 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1aghc1r9ix1 .
+km-dev:PredicateObjectMap_3010fea9-6cfe-4909-8f2b-89210a81240c a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1agmib5kgx1 .
 
-_:node1aghc1r9ix1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_08016b3e-2da1-43c5-b7ec-6dff62452eb0 .
+_:node1agmib5kgx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_3010fea9-6cfe-4909-8f2b-89210a81240c .
 
-km-dev:PredicateObjectMap_dae23197-444c-4b5a-867c-a1a0a5c77740 rr:predicate aml:hasInstanceHierarchy .
+km-dev:PredicateObjectMap_19acee70-3e2a-4f65-8ba8-5c1c19e20c1b rr:predicate aml:hasInstanceHierarchy .
 
-km-dev:RefObjectMap_af2d4a72-d798-4e60-9ad2-334295756802 a rr:RefObjectMap , rr:ObjectMap ;
-	rr:parentTriplesMap km-dev:TriplesMap_446e2c45-402e-493a-a2a5-4959c6265292 ;
-	km-dev:isPartOfMapping _:node1aghc1r9ix1 .
+km-dev:RefObjectMap_e937e706-101b-46f6-a7f1-7f280a76c7d7 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_644b63e8-aa75-48dc-9fd0-af3232c699aa ;
+	km-dev:isPartOfMapping _:node1agmib5kgx1 .
 
-_:node1aghc1r9ix1 km-dev:hasObjectMap km-dev:RefObjectMap_af2d4a72-d798-4e60-9ad2-334295756802 .
+_:node1agmib5kgx1 km-dev:hasObjectMap km-dev:RefObjectMap_e937e706-101b-46f6-a7f1-7f280a76c7d7 .
 
-km-dev:PredicateObjectMap_dae23197-444c-4b5a-867c-a1a0a5c77740 rr:objectMap km-dev:RefObjectMap_af2d4a72-d798-4e60-9ad2-334295756802 .
+km-dev:PredicateObjectMap_19acee70-3e2a-4f65-8ba8-5c1c19e20c1b rr:objectMap km-dev:RefObjectMap_e937e706-101b-46f6-a7f1-7f280a76c7d7 .
 
-km-dev:TriplesMap_d7ffc844-9968-4895-99d6-d66470e48f32 rr:predicateObjectMap km-dev:PredicateObjectMap_dae23197-444c-4b5a-867c-a1a0a5c77740 .
+km-dev:TriplesMap_7956164b-f389-43d5-86bf-ba61ae66462b rr:predicateObjectMap km-dev:PredicateObjectMap_19acee70-3e2a-4f65-8ba8-5c1c19e20c1b .
 
-km-dev:PredicateObjectMap_dae23197-444c-4b5a-867c-a1a0a5c77740 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1aghc1r9ix1 .
+km-dev:PredicateObjectMap_19acee70-3e2a-4f65-8ba8-5c1c19e20c1b a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1agmib5kgx1 .
 
-_:node1aghc1r9ix1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_dae23197-444c-4b5a-867c-a1a0a5c77740 .
+_:node1agmib5kgx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_19acee70-3e2a-4f65-8ba8-5c1c19e20c1b .
 
-km-dev:PredicateObjectMap_e4883ef4-48e9-4952-aa48-cc91367db033 rr:predicate aml:hasSchemaVersion .
+km-dev:PredicateObjectMap_7725513f-6184-4548-8749-b4ce92fc7b80 rr:predicate aml:hasSchemaVersion .
 
-_:node1aghc1r9ix25 rr:column "[\"CAEXFile\",\"SchemaVersion\"]" ;
+_:node1agmib5kgx29 rr:column "[\"CAEXFile\",\"SchemaVersion\"]" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1aghc1r9ix1 .
+	km-dev:isPartOfMapping _:node1agmib5kgx1 .
 
-_:node1aghc1r9ix1 km-dev:hasObjectMap _:node1aghc1r9ix25 .
+_:node1agmib5kgx1 km-dev:hasObjectMap _:node1agmib5kgx29 .
 
-km-dev:PredicateObjectMap_e4883ef4-48e9-4952-aa48-cc91367db033 rr:objectMap _:node1aghc1r9ix25 .
+km-dev:PredicateObjectMap_7725513f-6184-4548-8749-b4ce92fc7b80 rr:objectMap _:node1agmib5kgx29 .
 
-km-dev:TriplesMap_d7ffc844-9968-4895-99d6-d66470e48f32 rr:predicateObjectMap km-dev:PredicateObjectMap_e4883ef4-48e9-4952-aa48-cc91367db033 .
+km-dev:TriplesMap_7956164b-f389-43d5-86bf-ba61ae66462b rr:predicateObjectMap km-dev:PredicateObjectMap_7725513f-6184-4548-8749-b4ce92fc7b80 .
 
-km-dev:PredicateObjectMap_e4883ef4-48e9-4952-aa48-cc91367db033 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1aghc1r9ix1 .
+km-dev:PredicateObjectMap_7725513f-6184-4548-8749-b4ce92fc7b80 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1agmib5kgx1 .
 
-_:node1aghc1r9ix1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_e4883ef4-48e9-4952-aa48-cc91367db033 .
+_:node1agmib5kgx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_7725513f-6184-4548-8749-b4ce92fc7b80 .
 
-km-dev:TriplesMap_3578ee61-5383-4795-9358-215c47f2a695 a rr:TriplesMap .
+km-dev:TriplesMap_2b21c834-ffd5-445f-837f-672b14e28ec8 a rr:TriplesMap .
 
-_:node1aghc1r9ix1 km-dev:hasTriplesMap km-dev:TriplesMap_3578ee61-5383-4795-9358-215c47f2a695 .
+_:node1agmib5kgx1 km-dev:hasTriplesMap km-dev:TriplesMap_2b21c834-ffd5-445f-837f-672b14e28ec8 .
 
-km-dev:TriplesMap_3578ee61-5383-4795-9358-215c47f2a695 km-dev:isPartOfMapping _:node1aghc1r9ix1 .
+km-dev:TriplesMap_2b21c834-ffd5-445f-837f-672b14e28ec8 km-dev:isPartOfMapping _:node1agmib5kgx1 .
 
-_:node1aghc1r9ix26 rr:tableName "ExampleInstanceHierarchy.aml" ;
+_:node1agmib5kgx30 rr:tableName "ExampleInstanceHierarchy.aml" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node1aghc1r9ix1 .
+	km-dev:isPartOfMapping _:node1agmib5kgx1 .
 
-_:node1aghc1r9ix1 km-dev:hasLogicalTable _:node1aghc1r9ix26 .
+_:node1agmib5kgx1 km-dev:hasLogicalTable _:node1agmib5kgx30 .
 
-km-dev:TriplesMap_3578ee61-5383-4795-9358-215c47f2a695 rr:logicalTable _:node1aghc1r9ix26 ;
-	rr:subjectMap _:node1aghc1r9ix27 .
+km-dev:TriplesMap_2b21c834-ffd5-445f-837f-672b14e28ec8 rr:logicalTable _:node1agmib5kgx30 ;
+	rr:subjectMap _:node1agmib5kgx31 .
 
-_:node1aghc1r9ix1 km-dev:hasSubjectMap _:node1aghc1r9ix27 .
+_:node1agmib5kgx1 km-dev:hasSubjectMap _:node1agmib5kgx31 .
 
-_:node1aghc1r9ix27 km-dev:isPartOfMapping _:node1aghc1r9ix1 ;
+_:node1agmib5kgx31 km-dev:isPartOfMapping _:node1agmib5kgx1 ;
 	a rr:SubjectMap ;
 	km-dev:alignmentNodeId "http://iais.fraunhofer.de/aml#ExternalReference1" ;
 	rr:class aml:ExternalReference ;
 	rr:template "{[\"CAEXFile\",\"ExternalReference\",\"Alias\"]}" .
 
-km-dev:PredicateObjectMap_2b7d7490-d374-4364-9317-3558afb7c6fc rr:predicate aml:externalReferenceAlias .
+km-dev:PredicateObjectMap_efa3592a-dfb4-46d8-b361-3f8b1cbf69d8 rr:predicate aml:hasAlias .
 
-_:node1aghc1r9ix28 rr:column "[\"CAEXFile\",\"ExternalReference\",\"Alias\"]" ;
+_:node1agmib5kgx32 rr:column "[\"CAEXFile\",\"ExternalReference\",\"Alias\"]" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1aghc1r9ix1 .
+	km-dev:isPartOfMapping _:node1agmib5kgx1 .
 
-_:node1aghc1r9ix1 km-dev:hasObjectMap _:node1aghc1r9ix28 .
+_:node1agmib5kgx1 km-dev:hasObjectMap _:node1agmib5kgx32 .
 
-km-dev:PredicateObjectMap_2b7d7490-d374-4364-9317-3558afb7c6fc rr:objectMap _:node1aghc1r9ix28 .
+km-dev:PredicateObjectMap_efa3592a-dfb4-46d8-b361-3f8b1cbf69d8 rr:objectMap _:node1agmib5kgx32 .
 
-km-dev:TriplesMap_3578ee61-5383-4795-9358-215c47f2a695 rr:predicateObjectMap km-dev:PredicateObjectMap_2b7d7490-d374-4364-9317-3558afb7c6fc .
+km-dev:TriplesMap_2b21c834-ffd5-445f-837f-672b14e28ec8 rr:predicateObjectMap km-dev:PredicateObjectMap_efa3592a-dfb4-46d8-b361-3f8b1cbf69d8 .
 
-km-dev:PredicateObjectMap_2b7d7490-d374-4364-9317-3558afb7c6fc a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1aghc1r9ix1 .
+km-dev:PredicateObjectMap_efa3592a-dfb4-46d8-b361-3f8b1cbf69d8 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1agmib5kgx1 .
 
-_:node1aghc1r9ix1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_2b7d7490-d374-4364-9317-3558afb7c6fc .
+_:node1agmib5kgx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_efa3592a-dfb4-46d8-b361-3f8b1cbf69d8 .
 
-km-dev:PredicateObjectMap_e4b17afb-3bfd-46f1-b2f6-72924d1b3e37 rr:predicate aml:externalReferencePath .
+km-dev:PredicateObjectMap_85f12a60-42ac-414c-b64a-319015cef24c rr:predicate aml:hasPath .
 
-_:node1aghc1r9ix29 rr:column "[\"CAEXFile\",\"ExternalReference\",\"Path\"]" ;
+_:node1agmib5kgx33 rr:column "[\"CAEXFile\",\"ExternalReference\",\"Path\"]" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1aghc1r9ix1 .
+	km-dev:isPartOfMapping _:node1agmib5kgx1 .
 
-_:node1aghc1r9ix1 km-dev:hasObjectMap _:node1aghc1r9ix29 .
+_:node1agmib5kgx1 km-dev:hasObjectMap _:node1agmib5kgx33 .
 
-km-dev:PredicateObjectMap_e4b17afb-3bfd-46f1-b2f6-72924d1b3e37 rr:objectMap _:node1aghc1r9ix29 .
+km-dev:PredicateObjectMap_85f12a60-42ac-414c-b64a-319015cef24c rr:objectMap _:node1agmib5kgx33 .
 
-km-dev:TriplesMap_3578ee61-5383-4795-9358-215c47f2a695 rr:predicateObjectMap km-dev:PredicateObjectMap_e4b17afb-3bfd-46f1-b2f6-72924d1b3e37 .
+km-dev:TriplesMap_2b21c834-ffd5-445f-837f-672b14e28ec8 rr:predicateObjectMap km-dev:PredicateObjectMap_85f12a60-42ac-414c-b64a-319015cef24c .
 
-km-dev:PredicateObjectMap_e4b17afb-3bfd-46f1-b2f6-72924d1b3e37 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1aghc1r9ix1 .
+km-dev:PredicateObjectMap_85f12a60-42ac-414c-b64a-319015cef24c a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1agmib5kgx1 .
 
-_:node1aghc1r9ix1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_e4b17afb-3bfd-46f1-b2f6-72924d1b3e37 .
+_:node1agmib5kgx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_85f12a60-42ac-414c-b64a-319015cef24c .
 
-km-dev:TriplesMap_446e2c45-402e-493a-a2a5-4959c6265292 a rr:TriplesMap .
+km-dev:TriplesMap_644b63e8-aa75-48dc-9fd0-af3232c699aa a rr:TriplesMap .
 
-_:node1aghc1r9ix1 km-dev:hasTriplesMap km-dev:TriplesMap_446e2c45-402e-493a-a2a5-4959c6265292 .
+_:node1agmib5kgx1 km-dev:hasTriplesMap km-dev:TriplesMap_644b63e8-aa75-48dc-9fd0-af3232c699aa .
 
-km-dev:TriplesMap_446e2c45-402e-493a-a2a5-4959c6265292 km-dev:isPartOfMapping _:node1aghc1r9ix1 .
+km-dev:TriplesMap_644b63e8-aa75-48dc-9fd0-af3232c699aa km-dev:isPartOfMapping _:node1agmib5kgx1 .
 
-_:node1aghc1r9ix30 rr:tableName "ExampleInstanceHierarchy.aml" ;
+_:node1agmib5kgx34 rr:tableName "ExampleInstanceHierarchy.aml" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node1aghc1r9ix1 .
+	km-dev:isPartOfMapping _:node1agmib5kgx1 .
 
-_:node1aghc1r9ix1 km-dev:hasLogicalTable _:node1aghc1r9ix30 .
+_:node1agmib5kgx1 km-dev:hasLogicalTable _:node1agmib5kgx34 .
 
-km-dev:TriplesMap_446e2c45-402e-493a-a2a5-4959c6265292 rr:logicalTable _:node1aghc1r9ix30 ;
-	rr:subjectMap _:node1aghc1r9ix31 .
+km-dev:TriplesMap_644b63e8-aa75-48dc-9fd0-af3232c699aa rr:logicalTable _:node1agmib5kgx34 ;
+	rr:subjectMap _:node1agmib5kgx35 .
 
-_:node1aghc1r9ix1 km-dev:hasSubjectMap _:node1aghc1r9ix31 .
+_:node1agmib5kgx1 km-dev:hasSubjectMap _:node1agmib5kgx35 .
 
-_:node1aghc1r9ix31 km-dev:isPartOfMapping _:node1aghc1r9ix1 ;
+_:node1agmib5kgx35 km-dev:isPartOfMapping _:node1agmib5kgx1 ;
 	a rr:SubjectMap ;
 	km-dev:alignmentNodeId "http://iais.fraunhofer.de/aml#InstanceHierarchy1" ;
 	rr:class aml:InstanceHierarchy ;
 	rr:template "{[\"CAEXFile\",\"InstanceHierarchy\",\"Name\"]}" .
 
-km-dev:PredicateObjectMap_b47141db-b5b8-432b-a281-519b97ab0d32 rr:predicate aml:hasInternalElement .
+km-dev:PredicateObjectMap_71a6f72a-e437-4db1-ba2a-d9088d57ac3b rr:predicate aml:hasInternalElement .
 
-km-dev:RefObjectMap_2a44d393-5193-4b3b-a01a-0e0299d7ab85 a rr:RefObjectMap , rr:ObjectMap ;
-	rr:parentTriplesMap km-dev:TriplesMap_b932e772-f2e4-4bc1-9b67-97a645ba5799 ;
-	km-dev:isPartOfMapping _:node1aghc1r9ix1 .
+km-dev:RefObjectMap_93dcf92c-42bb-48b1-80ff-4b7df73a5192 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_555768f7-cbb6-408a-b5ab-667441116973 ;
+	km-dev:isPartOfMapping _:node1agmib5kgx1 .
 
-_:node1aghc1r9ix1 km-dev:hasObjectMap km-dev:RefObjectMap_2a44d393-5193-4b3b-a01a-0e0299d7ab85 .
+_:node1agmib5kgx1 km-dev:hasObjectMap km-dev:RefObjectMap_93dcf92c-42bb-48b1-80ff-4b7df73a5192 .
 
-km-dev:PredicateObjectMap_b47141db-b5b8-432b-a281-519b97ab0d32 rr:objectMap km-dev:RefObjectMap_2a44d393-5193-4b3b-a01a-0e0299d7ab85 .
+km-dev:PredicateObjectMap_71a6f72a-e437-4db1-ba2a-d9088d57ac3b rr:objectMap km-dev:RefObjectMap_93dcf92c-42bb-48b1-80ff-4b7df73a5192 .
 
-km-dev:TriplesMap_446e2c45-402e-493a-a2a5-4959c6265292 rr:predicateObjectMap km-dev:PredicateObjectMap_b47141db-b5b8-432b-a281-519b97ab0d32 .
+km-dev:TriplesMap_644b63e8-aa75-48dc-9fd0-af3232c699aa rr:predicateObjectMap km-dev:PredicateObjectMap_71a6f72a-e437-4db1-ba2a-d9088d57ac3b .
 
-km-dev:PredicateObjectMap_b47141db-b5b8-432b-a281-519b97ab0d32 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1aghc1r9ix1 .
+km-dev:PredicateObjectMap_71a6f72a-e437-4db1-ba2a-d9088d57ac3b a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1agmib5kgx1 .
 
-_:node1aghc1r9ix1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_b47141db-b5b8-432b-a281-519b97ab0d32 .
+_:node1agmib5kgx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_71a6f72a-e437-4db1-ba2a-d9088d57ac3b .
 
-km-dev:PredicateObjectMap_710b7b99-33ab-4a20-909f-4e3b64c5d043 rr:predicate schema:name .
+km-dev:PredicateObjectMap_8cf6355f-339d-40f3-93bb-abd37082e533 rr:predicate schema:name .
 
-_:node1aghc1r9ix32 rr:column "[\"CAEXFile\",\"InstanceHierarchy\",\"Name\"]" ;
+_:node1agmib5kgx36 rr:column "[\"CAEXFile\",\"InstanceHierarchy\",\"Name\"]" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1aghc1r9ix1 .
+	km-dev:isPartOfMapping _:node1agmib5kgx1 .
 
-_:node1aghc1r9ix1 km-dev:hasObjectMap _:node1aghc1r9ix32 .
+_:node1agmib5kgx1 km-dev:hasObjectMap _:node1agmib5kgx36 .
 
-km-dev:PredicateObjectMap_710b7b99-33ab-4a20-909f-4e3b64c5d043 rr:objectMap _:node1aghc1r9ix32 .
+km-dev:PredicateObjectMap_8cf6355f-339d-40f3-93bb-abd37082e533 rr:objectMap _:node1agmib5kgx36 .
 
-km-dev:TriplesMap_446e2c45-402e-493a-a2a5-4959c6265292 rr:predicateObjectMap km-dev:PredicateObjectMap_710b7b99-33ab-4a20-909f-4e3b64c5d043 .
+km-dev:TriplesMap_644b63e8-aa75-48dc-9fd0-af3232c699aa rr:predicateObjectMap km-dev:PredicateObjectMap_8cf6355f-339d-40f3-93bb-abd37082e533 .
 
-km-dev:PredicateObjectMap_710b7b99-33ab-4a20-909f-4e3b64c5d043 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1aghc1r9ix1 .
+km-dev:PredicateObjectMap_8cf6355f-339d-40f3-93bb-abd37082e533 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1agmib5kgx1 .
 
-_:node1aghc1r9ix1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_710b7b99-33ab-4a20-909f-4e3b64c5d043 .
+_:node1agmib5kgx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_8cf6355f-339d-40f3-93bb-abd37082e533 .
 
-km-dev:TriplesMap_b932e772-f2e4-4bc1-9b67-97a645ba5799 a rr:TriplesMap .
+km-dev:TriplesMap_555768f7-cbb6-408a-b5ab-667441116973 a rr:TriplesMap .
 
-_:node1aghc1r9ix1 km-dev:hasTriplesMap km-dev:TriplesMap_b932e772-f2e4-4bc1-9b67-97a645ba5799 .
+_:node1agmib5kgx1 km-dev:hasTriplesMap km-dev:TriplesMap_555768f7-cbb6-408a-b5ab-667441116973 .
 
-km-dev:TriplesMap_b932e772-f2e4-4bc1-9b67-97a645ba5799 km-dev:isPartOfMapping _:node1aghc1r9ix1 .
+km-dev:TriplesMap_555768f7-cbb6-408a-b5ab-667441116973 km-dev:isPartOfMapping _:node1agmib5kgx1 .
 
-_:node1aghc1r9ix33 rr:tableName "ExampleInstanceHierarchy.aml" ;
+_:node1agmib5kgx37 rr:tableName "ExampleInstanceHierarchy.aml" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node1aghc1r9ix1 .
+	km-dev:isPartOfMapping _:node1agmib5kgx1 .
 
-_:node1aghc1r9ix1 km-dev:hasLogicalTable _:node1aghc1r9ix33 .
+_:node1agmib5kgx1 km-dev:hasLogicalTable _:node1agmib5kgx37 .
 
-km-dev:TriplesMap_b932e772-f2e4-4bc1-9b67-97a645ba5799 rr:logicalTable _:node1aghc1r9ix33 ;
-	rr:subjectMap _:node1aghc1r9ix34 .
+km-dev:TriplesMap_555768f7-cbb6-408a-b5ab-667441116973 rr:logicalTable _:node1agmib5kgx37 ;
+	rr:subjectMap _:node1agmib5kgx38 .
 
-_:node1aghc1r9ix1 km-dev:hasSubjectMap _:node1aghc1r9ix34 .
+_:node1agmib5kgx1 km-dev:hasSubjectMap _:node1agmib5kgx38 .
 
-_:node1aghc1r9ix34 km-dev:isPartOfMapping _:node1aghc1r9ix1 ;
+_:node1agmib5kgx38 km-dev:isPartOfMapping _:node1agmib5kgx1 ;
 	a rr:SubjectMap ;
 	km-dev:alignmentNodeId "http://iais.fraunhofer.de/aml#InternalElement1" ;
 	rr:class aml:InternalElement ;
 	rr:template "{[\"CAEXFile\",\"InstanceHierarchy\",\"InternalElement\",\"ID\"]}" .
 
-km-dev:PredicateObjectMap_0d3862a5-078d-4693-bba0-8d12c82c33e3 rr:predicate aml:RefBaseSystemUnitPath .
+km-dev:PredicateObjectMap_c7092f02-23d9-444e-ab9b-002e6951e546 rr:predicate aml:RefBaseSystemUnitPath .
 
-_:node1aghc1r9ix35 rr:column "[\"CAEXFile\",\"InstanceHierarchy\",\"InternalElement\",\"RefBaseSystemUnitPath\"]" ;
+_:node1agmib5kgx39 rr:column "[\"CAEXFile\",\"InstanceHierarchy\",\"InternalElement\",\"RefBaseSystemUnitPath\"]" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1aghc1r9ix1 .
+	km-dev:isPartOfMapping _:node1agmib5kgx1 .
 
-_:node1aghc1r9ix1 km-dev:hasObjectMap _:node1aghc1r9ix35 .
+_:node1agmib5kgx1 km-dev:hasObjectMap _:node1agmib5kgx39 .
 
-km-dev:PredicateObjectMap_0d3862a5-078d-4693-bba0-8d12c82c33e3 rr:objectMap _:node1aghc1r9ix35 .
+km-dev:PredicateObjectMap_c7092f02-23d9-444e-ab9b-002e6951e546 rr:objectMap _:node1agmib5kgx39 .
 
-km-dev:TriplesMap_b932e772-f2e4-4bc1-9b67-97a645ba5799 rr:predicateObjectMap km-dev:PredicateObjectMap_0d3862a5-078d-4693-bba0-8d12c82c33e3 .
+km-dev:TriplesMap_555768f7-cbb6-408a-b5ab-667441116973 rr:predicateObjectMap km-dev:PredicateObjectMap_c7092f02-23d9-444e-ab9b-002e6951e546 .
 
-km-dev:PredicateObjectMap_0d3862a5-078d-4693-bba0-8d12c82c33e3 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1aghc1r9ix1 .
+km-dev:PredicateObjectMap_c7092f02-23d9-444e-ab9b-002e6951e546 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1agmib5kgx1 .
 
-_:node1aghc1r9ix1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_0d3862a5-078d-4693-bba0-8d12c82c33e3 .
+_:node1agmib5kgx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_c7092f02-23d9-444e-ab9b-002e6951e546 .
 
-km-dev:PredicateObjectMap_80444b07-3558-4d12-a7c5-4e4ec404d60f rr:predicate aml:hasAttribute .
+km-dev:PredicateObjectMap_97589071-f6b0-4e1d-a60c-b94176e50c3b rr:predicate aml:hasAttribute .
 
-km-dev:RefObjectMap_21d481fc-e09d-4b2f-b2bc-fb00b1f257e4 a rr:RefObjectMap , rr:ObjectMap ;
-	rr:parentTriplesMap km-dev:TriplesMap_9ecba680-9cac-4bae-8427-b53ce2a6b2c5 ;
-	km-dev:isPartOfMapping _:node1aghc1r9ix1 .
+km-dev:RefObjectMap_a861a9fa-6ef8-4d39-b3db-7a30a6c2f3d7 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_bee981eb-1725-43e2-81b9-6f1b12699244 ;
+	km-dev:isPartOfMapping _:node1agmib5kgx1 .
 
-_:node1aghc1r9ix1 km-dev:hasObjectMap km-dev:RefObjectMap_21d481fc-e09d-4b2f-b2bc-fb00b1f257e4 .
+_:node1agmib5kgx1 km-dev:hasObjectMap km-dev:RefObjectMap_a861a9fa-6ef8-4d39-b3db-7a30a6c2f3d7 .
 
-km-dev:PredicateObjectMap_80444b07-3558-4d12-a7c5-4e4ec404d60f rr:objectMap km-dev:RefObjectMap_21d481fc-e09d-4b2f-b2bc-fb00b1f257e4 .
+km-dev:PredicateObjectMap_97589071-f6b0-4e1d-a60c-b94176e50c3b rr:objectMap km-dev:RefObjectMap_a861a9fa-6ef8-4d39-b3db-7a30a6c2f3d7 .
 
-km-dev:TriplesMap_b932e772-f2e4-4bc1-9b67-97a645ba5799 rr:predicateObjectMap km-dev:PredicateObjectMap_80444b07-3558-4d12-a7c5-4e4ec404d60f .
+km-dev:TriplesMap_555768f7-cbb6-408a-b5ab-667441116973 rr:predicateObjectMap km-dev:PredicateObjectMap_97589071-f6b0-4e1d-a60c-b94176e50c3b .
 
-km-dev:PredicateObjectMap_80444b07-3558-4d12-a7c5-4e4ec404d60f a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1aghc1r9ix1 .
+km-dev:PredicateObjectMap_97589071-f6b0-4e1d-a60c-b94176e50c3b a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1agmib5kgx1 .
 
-_:node1aghc1r9ix1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_80444b07-3558-4d12-a7c5-4e4ec404d60f .
+_:node1agmib5kgx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_97589071-f6b0-4e1d-a60c-b94176e50c3b .
 
-km-dev:PredicateObjectMap_3c647a84-2ec4-47ef-8c6e-30d4e1475840 rr:predicate aml:hasAttribute .
+km-dev:PredicateObjectMap_3332e0d5-98bb-457c-bf29-92e6f6594c17 rr:predicate aml:hasAttribute .
 
-km-dev:RefObjectMap_76e87920-cc2c-4837-b2a0-ce63f6768d47 a rr:RefObjectMap , rr:ObjectMap ;
-	rr:parentTriplesMap km-dev:TriplesMap_8bc59946-94dd-448c-b01c-fd3876e9ed3f ;
-	km-dev:isPartOfMapping _:node1aghc1r9ix1 .
+km-dev:RefObjectMap_a26a79e3-ba7f-4e85-b73c-33e28a67ca74 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_6ccd5153-2a42-46a6-841e-847fabf347b6 ;
+	km-dev:isPartOfMapping _:node1agmib5kgx1 .
 
-_:node1aghc1r9ix1 km-dev:hasObjectMap km-dev:RefObjectMap_76e87920-cc2c-4837-b2a0-ce63f6768d47 .
+_:node1agmib5kgx1 km-dev:hasObjectMap km-dev:RefObjectMap_a26a79e3-ba7f-4e85-b73c-33e28a67ca74 .
 
-km-dev:PredicateObjectMap_3c647a84-2ec4-47ef-8c6e-30d4e1475840 rr:objectMap km-dev:RefObjectMap_76e87920-cc2c-4837-b2a0-ce63f6768d47 .
+km-dev:PredicateObjectMap_3332e0d5-98bb-457c-bf29-92e6f6594c17 rr:objectMap km-dev:RefObjectMap_a26a79e3-ba7f-4e85-b73c-33e28a67ca74 .
 
-km-dev:TriplesMap_b932e772-f2e4-4bc1-9b67-97a645ba5799 rr:predicateObjectMap km-dev:PredicateObjectMap_3c647a84-2ec4-47ef-8c6e-30d4e1475840 .
+km-dev:TriplesMap_555768f7-cbb6-408a-b5ab-667441116973 rr:predicateObjectMap km-dev:PredicateObjectMap_3332e0d5-98bb-457c-bf29-92e6f6594c17 .
 
-km-dev:PredicateObjectMap_3c647a84-2ec4-47ef-8c6e-30d4e1475840 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1aghc1r9ix1 .
+km-dev:PredicateObjectMap_3332e0d5-98bb-457c-bf29-92e6f6594c17 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1agmib5kgx1 .
 
-_:node1aghc1r9ix1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_3c647a84-2ec4-47ef-8c6e-30d4e1475840 .
+_:node1agmib5kgx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_3332e0d5-98bb-457c-bf29-92e6f6594c17 .
 
-km-dev:PredicateObjectMap_101e9bb5-5b5c-4a2c-8948-6c121f6d0ab7 rr:predicate aml:hasRoleRequeriment .
+km-dev:PredicateObjectMap_7537b66a-333f-44eb-a14a-3e9af480247b rr:predicate aml:hasID .
 
-km-dev:RefObjectMap_43b23288-dad7-48d7-b2ef-6016fe6bec3e a rr:RefObjectMap , rr:ObjectMap ;
-	rr:parentTriplesMap km-dev:TriplesMap_04435125-7a57-40c3-831c-015cf6da51a0 ;
-	km-dev:isPartOfMapping _:node1aghc1r9ix1 .
-
-_:node1aghc1r9ix1 km-dev:hasObjectMap km-dev:RefObjectMap_43b23288-dad7-48d7-b2ef-6016fe6bec3e .
-
-km-dev:PredicateObjectMap_101e9bb5-5b5c-4a2c-8948-6c121f6d0ab7 rr:objectMap km-dev:RefObjectMap_43b23288-dad7-48d7-b2ef-6016fe6bec3e .
-
-km-dev:TriplesMap_b932e772-f2e4-4bc1-9b67-97a645ba5799 rr:predicateObjectMap km-dev:PredicateObjectMap_101e9bb5-5b5c-4a2c-8948-6c121f6d0ab7 .
-
-km-dev:PredicateObjectMap_101e9bb5-5b5c-4a2c-8948-6c121f6d0ab7 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1aghc1r9ix1 .
-
-_:node1aghc1r9ix1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_101e9bb5-5b5c-4a2c-8948-6c121f6d0ab7 .
-
-km-dev:PredicateObjectMap_f0420a79-1b2e-4322-afac-89354efd375d rr:predicate aml:internalElementId .
-
-_:node1aghc1r9ix36 rr:column "[\"CAEXFile\",\"InstanceHierarchy\",\"InternalElement\",\"ID\"]" ;
+_:node1agmib5kgx40 rr:column "[\"CAEXFile\",\"InstanceHierarchy\",\"InternalElement\",\"ID\"]" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1aghc1r9ix1 .
+	km-dev:isPartOfMapping _:node1agmib5kgx1 .
 
-_:node1aghc1r9ix1 km-dev:hasObjectMap _:node1aghc1r9ix36 .
+_:node1agmib5kgx1 km-dev:hasObjectMap _:node1agmib5kgx40 .
 
-km-dev:PredicateObjectMap_f0420a79-1b2e-4322-afac-89354efd375d rr:objectMap _:node1aghc1r9ix36 .
+km-dev:PredicateObjectMap_7537b66a-333f-44eb-a14a-3e9af480247b rr:objectMap _:node1agmib5kgx40 .
 
-km-dev:TriplesMap_b932e772-f2e4-4bc1-9b67-97a645ba5799 rr:predicateObjectMap km-dev:PredicateObjectMap_f0420a79-1b2e-4322-afac-89354efd375d .
+km-dev:TriplesMap_555768f7-cbb6-408a-b5ab-667441116973 rr:predicateObjectMap km-dev:PredicateObjectMap_7537b66a-333f-44eb-a14a-3e9af480247b .
 
-km-dev:PredicateObjectMap_f0420a79-1b2e-4322-afac-89354efd375d a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1aghc1r9ix1 .
+km-dev:PredicateObjectMap_7537b66a-333f-44eb-a14a-3e9af480247b a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1agmib5kgx1 .
 
-_:node1aghc1r9ix1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_f0420a79-1b2e-4322-afac-89354efd375d .
+_:node1agmib5kgx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_7537b66a-333f-44eb-a14a-3e9af480247b .
 
-km-dev:PredicateObjectMap_b162cad8-19e3-4866-85b3-d5d9e2a261ba rr:predicate schema:name .
+km-dev:PredicateObjectMap_b469dc53-c5ca-457a-8a34-5cde67ba9e77 rr:predicate aml:hasRoleRequeriment .
 
-_:node1aghc1r9ix37 rr:column "[\"CAEXFile\",\"InstanceHierarchy\",\"InternalElement\",\"Name\"]" ;
+km-dev:RefObjectMap_7b5fa34f-ab9a-40d2-8dd9-f2d681c44234 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_a0b3b32b-ba07-452b-80bc-7b7c54d55736 ;
+	km-dev:isPartOfMapping _:node1agmib5kgx1 .
+
+_:node1agmib5kgx1 km-dev:hasObjectMap km-dev:RefObjectMap_7b5fa34f-ab9a-40d2-8dd9-f2d681c44234 .
+
+km-dev:PredicateObjectMap_b469dc53-c5ca-457a-8a34-5cde67ba9e77 rr:objectMap km-dev:RefObjectMap_7b5fa34f-ab9a-40d2-8dd9-f2d681c44234 .
+
+km-dev:TriplesMap_555768f7-cbb6-408a-b5ab-667441116973 rr:predicateObjectMap km-dev:PredicateObjectMap_b469dc53-c5ca-457a-8a34-5cde67ba9e77 .
+
+km-dev:PredicateObjectMap_b469dc53-c5ca-457a-8a34-5cde67ba9e77 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1agmib5kgx1 .
+
+_:node1agmib5kgx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_b469dc53-c5ca-457a-8a34-5cde67ba9e77 .
+
+km-dev:PredicateObjectMap_e0f356bb-67e8-45fc-aabb-c053c18352e6 rr:predicate schema:name .
+
+_:node1agmib5kgx41 rr:column "[\"CAEXFile\",\"InstanceHierarchy\",\"InternalElement\",\"Name\"]" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1aghc1r9ix1 .
+	km-dev:isPartOfMapping _:node1agmib5kgx1 .
 
-_:node1aghc1r9ix1 km-dev:hasObjectMap _:node1aghc1r9ix37 .
+_:node1agmib5kgx1 km-dev:hasObjectMap _:node1agmib5kgx41 .
 
-km-dev:PredicateObjectMap_b162cad8-19e3-4866-85b3-d5d9e2a261ba rr:objectMap _:node1aghc1r9ix37 .
+km-dev:PredicateObjectMap_e0f356bb-67e8-45fc-aabb-c053c18352e6 rr:objectMap _:node1agmib5kgx41 .
 
-km-dev:TriplesMap_b932e772-f2e4-4bc1-9b67-97a645ba5799 rr:predicateObjectMap km-dev:PredicateObjectMap_b162cad8-19e3-4866-85b3-d5d9e2a261ba .
+km-dev:TriplesMap_555768f7-cbb6-408a-b5ab-667441116973 rr:predicateObjectMap km-dev:PredicateObjectMap_e0f356bb-67e8-45fc-aabb-c053c18352e6 .
 
-km-dev:PredicateObjectMap_b162cad8-19e3-4866-85b3-d5d9e2a261ba a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1aghc1r9ix1 .
+km-dev:PredicateObjectMap_e0f356bb-67e8-45fc-aabb-c053c18352e6 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1agmib5kgx1 .
 
-_:node1aghc1r9ix1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_b162cad8-19e3-4866-85b3-d5d9e2a261ba .
+_:node1agmib5kgx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_e0f356bb-67e8-45fc-aabb-c053c18352e6 .
 
-km-dev:TriplesMap_04435125-7a57-40c3-831c-015cf6da51a0 a rr:TriplesMap .
+km-dev:TriplesMap_a0b3b32b-ba07-452b-80bc-7b7c54d55736 a rr:TriplesMap .
 
-_:node1aghc1r9ix1 km-dev:hasTriplesMap km-dev:TriplesMap_04435125-7a57-40c3-831c-015cf6da51a0 .
+_:node1agmib5kgx1 km-dev:hasTriplesMap km-dev:TriplesMap_a0b3b32b-ba07-452b-80bc-7b7c54d55736 .
 
-km-dev:TriplesMap_04435125-7a57-40c3-831c-015cf6da51a0 km-dev:isPartOfMapping _:node1aghc1r9ix1 .
+km-dev:TriplesMap_a0b3b32b-ba07-452b-80bc-7b7c54d55736 km-dev:isPartOfMapping _:node1agmib5kgx1 .
 
-_:node1aghc1r9ix38 rr:tableName "ExampleInstanceHierarchy.aml" ;
+_:node1agmib5kgx42 rr:tableName "ExampleInstanceHierarchy.aml" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node1aghc1r9ix1 .
+	km-dev:isPartOfMapping _:node1agmib5kgx1 .
 
-_:node1aghc1r9ix1 km-dev:hasLogicalTable _:node1aghc1r9ix38 .
+_:node1agmib5kgx1 km-dev:hasLogicalTable _:node1agmib5kgx42 .
 
-km-dev:TriplesMap_04435125-7a57-40c3-831c-015cf6da51a0 rr:logicalTable _:node1aghc1r9ix38 ;
-	rr:subjectMap _:node1aghc1r9ix39 .
+km-dev:TriplesMap_a0b3b32b-ba07-452b-80bc-7b7c54d55736 rr:logicalTable _:node1agmib5kgx42 ;
+	rr:subjectMap _:node1agmib5kgx43 .
 
-_:node1aghc1r9ix1 km-dev:hasSubjectMap _:node1aghc1r9ix39 .
+_:node1agmib5kgx1 km-dev:hasSubjectMap _:node1agmib5kgx43 .
 
-_:node1aghc1r9ix39 km-dev:isPartOfMapping _:node1aghc1r9ix1 ;
+_:node1agmib5kgx43 km-dev:isPartOfMapping _:node1agmib5kgx1 ;
 	a rr:SubjectMap ;
 	km-dev:alignmentNodeId "http://iais.fraunhofer.de/aml#RoleRequirements1" ;
 	rr:class aml:RoleRequirements ;
 	rr:template "{[\"CAEXFile\",\"InstanceHierarchy\",\"InternalElement\",\"RoleRequirements\",\"RefBaseRoleClassPath\"]}" .
 
-km-dev:PredicateObjectMap_8f8bb5c0-37fb-42b9-b2ec-ae193abcc73e rr:predicate aml:refRoleClassPath .
+km-dev:PredicateObjectMap_0b0510a6-495e-45e0-b5f1-a6e632d5f985 rr:predicate aml:refRoleClassPath .
 
-_:node1aghc1r9ix40 rr:column "[\"CAEXFile\",\"InstanceHierarchy\",\"InternalElement\",\"RoleRequirements\",\"RefBaseRoleClassPath\"]" ;
+_:node1agmib5kgx44 rr:column "[\"CAEXFile\",\"InstanceHierarchy\",\"InternalElement\",\"RoleRequirements\",\"RefBaseRoleClassPath\"]" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1aghc1r9ix1 .
+	km-dev:isPartOfMapping _:node1agmib5kgx1 .
 
-_:node1aghc1r9ix1 km-dev:hasObjectMap _:node1aghc1r9ix40 .
+_:node1agmib5kgx1 km-dev:hasObjectMap _:node1agmib5kgx44 .
 
-km-dev:PredicateObjectMap_8f8bb5c0-37fb-42b9-b2ec-ae193abcc73e rr:objectMap _:node1aghc1r9ix40 .
+km-dev:PredicateObjectMap_0b0510a6-495e-45e0-b5f1-a6e632d5f985 rr:objectMap _:node1agmib5kgx44 .
 
-km-dev:TriplesMap_04435125-7a57-40c3-831c-015cf6da51a0 rr:predicateObjectMap km-dev:PredicateObjectMap_8f8bb5c0-37fb-42b9-b2ec-ae193abcc73e .
+km-dev:TriplesMap_a0b3b32b-ba07-452b-80bc-7b7c54d55736 rr:predicateObjectMap km-dev:PredicateObjectMap_0b0510a6-495e-45e0-b5f1-a6e632d5f985 .
 
-km-dev:PredicateObjectMap_8f8bb5c0-37fb-42b9-b2ec-ae193abcc73e a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1aghc1r9ix1 .
+km-dev:PredicateObjectMap_0b0510a6-495e-45e0-b5f1-a6e632d5f985 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1agmib5kgx1 .
 
-_:node1aghc1r9ix1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_8f8bb5c0-37fb-42b9-b2ec-ae193abcc73e .
+_:node1agmib5kgx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_0b0510a6-495e-45e0-b5f1-a6e632d5f985 .
