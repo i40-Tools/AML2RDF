@@ -109,8 +109,8 @@ public class Integrate {
 		// gives those two files a URI for querying data
 		Dataset dataset = DatasetFactory.create();
 		dataset.setDefaultModel(firstModel);
-		dataset.addNamedModel(AML_NAMESPACE + "named-1", firstModel);
-		dataset.addNamedModel(AML_NAMESPACE + "named-2", secondModel);
+		dataset.addNamedModel(AML_NAMESPACE + "Hetrogenity-1", firstModel);
+		dataset.addNamedModel(AML_NAMESPACE + "Hetrogenity-2", secondModel);
 
 		String queryString = null;
 

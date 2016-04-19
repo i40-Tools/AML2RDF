@@ -9,12 +9,12 @@ CONSTRUCT {  ?x ?y ?z .
 ?x aml:hasAttributeDataType ?result.
 ?x aml:hasFileName ?result1.
 }
-from named <http://iais.fraunhofer.de/aml#named-1>
-from named <http://iais.fraunhofer.de/aml#named-2>
-where {{ graph <http://iais.fraunhofer.de/aml#named-1>{
+from named <http://iais.fraunhofer.de/aml#Hetrogenity-1>
+from named <http://iais.fraunhofer.de/aml#Hetrogenity-2>
+where {{ graph <http://iais.fraunhofer.de/aml#Hetrogenity-1>{
 {?x ?y ?z}}}
 UNION
-{ graph <http://iais.fraunhofer.de/aml#named-2>{
+{ graph <http://iais.fraunhofer.de/aml#Hetrogenity-2>{
 {?x ?y ?z}}}
 Optional{?x aml:hasValue ?value}
 Bind(xsd:double(STRBEFORE(str(?value), '.')) as ?doubleVal).
