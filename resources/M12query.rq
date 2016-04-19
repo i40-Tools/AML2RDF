@@ -5,5 +5,5 @@ prefix schema:<http://schema.org/>
 prefix xsd:<http://www.w3.org/2001/XMLSchema#>
 
 Select *
-from named<http://example/named-3>
+from named<http://iais.fraunhofer.de/aml#M1.2>
 where {?x ?y ?z}
