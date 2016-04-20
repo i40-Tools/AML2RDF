@@ -149,7 +149,7 @@ public class Integrate {
 		/* Array Holds Attribute, Values, and All Attributes */
 		ArrayList<String> nAttribute = new ArrayList<String>();
 		ArrayList<String> nValue = new ArrayList<String>();
-		ArrayList<String> nAll_Attribute = new ArrayList<String>();
+		ArrayList<String> allAttribute = new ArrayList<String>();
 		// DOM parser to Read XML file to add Attribute and Elements
 		DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
 		dbFactory.setValidating(false);
@@ -172,12 +172,12 @@ public class Integrate {
 				// add blank values.
 				cNodes.add("#text");
 				// Gets All the Child nodes of Element.
-				NodeList child_Node = eElement.getChildNodes();
+				NodeList childNode = eElement.getChildNodes();
 
 				// Loop through all the Child nodes.
-				for (int n = 0; n < child_Node.getLength(); n++) {
+				for (int n = 0; n < childNode.getLength(); n++) {
 
-					Node nNode1 = child_Node.item(n);
+					Node nNode1 = childNode.item(n);
 
 					// Skips if its a Class, else Add it as Attribute.
 					if (!cNodes.contains(nNode1.getNodeName().toString())
@@ -191,7 +191,7 @@ public class Integrate {
 
 							// Gets selected Element node name and All nodes.
 							nAttribute.add(nNode1.getNodeName());
-							nAll_Attribute.add(nNode1.getNodeName());
+							allAttribute.add(nNode1.getNodeName());
 
 							// Loops through current Element and gets its Value.
 							NodeList nListAtt = eElement.getElementsByTagName(nNode1.getNodeName());
@@ -224,8 +224,8 @@ public class Integrate {
 		}
 
 		// Removes All nodes which were Attributes in the Elements.
-		for (int i = 0; i < nAll_Attribute.size(); i++) {
-			NodeList list = doc.getElementsByTagName(nAll_Attribute.get(i).toString());
+		for (int i = 0; i < allAttribute.size(); i++) {
+			NodeList list = doc.getElementsByTagName(allAttribute.get(i).toString());
 			for (int j = list.getLength() - 1; j >= 0; j--) {
 				Node nNode = list.item(j);
 				nNode.getParentNode().removeChild(nNode);
@@ -272,16 +272,16 @@ public class Integrate {
 				QuerySolution soln = results.nextSolution();
 
 				// Gets all the values of graph in variable
-				RDFNode y = soln.get("predicate"); // Gets predicate
-				RDFNode z = soln.get("object"); // Gets Object
+				RDFNode nPredicate = soln.get("predicate"); // Gets predicate
+				RDFNode nObject = soln.get("object"); // Gets Object
 
 				// Gets all rdf classes in array through rdf:type
-				if (y.toString().equals("http://www.w3.org/1999/02/22-rdf-syntax-ns#type")) {
-					String s = z.toString();
+				if (nPredicate.toString().equals("http://www.w3.org/1999/02/22-rdf-syntax-ns#type")) {
+					String line = nObject.toString();
 
 					// Removes the prefix and stores only name
-					s = s.replaceAll("http://iais.fraunhofer.de/aml#", "");
-					cNodes.add(s);
+					line = line.replaceAll("http://iais.fraunhofer.de/aml#", "");
+					cNodes.add(line);
 				}
 
 			}
@@ -403,7 +403,7 @@ public class Integrate {
 	 */
 	ArrayList<String> getAttributes() throws Exception {
 		ArrayList<String> cNodes = rdfClasses();
-		ArrayList<String> aNodes = new ArrayList<>();
+		ArrayList<String> attrNodes = new ArrayList<>();
 
 		DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
 		dbFactory.setValidating(false);
@@ -414,23 +414,21 @@ public class Integrate {
 			doc.getDocumentElement().normalize();
 
 			for (int k = 0; k < cNodes.size(); k++) {
-				NodeList baseElmntLst_gold = doc.getElementsByTagName(cNodes.get(k).toString());
-				Element baseElmnt_gold = (Element) baseElmntLst_gold.item(0);
+				NodeList baseElmntLst = doc.getElementsByTagName(cNodes.get(k).toString());
+				Element baseElmnt = (Element) baseElmntLst.item(0);
 
-				NamedNodeMap baseElmnt_gold_attr = baseElmnt_gold.getAttributes();
-				for (int i = 0; i < baseElmnt_gold_attr.getLength(); ++i) {
-					Node attr = baseElmnt_gold_attr.item(i);
-					// System.out.println(attr.getNodeName() + " = \"" +
-					// attr.getNodeValue() + "\"");
+				NamedNodeMap baseElmntAttr = baseElmnt.getAttributes();
+				for (int i = 0; i < baseElmntAttr.getLength(); ++i) {
+					Node attr = baseElmntAttr.item(i);
 					if (!cNodes.contains(attr.getNodeName())) {
-						aNodes.add(attr.getNodeName());
+						attrNodes.add(attr.getNodeName());
 					}
 				}
 			}
 			j++;
 		}
 
-		return aNodes;
+		return attrNodes;
 	}
 
 }
