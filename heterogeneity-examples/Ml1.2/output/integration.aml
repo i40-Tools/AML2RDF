@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<CAEXFile FileName="Attribute-double.aml" SchemaVersion="2.15">
-    <AdditionalInformation AutomationMLVersion="2.0">
+<CAEXFile FileName="Attribute-double.aml" SchemaVersion="2.15" xsi:noNamespaceSchemaLocation="Source/CAEX_ClassModel_V2.15.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <AdditionalInformation AutomationMLVersion="2.0"/>
+    <AdditionalInformation>
         <WriterHeader>
             <LastWritingDateTime>2012-02-20</LastWritingDateTime>
             <WriterID>AutomationMLe.V.</WriterID>
@@ -13,11 +14,10 @@
             <WriterVersion>1.0</WriterVersion>
         </WriterHeader>
     </AdditionalInformation>
-    <AdditionalInformation AutomationMLVersion="2.0"/>
     <ExternalReference Alias="BaseInterfaceClassLib" Path="Libs/InterfaceClassLibraries/AutomationMLInterfaceClassLib.aml"/>
     <ExternalReference Alias="BaseRoleClassLib" Path="Libs/RoleClassLibraries/AutomationMLBaseRoleClassLib.aml"/>
-    <InstanceHierarchy Name="MechatronicEngineering">
-        <InternalElement ID="74d0c8ef-ab53-462a-8225-306ed22dc0f3" Name="AMLObject">
+    <InstanceHierarchy Name="length">
+        <InternalElement ID="74d0c8ef-ab53-462a-8225-306ed22dc0f3" Name="length">
             <Attribute AttributeDataType="xs:double" Name="length">
                 <Value>35</Value>
             </Attribute>

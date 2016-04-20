@@ -43,13 +43,15 @@
 
 <http://iais.fraunhofer.de/aml#2.15>
         <http://iais.fraunhofer.de/aml#hasAdditionalInformation>  <http://iais.fraunhofer.de/aml#2.0> ;
+        <http://iais.fraunhofer.de/aml#hasSchemaVersion>  "2.15" ;
+        <http://www.w3.org/2001/XMLSchema-instance#noNamespaceSchemaLocation>  "Source/CAEX_ClassModel_V2.15.xsd" ;
+        <http://www.w3.org/2000/10/XMLSchema#xsi>  "http://www.w3.org/2001/XMLSchema-instance" ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://iais.fraunhofer.de/aml#CAEXFile> ;
         <http://iais.fraunhofer.de/aml#hasExternalReference>  <http://iais.fraunhofer.de/aml#BaseInterfaceClassLib> ;
+        <http://iais.fraunhofer.de/aml#hasFileName>  "Attribute-integer.aml" ;
         <http://iais.fraunhofer.de/aml#hasExternalReference>  <http://iais.fraunhofer.de/aml#BaseRoleClassLib> ;
         <http://iais.fraunhofer.de/aml#hasInstanceHierarchy>  <http://iais.fraunhofer.de/aml#MechatronicEngineering> ;
-        <http://iais.fraunhofer.de/aml#hasFileName>  "Attribute-integer.aml" ;
-        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://iais.fraunhofer.de/aml#CAEXFile> ;
-        <http://iais.fraunhofer.de/aml#hasAdditionalInformation>  <http://iais.fraunhofer.de/aml#1.0> ;
-        <http://iais.fraunhofer.de/aml#hasSchemaVersion>  "2.15" .
+        <http://iais.fraunhofer.de/aml#hasAdditionalInformation>  <http://iais.fraunhofer.de/aml#1.0> .
 
 <http://iais.fraunhofer.de/aml#2.0>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://iais.fraunhofer.de/aml#AdditionalInformation> ;

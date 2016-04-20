@@ -159,10 +159,9 @@ public class Integrate {
 				.parse(new FileInputStream(new File(new RDFConvertor().getpath() + "integration.aml.rdf")));
 		doc.getDocumentElement().normalize();
 
-		Node temp_Node = null; // Temporary node to hold values.
-
 		// Loop through all Classes and its attributes values.
 		for (int j = 0; j < cNodes.size(); j++) {
+
 			// Gets Elements based on the Class.
 			NodeList nList = doc.getElementsByTagName(cNodes.get(j));
 
@@ -177,54 +176,48 @@ public class Integrate {
 
 				// Loop through all the Child nodes.
 				for (int n = 0; n < child_Node.getLength(); n++) {
+
 					Node nNode1 = child_Node.item(n);
 
 					// Skips if its a Class, else Add it as Attribute.
-					if (!cNodes.contains(nNode1.getNodeName().toString())) {
+					if (!cNodes.contains(nNode1.getNodeName().toString())
+							|| !nNode1.getNodeName().toString().equals("#text")) {
 
-						// Gets Attributes values from orignal AML files.
+						// Gets Attributes values from original AML files.
 						ArrayList<String> tempNodes = getAttributes();
 
 						// Compares if its attribute
 						if (tempNodes.contains(nNode1.getNodeName())) {
 
-							// Gets Attributes,Value and All nodes in Array.
+							// Gets selected Element node name and All nodes.
 							nAttribute.add(nNode1.getNodeName());
 							nAll_Attribute.add(nNode1.getNodeName());
 
-							// Loops Through Attribute and gets its Value.
+							// Loops through current Element and gets its Value.
 							NodeList nListAtt = eElement.getElementsByTagName(nNode1.getNodeName());
 							for (int m = 0; m < nListAtt.getLength(); m++) {
 								Node nNode2 = nListAtt.item(m);
 
-								// Checks if more than 2 Attributes Values.
-								if (nListAtt.item(m + 1) == null) {
-									// Adds the value of Attribute.
-									nValue.add(eElement.getElementsByTagName(nNode2.getNodeName()).item(m)
-											.getTextContent());
-								}
+								// Adds the value of Selected Element
+								nValue.add(
+										eElement.getElementsByTagName(nNode2.getNodeName()).item(m).getTextContent());
+
 							}
 						}
 					}
 				}
 
-				// Gets Element for adding Attribute.
-				Element element = (Element) doc.getElementsByTagName(cNodes.get(j)).item(0);
-
-				// Adds Attribute Name and Value.
+				/**
+				 * We have identified all attributes now we just add those
+				 * attributes in the XML document.
+				 */
 				for (int i = 0; i < nAttribute.size(); i++) {
-					element.setAttribute(nAttribute.get(i).toString(), nValue.get(i).toString());
-				}
-
-				// IF more than one child Elements exist, adds the previous.
-				if (k >= 1) {
-					temp_Node.getParentNode().insertBefore(nNode, temp_Node);
+					eElement.setAttribute(nAttribute.get(i).toString(), nValue.get(i).toString());
 				}
 
 				// Clears value for Next Class Node.
 				nAttribute.clear();
 				nValue.clear();
-				temp_Node = nNode;
 
 			}
 
@@ -279,8 +272,8 @@ public class Integrate {
 				QuerySolution soln = results.nextSolution();
 
 				// Gets all the values of graph in variable
-				RDFNode y = soln.get("y"); // Gets predicate by variable name.
-				RDFNode z = soln.get("z"); // Gets Object by variable name.
+				RDFNode y = soln.get("predicate"); // Gets predicate
+				RDFNode z = soln.get("object"); // Gets Object
 
 				// Gets all rdf classes in array through rdf:type
 				if (y.toString().equals("http://www.w3.org/1999/02/22-rdf-syntax-ns#type")) {
@@ -321,6 +314,11 @@ public class Integrate {
 					if (line.contains("schema:name")) {
 						line = line.replaceAll("schema:name", "Name");
 					}
+
+					if (line.contains("j.0")) {
+						line = line.replaceAll("j.0", "xmlns");
+					}
+
 					// Removes rdf:about column as its not needed for AML
 					String temp = StringUtils.substringBetween(line, "rdf", ">");
 					line = line.replaceAll("rdf" + temp, "");

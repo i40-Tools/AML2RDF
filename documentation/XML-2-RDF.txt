@@ -1,0 +1,48 @@
+XML 2 RDF converts the RDF file in to XML based on the given ontology.
+The algorithm used in XML 2 RDF is as follows.
+
+1- RDF file is seriallized in to XML/RDF file. 
+  
+This gives us the already built XML tags which automatically idetifies the root node and child element.
+
+2- We remove the RDF seriallization from XML file .
+    
+The RDF seriallization is removed manually by reading the file line by line and preforming checks to 
+delete the tags which start with RDF.
+
+3- Once we have RDF free XML file , the next step is to identify Attribute Property. The Current XML
+document is in ELement nodes form only. We need to identify its attribute properties which is impossible
+to guess just by looking at RDF file.
+
+e.g
+
+our XML without attribute property.
+<Attribute>
+<length> 12.0 </length>
+<Name> Max Speed </Name>
+<Value> 2.0 </Value>
+</>
+
+should be :
+<Attribute length= "12.0" Name= "Max speed" >
+<Value> 2.0 </Value>
+</> 
+
+
+We used the approach to identify attribute properties by reading the orignal two XML files.
+We parsed the orignal XML files and using DOM XML parser for java we got getAttributes() names .
+Once we have the attribute names we can compare it with our RDF free XML document and mark the nodes
+as Attributes.
+
+Once we were able to mark the nodes which are Attribute properties , we used setAttribute() function
+to include the attributes in our current XML document. We then remove the marked nodes from XML document
+once they were added as Attribute.
+
+4- We also made sure that our ontology followed rules for mapping property. We used has<property name>. 
+Once our XML was created , we just had to filter out has String from our XML document which gave us the
+orignal properties as defined in XML files.
+
+Possible DrawBack of the current strategy:
+
+To be added Later.
+         

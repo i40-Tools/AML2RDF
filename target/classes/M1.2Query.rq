@@ -3,6 +3,8 @@ prefix aml:<http://iais.fraunhofer.de/aml#>
 prefix rdfs:<http://www.w3.org/2000/01/rdf-schema#>
 prefix schema:<http://schema.org/>
 prefix xsd:<http://www.w3.org/2001/XMLSchema#>
+prefix xmlns:<http://www.w3.org/2000/10/XMLSchema#>
+prefix xsi:<http://www.w3.org/2001/XMLSchema-instance#>
 
 CONSTRUCT {  ?x ?y ?z .
 ?x aml:hasValue ?doubleVal.

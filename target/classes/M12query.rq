@@ -3,7 +3,10 @@ prefix aml:<http://iais.fraunhofer.de/aml#>
 prefix rdfs:<http://www.w3.org/2000/01/rdf-schema#>
 prefix schema:<http://schema.org/>
 prefix xsd:<http://www.w3.org/2001/XMLSchema#>
+prefix xmlns:<http://www.w3.org/2000/10/>
+prefix xsi:<http://www.w3.org/2001/XMLSchema-instance#>
+ 
 
 Select *
 from named<http://iais.fraunhofer.de/aml#M1.2>
-where {?x ?y ?z}
+where {?subject ?predicate ?object}

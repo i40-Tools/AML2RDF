@@ -1,8 +1,10 @@
 @prefix schema:  <http://schema.org/> .
-@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 @prefix aml:  <http://iais.fraunhofer.de/aml#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xmlns:  <http://www.w3.org/2000/10/XMLSchema#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsi:  <http://www.w3.org/2001/XMLSchema-instance#> .
 
 aml:AutomationMLTutorialExamples
         aml:hasWriterVersion        "1.0" ;
@@ -44,14 +46,16 @@ aml:MechatronicEngineering
         schema:name             "MechatronicEngineering" ;
         rdf:type                aml:InstanceHierarchy .
 
-aml:2.15  aml:hasSchemaVersion        "2.15" ;
-        aml:hasAdditionalInformation  aml:1.0 ;
-        rdf:type                      aml:CAEXFile ;
-        aml:hasInstanceHierarchy      aml:MechatronicEngineering ;
-        aml:hasExternalReference      aml:BaseRoleClassLib ;
-        aml:hasExternalReference      aml:BaseInterfaceClassLib ;
-        aml:hasFileName               "Attribute-double.aml" ;
-        aml:hasAdditionalInformation  aml:2.0 .
+aml:2.15  aml:hasAdditionalInformation  aml:2.0 ;
+        aml:hasSchemaVersion           "2.15" ;
+        aml:hasFileName                "Attribute-double.aml" ;
+        xsi:noNamespaceSchemaLocation  "Source/CAEX_ClassModel_V2.15.xsd" ;
+        xmlns:xsi                      "http://www.w3.org/2001/XMLSchema-instance" ;
+        rdf:type                       aml:CAEXFile ;
+        aml:hasExternalReference       aml:BaseInterfaceClassLib ;
+        aml:hasExternalReference       aml:BaseRoleClassLib ;
+        aml:hasInstanceHierarchy       aml:MechatronicEngineering ;
+        aml:hasAdditionalInformation   aml:1.0 .
 
 aml:2.0  aml:hasAutomationMLVersion  "2.0" ;
         rdf:type                    aml:AdditionalInformation .
