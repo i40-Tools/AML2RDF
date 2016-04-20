@@ -41,8 +41,10 @@ import edu.isi.karma.webserver.KarmaException;
 public class RDFConvertor {
 
 	/**
-	 * This method converts the AML files into RDF. The default conversion is in N triples. We have to manually add the URI for the triples. 
-	 * We then  apply the Turtle format for better Readability.
+	 * This method converts the AML files into RDF. The default conversion is in
+	 * N triples. We have to manually add the URI for the triples. We then apply
+	 * the Turtle format for better Readability.
+	 * 
 	 * @throws URISyntaxException
 	 * @throws KarmaException
 	 * @throws IOException
@@ -104,6 +106,8 @@ public class RDFConvertor {
 
 			// conversion to Turtle format
 			Model modelX = FileManager.get().loadModel(getpath() + RDFGUI.files[i].getName() + ".ttl");
+			// reads prefix from file and adds them
+			modelX.read(getTestResource("prefix.ttl").toString());
 			sw = new StringWriter();
 			RDFDataMgr.write(sw, modelX, RDFFormat.TURTLE_BLOCKS);
 			output = new FileWriter(getpath() + RDFGUI.files[i].getName() + ".ttl");
@@ -112,10 +116,12 @@ public class RDFConvertor {
 			i++;
 
 		}
+
 	}
 
 	/**
 	 * Gets the path from where the aml files were selected and saves in output
+	 * 
 	 * @return
 	 */
 	public String getpath() {
@@ -125,10 +131,12 @@ public class RDFConvertor {
 
 	/**
 	 * Gets the resource folder
+	 * 
 	 * @param name
 	 * @return
 	 */
 	protected URL getTestResource(String name) {
 		return getClass().getClassLoader().getResource(name);
 	}
+
 }

@@ -85,6 +85,7 @@ public class Integrate {
 		RDFDataMgr.write(sw, getNewModel(), RDFFormat.RDFXML);
 		output.write(sw.toString());
 		output.close();
+
 		try {
 			convertXML(getNewModel()); // calls for XML conversion for AML
 										// files.

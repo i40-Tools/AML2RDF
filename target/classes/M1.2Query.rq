@@ -1,10 +1,10 @@
 prefix rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-prefix aml:<http://iais.fraunhofer.de/aml#>
 prefix rdfs:<http://www.w3.org/2000/01/rdf-schema#>
 prefix schema:<http://schema.org/>
 prefix xsd:<http://www.w3.org/2001/XMLSchema#>
 prefix xmlns:<http://www.w3.org/2000/10/XMLSchema#>
 prefix xsi:<http://www.w3.org/2001/XMLSchema-instance#>
+prefix aml:<http://iais.fraunhofer.de/aml#>
 
 CONSTRUCT {  ?x ?y ?z .
 ?x aml:hasValue ?doubleVal.
