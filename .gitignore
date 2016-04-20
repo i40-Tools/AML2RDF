@@ -2,6 +2,7 @@
 
 bin/
 target/
+log/
 
 .DS_Store
 .project
