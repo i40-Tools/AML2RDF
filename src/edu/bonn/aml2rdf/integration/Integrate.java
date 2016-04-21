@@ -65,8 +65,7 @@ public class Integrate {
 
 	/**
 	 * This method integrates the RDF files into single RDF, The default
-	 * conversion is in in Turtle format. Integration is performed through
-	 * SPARQL Query.
+	 * conversion is in in Turtle format. Integration is performed through an SPARQL Query.
 	 * 
 	 * @throws IOException
 	 */
@@ -75,19 +74,19 @@ public class Integrate {
 		// Sets output file of RDF integration
 		output = new FileWriter(new RDFConvertor().getpath() + "integration.aml.ttl");
 		StringWriter sw = new StringWriter();
-		RDFDataMgr.write(sw, getNewModel(), RDFFormat.TURTLE_BLOCKS);
+		RDFDataMgr.write(sw, getIntegratedModel(), RDFFormat.TURTLE_BLOCKS);
 		output.write(sw.toString());
 		output.close();
 
 		// Sets output format RDF/XML for XML conversion
 		output = new FileWriter(new RDFConvertor().getpath() + "integration.rdf");
 		sw = new StringWriter();
-		RDFDataMgr.write(sw, getNewModel(), RDFFormat.RDFXML);
+		RDFDataMgr.write(sw, getIntegratedModel(), RDFFormat.RDFXML);
 		output.write(sw.toString());
 		output.close();
 
 		try {
-			convertXML(getNewModel()); // calls for XML conversion for AML
+			convertXML(getIntegratedModel()); // calls for XML conversion for AML
 										// files.
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -95,11 +94,11 @@ public class Integrate {
 	}
 
 	/**
-	 * creates a new RDF graph using Construct Query.
+	 * Creates a new RDF graph using Construct Query.
 	 * 
-	 * @return new model
+	 * @return model
 	 */
-	protected Model getNewModel() {
+	protected Model getIntegratedModel() {
 
 		// loads two RDF files in turtle format from output folder.
 		Model firstModel = FileManager.get()
