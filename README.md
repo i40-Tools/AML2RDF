@@ -28,7 +28,7 @@ Available at: [Documentation](documentation/)
 Research Documentation available at:   
 https://docs.google.com/document/d/1YoOr08Gfg8TZjPP_RXflSJ0KElqmOp_YDDjGOsxgaLo/edit?usp=sharing
 
-AML ontology available at:
+AML ontology available at:  
 https://github.com/i40-Tools/vocabularies
 
 ## Usage  
