@@ -18,7 +18,7 @@ You can find useful video tutorials at:
 
 ## Installation and Setup  
 
-Look in the Wiki : [[Installation: Source Code]]
+Look in the Wiki : [Installation](https://github.com/i40-Tools/AML2RDF/wiki/Installation%3A-Source-Code)
 
 ## Documentation  
 
