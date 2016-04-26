@@ -18,12 +18,7 @@ You can find useful video tutorials at:
 
 ## Installation and Setup  
 
-This software can be compiled using Eclipse. Import the project and run as Java Application.
-Supports Windows/Linux.
-
-Executable Windows binary available at:   
-* https://drive.google.com/file/d/0B7FScfr1FLRDMF9JbHJEeXl3VUk/view?usp=sharing
-
+Look in the Wiki : [installation](wiki/Installation%3A-Source-Code)
 
 ## Documentation  
 
