@@ -7,6 +7,7 @@ Tool to integrate Industry 4.0 standards using Linked Data
 AML2RDF needs Java 1.7, Maven 3.0. Download Java SE from  
 http://www.oracle.com/technetwork/java/javase/downloads/index.html
 
+More details in the [wiki](https://github.com/i40-Tools/AML2RDF/wiki)
 
 ## What is AML2RDF?
 
