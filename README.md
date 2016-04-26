@@ -11,20 +11,20 @@ http://www.oracle.com/technetwork/java/javase/downloads/index.html
 
 AML2RDF is a java based tool , which converts AML files (based on XML) to RDF and performs integration utilizing SPARQL. AML to RDF conversion is based on R2RML mapping generated using KARMA - integration tool. The modeling file is created in KARMA utilizing AML ontology. AML2RDF utilizes this modeling file to convert AML to RDF which becomes input for integration process that utilizes SPARQL to expel hetrogenity between AML files.Once the hetrogenity is removed, AML2RDF converts RDF files back to AML and finishes the integration process.
 
-You can find useful video tutorials at: [Tutorial](https://drive.google.com/open?id=0B7FScfr1FLRDLXVBcEY3UWNObGc/)
+You can find useful video tutorials at: [Tutorial](https://drive.google.com/open?id=0B7FScfr1FLRDLXVBcEY3UWNObGc)
 
 ## Installation and Setup  
 
 This software can be compiled using Eclipse. Import the project and run as Java Application.
 Supports Windows/Linux.
 
-Executable binary available at: [Binary] (https://drive.google.com/file/d/0B7FScfr1FLRDMF9JbHJEeXl3VUk/view?usp=sharing/)
+Executable binary available at: [Binary] (https://drive.google.com/file/d/0B7FScfr1FLRDMF9JbHJEeXl3VUk/view?usp=sharing)
 
 ## Documentation  
 
 Available at: [Documentation](documentation/)
 
-Research Documentation available at: [Research Documentation](https://docs.google.com/document/d/1YoOr08Gfg8TZjPP_RXflSJ0KElqmOp_YDDjGOsxgaLo/edit?usp=sharing/)
+Research Documentation available at: [Research Documentation](https://docs.google.com/document/d/1YoOr08Gfg8TZjPP_RXflSJ0KElqmOp_YDDjGOsxgaLo/edit?usp=sharing)
 
 ## Usage  
 
