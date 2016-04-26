@@ -1,4 +1,5 @@
-# AML2RDF : Tool to integrate Industry 4.0 standards using Linked Data
+# AML2RDF   
+Tool to integrate Industry 4.0 standards using Linked Data
 
 ## Important Dependencies
 
@@ -16,16 +17,13 @@ You can find useful video tutorials at: [Tutorial](https://drive.google.com/open
 This software can be compiled using Eclipse. Import the project and run as Java Application.
 Supports Windows/Linux.
 
-Executable binary available at:     
-[Binary] (https://drive.google.com/file/d/0B7FScfr1FLRDMF9JbHJEeXl3VUk/view?usp=sharing/)
+Executable binary available at: [Binary] (https://drive.google.com/file/d/0B7FScfr1FLRDMF9JbHJEeXl3VUk/view?usp=sharing/)
 
 ## Documentation  
 
-Available at:    
-[Documentation](documentation/)
+Available at: [Documentation](documentation/)
 
-Research Documentation available at:  
-[Research Documentation] (https://docs.google.com/document/d/1YoOr08Gfg8TZjPP_RXflSJ0KElqmOp_YDDjGOsxgaLo/edit?usp=sharing/)
+Research Documentation available at: [Research Documentation](https://docs.google.com/document/d/1YoOr08Gfg8TZjPP_RXflSJ0KElqmOp_YDDjGOsxgaLo/edit?usp=sharing/)
 
 ## Usage  
 
