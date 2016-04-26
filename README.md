@@ -18,7 +18,7 @@ You can find useful video tutorials at:
 
 ## Installation and Setup  
 
-Look in the Wiki : [installation](wiki/Installation%3A-Source-Code)
+Look in the Wiki : [[installation|Installation: Source Code]]
 
 ## Documentation  
 
