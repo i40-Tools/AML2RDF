@@ -18,7 +18,7 @@ You can find useful video tutorials at: [Tutorial](https://drive.google.com/open
 This software can be compiled using Eclipse. Import the project and run as Java Application.
 Supports Windows/Linux.
 
-Executable binary available at: [Binary] (https://drive.google.com/file/d/0B7FScfr1FLRDMF9JbHJEeXl3VUk/view?usp=sharing)
+Executable Windows binary available at: [Binary] (https://drive.google.com/file/d/0B7FScfr1FLRDMF9JbHJEeXl3VUk/view?usp=sharing)
 
 ## Documentation  
 
