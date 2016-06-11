@@ -55,8 +55,8 @@ import nu.xom.Builder;
 import nu.xom.Serializer;
 
 /**
- * @author Omar
- * @todo purpose of the class
+ * @author Omar This Class Automatically integrates RDF and convert it to
+ *         AutomationML(ML) file format.
  */
 public class Integrate {
 

@@ -34,8 +34,8 @@ import edu.isi.karma.rdf.RDFGeneratorRequest;
 import edu.isi.karma.webserver.KarmaException;
 
 /**
- * @author omar
- * @todo Purpose of the class
+ * @author omar This Class Automatically converts AML files to RDF and takes
+ *         input AutomationML(ML) files.
  */
 
 public class RDFConvertor {

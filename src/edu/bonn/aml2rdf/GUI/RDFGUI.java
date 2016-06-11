@@ -26,7 +26,8 @@ import edu.isi.karma.webserver.KarmaException;
 
 /**
  * 
- * @author Omar
+ * @author Omar This Class provides graphical user interface for selection of
+ *         files and output.
  *
  */
 public class RDFGUI extends JFrame {
