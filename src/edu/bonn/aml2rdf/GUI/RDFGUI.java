@@ -1,4 +1,4 @@
-package edu.bonn.aml2rdf.GUI;
+package edu.bonn.aml2rdf.gui;
 
 import java.awt.EventQueue;
 import java.awt.Font;

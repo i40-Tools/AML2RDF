@@ -24,7 +24,7 @@ import org.apache.jena.riot.RDFDataMgr;
 import org.apache.jena.riot.RDFFormat;
 import org.apache.jena.util.FileManager;
 
-import edu.bonn.aml2rdf.GUI.RDFGUI;
+import edu.bonn.aml2rdf.gui.RDFGUI;
 import edu.isi.karma.kr2rml.URIFormatter;
 import edu.isi.karma.kr2rml.mapping.R2RMLMappingIdentifier;
 import edu.isi.karma.kr2rml.writer.N3KR2RMLRDFWriter;

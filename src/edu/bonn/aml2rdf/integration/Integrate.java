@@ -49,7 +49,7 @@ import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
-import edu.bonn.aml2rdf.GUI.RDFGUI;
+import edu.bonn.aml2rdf.gui.RDFGUI;
 import edu.bonn.aml2rdf.rdfconvertor.RDFConvertor;
 import nu.xom.Builder;
 import nu.xom.Serializer;
@@ -87,9 +87,9 @@ public class Integrate {
 		output.close();
 
 		try {
-			convertXML(getIntegratedModel()); // calls for XML conversion for
-												// AML
-			// files.
+
+			// calls for XML conversion for AML files.
+			convertXML(getIntegratedModel());
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
