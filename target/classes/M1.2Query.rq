@@ -18,13 +18,20 @@ where {{ graph <http://iais.fraunhofer.de/aml#Hetrogenity-1>{
 UNION
 { graph <http://iais.fraunhofer.de/aml#Hetrogenity-2>{
 {?x ?y ?z}}}
+
+
+
 Optional{?x aml:hasValue ?value}
-Bind(xsd:double(STRBEFORE(str(?value), '.')) as ?doubleVal).
+BIND(IF(datatype(?value) = xsd:float || datatype(?value) = xsd:integer, xsd:double(STRBEFORE(str(?value), ".")),?value )as ?doubleVal)
+
+
+
 Optional{?x aml:hasAttributeDataType ?v}
-BIND(REPLACE(?v, ?v, "xs:double", "i") AS ?result).
+BIND(IF(?v="xs:integer" || ?v="xs:float",REPLACE(?v, ?v, "xs:double", "i"),?v) AS ?result).
+
+
 Optional{?x aml:hasFileName ?q}
 BIND(REPLACE(?q, ?q, "Attribute-double.aml", "i") AS ?result1).
-
 
 FILTER (?y != aml:hasValue)
 FILTER (?y != aml:hasAttributeDataType)

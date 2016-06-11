@@ -1,42 +1,42 @@
-# AML2RDF
+# AML2RDF   
 Tool to integrate Industry 4.0 standards using Linked Data
 
-##Description
 
-AML2RDF is a java based tool , which converts AML to RDF and performs integration based on SPARQL. AML to RDF conversion is based on
-R2RML mapping generated using KARMA - integration tool.
+## Important Dependencies
 
-##Documentation
+AML2RDF needs Java 1.7, Maven 3.0. Download Java SE from  
+http://www.oracle.com/technetwork/java/javase/downloads/index.html
 
-Available at:
+More details in the [wiki](https://github.com/i40-Tools/AML2RDF/wiki)
 
-* https://docs.google.com/document/d/1YoOr08Gfg8TZjPP_RXflSJ0KElqmOp_YDDjGOsxgaLo/edit?usp=sharing
+## What is AML2RDF?
 
-##Requirements
+AML2RDF is a java based tool , which converts AML files (based on XML) to RDF and performs integration utilizing SPARQL. AML to RDF conversion is based on R2RML mapping generated using KARMA - integration tool. The modeling file is created in KARMA utilizing AML ontology. AML2RDF utilizes this modeling file to convert AML to RDF which becomes input for integration process that utilizes SPARQL to expel hetrogenity between AML files.Once the hetrogenity is removed, AML2RDF converts RDF files back to AML and finishes the integration process.
 
-* Java 1.8. JDK
-* Maven 3.1
-
-##Build
-
-This software can be compiled using Eclipse. Import the project and run as java Application.
-The main method is define in RdfGUI.java
+You can find useful video tutorials at:   
+https://drive.google.com/open?id=0B7FScfr1FLRDLXVBcEY3UWNObGc
 
 
-##Install and Run
+## Installation and Setup  
 
-Executable binary available at:
+Look in the Wiki : [Installation](https://github.com/i40-Tools/AML2RDF/wiki/Installation%3A-Source-Code)
 
-* https://drive.google.com/file/d/0B7FScfr1FLRDMF9JbHJEeXl3VUk/view?usp=sharing
+## Documentation  
 
-##Usage
+Available at: [Documentation](documentation/)
 
-Video Tutorial: 
+Research Documentation available at:   
+https://docs.google.com/document/d/1YoOr08Gfg8TZjPP_RXflSJ0KElqmOp_YDDjGOsxgaLo/edit?usp=sharing
 
-* https://drive.google.com/file/d/0B7FScfr1FLRDLXVBcEY3UWNObGc/view?usp=sharing
+AML ontology available at:  
+https://github.com/i40-Tools/vocabularies
+
+## Usage  
+
 * Select multiple AML Files.
 * Click Integration.
 * output is stored in selected AML files folder.
+
 
 ##License
 

@@ -167,6 +167,7 @@ public class RDFGUI extends JFrame {
 
 	/**
 	 * Main method
+	 * 
 	 * @param args
 	 */
 	public static void main(String[] args) {

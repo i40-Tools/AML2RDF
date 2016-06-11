@@ -65,7 +65,7 @@ public class Integrate {
 
 	/**
 	 * This method integrates the RDF files into single RDF, The default
-	 * conversion is in in Turtle format. Integration is performed through
+	 * conversion is in in Turtle format. Integration is performed through an
 	 * SPARQL Query.
 	 * 
 	 * @throws IOException
@@ -75,31 +75,32 @@ public class Integrate {
 		// Sets output file of RDF integration
 		output = new FileWriter(new RDFConvertor().getpath() + "integration.aml.ttl");
 		StringWriter sw = new StringWriter();
-		RDFDataMgr.write(sw, getNewModel(), RDFFormat.TURTLE_BLOCKS);
+		RDFDataMgr.write(sw, getIntegratedModel(), RDFFormat.TURTLE_BLOCKS);
 		output.write(sw.toString());
 		output.close();
 
 		// Sets output format RDF/XML for XML conversion
 		output = new FileWriter(new RDFConvertor().getpath() + "integration.rdf");
 		sw = new StringWriter();
-		RDFDataMgr.write(sw, getNewModel(), RDFFormat.RDFXML);
+		RDFDataMgr.write(sw, getIntegratedModel(), RDFFormat.RDFXML);
 		output.write(sw.toString());
 		output.close();
 
 		try {
-			convertXML(getNewModel()); // calls for XML conversion for AML
-										// files.
+			convertXML(getIntegratedModel()); // calls for XML conversion for
+												// AML
+			// files.
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
 
 	/**
-	 * creates a new RDF graph using Construct Query.
+	 * Creates a new RDF graph using Construct Query.
 	 * 
-	 * @return new model
+	 * @return model
 	 */
-	protected Model getNewModel() {
+	protected Model getIntegratedModel() {
 
 		// loads two RDF files in turtle format from output folder.
 		Model firstModel = FileManager.get()
@@ -144,92 +145,37 @@ public class Integrate {
 	void convertXML(Model model) throws Exception {
 
 		ArrayList<String> cNodes = rdfClasses();
+
 		// Process XML file to remove RDF serialization.
 		processXML(cNodes);
 
-		/* Array Holds Attribute, Values, and All Attributes */
-		ArrayList<String> nAttribute = new ArrayList<String>();
-		ArrayList<String> nValue = new ArrayList<String>();
-		ArrayList<String> allAttribute = new ArrayList<String>();
 		// DOM parser to Read XML file to add Attribute and Elements
 		DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
 		dbFactory.setValidating(false);
 		DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
+
 		// Path to generated XML without RDF
 		Document doc = dBuilder
 				.parse(new FileInputStream(new File(new RDFConvertor().getpath() + "integration.aml.rdf")));
 		doc.getDocumentElement().normalize();
 
-		// Loop through all Classes and its attributes values.
-		for (int j = 0; j < cNodes.size(); j++) {
+		// get attributes from original file
+		ArrayList<String> tempNodes = getAttributes();
 
-			// Gets Elements based on the Class.
-			NodeList nList = doc.getElementsByTagName(cNodes.get(j));
+		// for every attribute get its node name
+		for (int i = 0; i < tempNodes.size(); i++) {
+			NodeList nodeList = doc.getElementsByTagName(tempNodes.get(i));
 
-			// Loop through all Elements of Node and add attribute.
-			for (int k = 0; k < nList.getLength(); k++) {
-				Node nNode = nList.item(k);
-				Element eElement = (Element) nNode;
-				// add blank values.
-				cNodes.add("#text");
-				// Gets All the Child nodes of Element.
-				NodeList childNode = eElement.getChildNodes();
+			// for every node gets its parent
+			for (int j = 0; j < nodeList.getLength(); j++) {
+				Node node = nodeList.item(j);
+				Element eElement = (Element) node.getChildNodes().item(0).getParentNode().getParentNode();
 
-				// Loop through all the Child nodes.
-				for (int n = 0; n < childNode.getLength(); n++) {
+				// sets the attribute with parent and node value
+				eElement.setAttribute(node.getNodeName(), node.getChildNodes().item(0).getNodeValue());
 
-					Node nNode1 = childNode.item(n);
-
-					// Skips if its a Class, else Add it as Attribute.
-					if (!cNodes.contains(nNode1.getNodeName().toString())
-							|| !nNode1.getNodeName().toString().equals("#text")) {
-
-						// Gets Attributes values from original AML files.
-						ArrayList<String> tempNodes = getAttributes();
-
-						// Compares if its attribute
-						if (tempNodes.contains(nNode1.getNodeName())) {
-
-							// Gets selected Element node name and All nodes.
-							nAttribute.add(nNode1.getNodeName());
-							allAttribute.add(nNode1.getNodeName());
-
-							// Loops through current Element and gets its Value.
-							NodeList nListAtt = eElement.getElementsByTagName(nNode1.getNodeName());
-							for (int m = 0; m < nListAtt.getLength(); m++) {
-								Node nNode2 = nListAtt.item(m);
-
-								// Adds the value of Selected Element
-								nValue.add(
-										eElement.getElementsByTagName(nNode2.getNodeName()).item(m).getTextContent());
-
-							}
-						}
-					}
-				}
-
-				/**
-				 * We have identified all attributes now we just add those
-				 * attributes in the XML document.
-				 */
-				for (int i = 0; i < nAttribute.size(); i++) {
-					eElement.setAttribute(nAttribute.get(i).toString(), nValue.get(i).toString());
-				}
-
-				// Clears value for Next Class Node.
-				nAttribute.clear();
-				nValue.clear();
-
-			}
-
-		}
-
-		// Removes All nodes which were Attributes in the Elements.
-		for (int i = 0; i < allAttribute.size(); i++) {
-			NodeList list = doc.getElementsByTagName(allAttribute.get(i).toString());
-			for (int j = list.getLength() - 1; j >= 0; j--) {
-				Node nNode = list.item(j);
-				nNode.getParentNode().removeChild(nNode);
+				// removes the nodes which were element attributes
+				eElement.removeChild(node.getChildNodes().item(0).getParentNode());
 			}
 		}
 
@@ -339,6 +285,7 @@ public class Integrate {
 					}
 
 					line = line.replaceAll("\\s", "");
+
 					// If Class found ignore that line.
 					if (flag) {
 						sb.append(line);
@@ -413,16 +360,21 @@ public class Integrate {
 		while (j < RDFGUI.files.length) {
 			Document doc = dBuilder.parse(new FileInputStream(RDFGUI.files[j].getAbsolutePath()));
 			doc.getDocumentElement().normalize();
+			NodeList baseElmntLst = doc.getElementsByTagName("*");
 
-			for (int k = 0; k < cNodes.size(); k++) {
-				NodeList baseElmntLst = doc.getElementsByTagName(cNodes.get(k).toString());
-				Element baseElmnt = (Element) baseElmntLst.item(0);
+			for (int k = 0; k < baseElmntLst.getLength(); k++) {
+				// baseElmntLst =
+				// doc.getElementsByTagName(cNodes.get(k).toString());
+				Element baseElmnt = (Element) baseElmntLst.item(k);
 
 				NamedNodeMap baseElmntAttr = baseElmnt.getAttributes();
 				for (int i = 0; i < baseElmntAttr.getLength(); ++i) {
 					Node attr = baseElmntAttr.item(i);
 					if (!cNodes.contains(attr.getNodeName())) {
-						attrNodes.add(attr.getNodeName());
+						if (j >= 1 && attrNodes.contains(attr.getNodeName())) {
+
+						} else
+							attrNodes.add(attr.getNodeName());
 					}
 				}
 			}
