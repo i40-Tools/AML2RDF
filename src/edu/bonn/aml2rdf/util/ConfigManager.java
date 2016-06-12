@@ -1,8 +1,8 @@
+package edu.bonn.aml2rdf.util;
+
 /**
  * @Copyright EIS University of Bonn
  */
-
-package edu.bonn.aml2rdf.util;
 
 import java.io.File;
 import java.io.InputStream;
@@ -17,7 +17,9 @@ import com.hp.hpl.jena.rdf.model.StmtIterator;
 import com.hp.hpl.jena.util.FileManager;
 
 /**
- * The aim of this class is to load the RDF configuration file to this program containing all the input data
+ * The aim of this class is to load the RDF configuration file to this program
+ * containing all the input data
+ * 
  * @class ConfigManager
  * @Version = 1.0
  * @Date 4/21/2016
@@ -30,9 +32,11 @@ public class ConfigManager {
 	static Properties prop;
 	private static RDFNode literal;
 	private static RDFNode predicate;
-	private static ArrayList<RDFNode> literals, predicates;
+	public static ArrayList<RDFNode> literals;
+	public static ArrayList<RDFNode> predicates;
 	private static Model model;
-	
+	private String filePath = null;
+
 	public final static String HET_NAMESPACE = "http://vocab.cs.uni-bonn.de/het#";
 
 	public static ConfigManager getInstance() {
@@ -47,10 +51,9 @@ public class ConfigManager {
 	/**
 	 * This method load the Configuration file parameters
 	 **/
-	public static Properties loadConfig() {
+	public static Properties loadConfig(String filePath) {
 		prop = new Properties();
-		String dir = System.getProperty("user.dir");
-		File configFile = new File(dir + "/configuration.ttl");
+		File configFile = new File(filePath);
 
 		if (configFile.isFile() == false) {
 			System.out.println("Please especify the configuration file");
@@ -59,7 +62,9 @@ public class ConfigManager {
 
 		model = ModelFactory.createDefaultModel();
 		InputStream inputStream = FileManager.get().open(configFile.getPath());
-		model.read(new InputStreamReader(inputStream), null, "TURTLE"); // parses an InputStream assuming RDF in Turtle format
+
+		// parses an InputStream assuming RDF in Turtle format
+		model.read(new InputStreamReader(inputStream), null, "TURTLE");
 
 		literals = new ArrayList<RDFNode>();
 		predicates = new ArrayList<RDFNode>();
@@ -72,8 +77,7 @@ public class ConfigManager {
 
 			predicate = stmt.getPredicate();
 			predicates.add(predicate);
-
-			literal = stmt.getLiteral();
+			literal = stmt.getObject();
 			literals.add(literal);
 
 		}
@@ -88,10 +92,9 @@ public class ConfigManager {
 
 		return prop;
 	}
-	
+
 	public String getFilePath() {
-		String filePath = loadConfig().getProperty(
-				          HET_NAMESPACE + "path");
+		filePath = loadConfig(filePath).getProperty(HET_NAMESPACE + "path");
 		return filePath;
 	}
 
@@ -100,9 +103,8 @@ public class ConfigManager {
 	 * @param args
 	 */
 	public static void main(String[] args) {
- 	    ConfigManager con = new ConfigManager();
-		con.loadConfig();
-		System.out.println(con.getFilePath() + "aaaa");
+		ConfigManager con = new ConfigManager();
+		// con.loadConfig();
 	}
-   
+
 }

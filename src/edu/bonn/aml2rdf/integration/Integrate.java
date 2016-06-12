@@ -36,10 +36,7 @@ import org.apache.jena.query.Query;
 import org.apache.jena.query.QueryExecution;
 import org.apache.jena.query.QueryExecutionFactory;
 import org.apache.jena.query.QueryFactory;
-import org.apache.jena.query.QuerySolution;
-import org.apache.jena.query.ResultSet;
 import org.apache.jena.rdf.model.Model;
-import org.apache.jena.rdf.model.RDFNode;
 import org.apache.jena.riot.RDFDataMgr;
 import org.apache.jena.riot.RDFFormat;
 import org.apache.jena.util.FileManager;
@@ -51,6 +48,7 @@ import org.w3c.dom.NodeList;
 
 import edu.bonn.aml2rdf.gui.RDFGUI;
 import edu.bonn.aml2rdf.rdfconvertor.RDFConvertor;
+import edu.bonn.aml2rdf.util.ConfigManager;
 import nu.xom.Builder;
 import nu.xom.Serializer;
 
@@ -189,48 +187,19 @@ public class Integrate {
 	 * @return ArrayList.
 	 */
 	private ArrayList<String> rdfClasses() {
+
 		// Array of nodes which will store all the classes of RDF graph.
 		ArrayList<String> cNodes = new ArrayList<String>();
 
-		// Getting the final RDF and reading all its graph to extract classes.
-		Model modelY = FileManager.get().loadModel(new RDFConvertor().getpath() + "integration.aml.ttl");
+		// gets classes
+		ConfigManager.loadConfig(new RDFConvertor().getpath() + "integration.aml.ttl");
+		for (int i = 0; i < ConfigManager.literals.size(); i++) {
+			if (ConfigManager.predicates.get(i).toString().equals("http://www.w3.org/1999/02/22-rdf-syntax-ns#type")) {
+				String line = ConfigManager.literals.get(i).toString();
 
-		Dataset dataset = DatasetFactory.create();
-		dataset.setDefaultModel(modelY);
-		dataset.addNamedModel(AML_NAMESPACE + "M1.2", modelY);
-		String queryString = null;
-
-		// Query to read all the graph values
-		try (InputStream res = (Integrate.class.getResourceAsStream("/M12query.rq"))) {
-			try {
-				queryString = IOUtils.toString(res);
-			} catch (IOException e) {
-			}
-
-		} catch (IOException e1) {
-			e1.printStackTrace();
-		}
-
-		Query query = QueryFactory.create(queryString);
-
-		try (QueryExecution qexec = QueryExecutionFactory.create(query, dataset)) {
-			ResultSet results = qexec.execSelect();
-			for (; results.hasNext();) {
-				QuerySolution soln = results.nextSolution();
-
-				// Gets all the values of graph in variable
-				RDFNode nPredicate = soln.get("predicate"); // Gets predicate
-				RDFNode nObject = soln.get("object"); // Gets Object
-
-				// Gets all rdf classes in array through rdf:type
-				if (nPredicate.toString().equals("http://www.w3.org/1999/02/22-rdf-syntax-ns#type")) {
-					String line = nObject.toString();
-
-					// Removes the prefix and stores only name
-					line = line.replaceAll("http://iais.fraunhofer.de/aml#", "");
-					cNodes.add(line);
-				}
-
+				// Removes the prefix and stores only name
+				line = line.replaceAll("http://iais.fraunhofer.de/aml#", "");
+				cNodes.add(line);
 			}
 		}
 		return cNodes;
