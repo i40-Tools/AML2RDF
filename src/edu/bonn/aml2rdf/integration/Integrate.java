@@ -140,6 +140,7 @@ public class Integrate {
 	 * @param model
 	 * @throws Exception
 	 */
+
 	void convertXML(Model model) throws Exception {
 
 		ArrayList<String> cNodes = rdfClasses();
@@ -155,28 +156,29 @@ public class Integrate {
 		// Path to generated XML without RDF
 		Document doc = dBuilder
 				.parse(new FileInputStream(new File(new RDFConvertor().getpath() + "integration.aml.rdf")));
-		doc.getDocumentElement().normalize();
 
 		// get attributes from original file
 		ArrayList<String> tempNodes = getAttributes();
 
-		// for every attribute get its node name
 		for (int i = 0; i < tempNodes.size(); i++) {
 			NodeList nodeList = doc.getElementsByTagName(tempNodes.get(i));
 
-			// for every node gets its parent
 			for (int j = 0; j < nodeList.getLength(); j++) {
-				Node node = nodeList.item(j);
-				Element eElement = (Element) node.getChildNodes().item(0).getParentNode().getParentNode();
 
-				// sets the attribute with parent and node value
-				eElement.setAttribute(node.getNodeName(), node.getChildNodes().item(0).getNodeValue());
+				// for every attribute get its node
+				Node node = nodeList.item(j);
+
+				// for every node gets its parent
+				Element eElement = (Element) node.getParentNode();
+
+				eElement.setAttribute(node.getNodeName(), node.getTextContent());
 
 				// removes the nodes which were element attributes
-				eElement.removeChild(node.getChildNodes().item(0).getParentNode());
-			}
-		}
+				eElement.removeChild(node);
 
+			}
+
+		}
 		formatXML(doc);
 
 	}
@@ -282,7 +284,7 @@ public class Integrate {
 
 		// Writes the new added Elements Attributes with sylesheet sorting.
 		Transformer transformer = TransformerFactory.newInstance()
-				.newTransformer(new StreamSource(getClass().getClassLoader().getResourceAsStream("sort.xsl")));
+				.newTransformer(new StreamSource(getClass().getClassLoader().getResourceAsStream("sort2.xsl")));
 		DOMSource source = new DOMSource(doc);
 		StreamResult result = new StreamResult(new File(new RDFConvertor().getpath() + "integration.aml"));
 		transformer.transform(source, result);
@@ -332,8 +334,7 @@ public class Integrate {
 			NodeList baseElmntLst = doc.getElementsByTagName("*");
 
 			for (int k = 0; k < baseElmntLst.getLength(); k++) {
-				// baseElmntLst =
-				// doc.getElementsByTagName(cNodes.get(k).toString());
+
 				Element baseElmnt = (Element) baseElmntLst.item(k);
 
 				NamedNodeMap baseElmntAttr = baseElmnt.getAttributes();
